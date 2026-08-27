@@ -1,0 +1,73 @@
+{
+  "td_seq_breakout": {
+    "sharpe": 0.10017598197662397,
+    "cagr": 0.003821018932671283,
+    "trades": 87,
+    "maxdd": -0.19402930517839476,
+    "profit_factor": 1.1493461817267592,
+    "final_value": 111940.68181966204,
+    "avg_oos": 0.0,
+    "min_oos": 0.0,
+    "max_oos": 0.0,
+    "folds_geq_4": 0
+  },
+  "td_counter_trend": {
+    "sharpe": -0.11671570287922209,
+    "trades": 1,
+    "maxdd": -0.41539314085283696,
+    "avg_oos": 0.01435665514803263
+  },
+  "td_combo": {
+    "sharpe": 0.15039291607399566,
+    "trades": 1,
+    "maxdd": -0.2481160981483624,
+    "avg_oos": 0.001653882351986458
+  },
+  "cross_asset": {
+    "USDJPY=X": {
+      "sharpe": 0.10017598197662397,
+      "cagr": 0.003821018932671283,
+      "trades": 87,
+      "maxdd": -0.19402930517839476,
+      "avg_oos": -0.049,
+      "folds_geq_4": 1,
+      "total_folds": 27
+    },
+    "SPY": {
+      "sharpe": 0.0,
+      "cagr": 0.0,
+      "trades": 0,
+      "maxdd": 0.0,
+      "avg_oos": 0.0,
+      "folds_geq_4": 0,
+      "total_folds": 29
+    },
+    "QQQ": {
+      "sharpe": 0.0,
+      "cagr": 0.0,
+      "trades": 0,
+      "maxdd": 0.0,
+      "avg_oos": 0.0,
+      "folds_geq_4": 0,
+      "total_folds": 25
+    },
+    "GLD": {
+      "sharpe": 0.0,
+      "cagr": 0.0,
+      "trades": 0,
+      "maxdd": 0.0,
+      "avg_oos": 0.0,
+      "folds_geq_4": 0,
+      "total_folds": 19
+    },
+    "IEF": {
+      "sharpe": 0.0,
+      "cagr": 0.0,
+      "trades": 0,
+      "maxdd": 0.0,
+      "avg_oos": 0.0,
+      "folds_geq_4": 0,
+      "total_folds": 21
+    }
+  }
+}

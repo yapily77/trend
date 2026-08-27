@@ -1,0 +1,26 @@
+{
+  "donchian20": {
+    "sharpe": 0.3378703179589829,
+    "cagr": 0.018827506618786405,
+    "trades": 137,
+    "maxdd": -0.3271317004612244,
+    "avg_oos": 0.03226959700667704
+  },
+  "kama10": {
+    "sharpe": -0.284033070992726,
+    "cagr": -0.01691189168436824,
+    "trades": 1110,
+    "maxdd": -0.4942662054421491,
+    "avg_oos": -0.34049432732498996
+  },
+  "history_years": 29.57700205338809,
+  "validation": {
+    "is_years": 3,
+    "oos_years": 1,
+    "folds": 27,
+    "rejection_rules": {
+      "min_oos_sharpe": 0.4,
+      "max_max_drawdown": 0.30
+    }
+  }
+}
