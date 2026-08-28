@@ -30,10 +30,13 @@ This project uses `bd` (beads) for issue tracking. Run `bd prime` for full workf
 ## Known Results (USDJPY=X, 1996-2026)
 - Donchian 20: Sharpe +0.34, 137 trades, DD -32.71%, OOS avg Sharpe +0.03, 11/27 folds pass 0.4
 - TD Seq Breakout: Sharpe +0.10, 87 trades, DD -19.40%, OOS avg Sharpe -0.05, 1/27 folds pass 0.4
+- KAMA Slope: Sharpe -0.18, 854 trades, DD -38.48%, OOS avg Sharpe -0.26 (fails validation)
+- KAMA Adaptive Size: Sharpe -1.10, 7129 trades, DD -55.28%, OOS avg Sharpe -1.30 (much worse)
 - Donchian 20 + TD Breakout signal correlation: 0.40 (moderate, not redundant)
 - Donchian 20 + TD Breakout return correlation: 0.43
 - TDST filter: keeps only 4.5% of breakouts, produces negative Sharpe (-0.17)
 - Verdict: TD Sequential does NOT make money on JPY as standalone trend-following; does NOT improve Donchian 20 as a filter on daily data
+- KAMA (Kaufman's Adaptive MA) does NOT make money on JPY daily data; adaptive sizing made it much worse
 - Recommended next step: test on weekly data (TD Sequential was designed for weekly charts)
 
 ## Quick Start
