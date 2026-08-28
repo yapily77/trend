@@ -7,11 +7,12 @@ realistic cost models (2 pip slippage, 0.002% commission).
 ## Architecture
 - `scripts/bt/` — Backtesting engine (engine, data, indicators, strategies, sizing, charts, reporting, allocator)
 - `scripts/bt/indicators.py` — Technical indicators including Tom DeMark Sequential (td_setup, td_countdown, td_combo, td_st_demand, td_st_supply)
-- `scripts/bt/strategies.py` — Strategy classes: DonchianBreakout, KAMASlope, TDSequentialCounterTrend, TDComboStrategy, TDSequentialBreakout
+- `scripts/bt/strategies.py` — Strategy classes: DonchianBreakout, KAMASlope, KAMAAdaptivePositionSizing, TDSequentialCounterTrend, TDComboStrategy, TDSequentialBreakout
 - `scripts/bt/engine.py` — Backtest simulation + walk-forward validation
 - `JPY/` — Focused USDJPY=X research (TD Sequential vs Donchian 20)
 - `JPY/run_jpy.py` — Run both Donchian 20 and TD Seq Breakout on USDJPY=X
 - `JPY/correlation.py` — Signal/return correlation, trade overlap, TDST filter effectiveness, hybrid simulation
+- `JPY/run_jpy_kama.py` — Run KAMA Slope + KAMA Adaptive Position Sizing vs Donchian 20
 - `JPY/reports/` — Fold JSONs, trade logs, results, correlation JSON
 - `JPY/charts/` — Equity curve PNGs
 
@@ -44,4 +45,5 @@ This project uses `bd` (beads) for issue tracking. Run `bd prime` for full workf
 cd trend/
 python3 JPY/run_jpy.py          # Run TD Seq vs Donchian 20 on USDJPY=X
 python3 JPY/correlation.py      # Run correlation analysis
+python3 JPY/run_jpy_kama.py     # Run KAMA variants vs Donchian 20 on USDJPY=X
 ```
