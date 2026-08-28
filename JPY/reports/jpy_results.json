@@ -13,18 +13,32 @@
     "total_folds": 27,
     "n_folds_pass": 11
   },
-  "TD_Seq_Breakout": {
-    "sharpe": 0.10017598197662397,
-    "cagr": 0.003821018932671283,
-    "trades": 87,
-    "maxdd": -0.19402930517839476,
-    "profit_factor": 1.1493461817267592,
-    "final_value": 111940.68181966204,
-    "avg_oos": -0.04864035378071844,
-    "min_oos": -1.512803478096344,
-    "max_oos": 0.6015880172915651,
-    "folds_geq_4": 1,
+  "KAMA_Slope": {
+    "sharpe": -0.1750398286062538,
+    "cagr": -0.011674542519977016,
+    "trades": 854,
+    "maxdd": -0.38476342443069317,
+    "profit_factor": 0.8720077658295203,
+    "final_value": 70657.25505060802,
+    "avg_oos": -0.25560394156350086,
+    "min_oos": -2.318332240931346,
+    "max_oos": 1.1153414357522373,
+    "folds_geq_4": 7,
     "total_folds": 27,
-    "n_folds_pass": 1
+    "n_folds_pass": 7
+  },
+  "KAMA_AdaptiveSize": {
+    "sharpe": -1.1021817856446992,
+    "cagr": -0.02560680439955787,
+    "trades": 7129,
+    "maxdd": -0.5528230030760031,
+    "profit_factor": 0.8154680799110945,
+    "final_value": 46429.35688356265,
+    "avg_oos": -1.3004694799275527,
+    "min_oos": -3.4065331467180213,
+    "max_oos": 1.0719833091891013,
+    "folds_geq_4": 2,
+    "total_folds": 27,
+    "n_folds_pass": 2
   }
 }

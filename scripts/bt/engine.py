@@ -103,9 +103,11 @@ class Backtest:
                 
                 # 2. Open new position if signal is not flat (0)
                 if current_signal != 0:
-                    # Carver sizing
-                    position_size_units = calculate_equal_volatility_size(cash, self.risk_pct, atr)
-                    
+                    base_size = calculate_equal_volatility_size(cash, self.risk_pct, atr)
+                    # Adaptive sizing: scale by signal magnitude when the strategy provides one
+                    size_mult = abs(current_signal) if abs(current_signal) <= 1.0 else 1.0
+                    position_size_units = base_size * max(size_mult, 0.25)
+
                     if position_size_units > 0:
                         entry_slippage = self.slippage_pips * self.pip_value
                         if current_signal > 0: # Enter Long

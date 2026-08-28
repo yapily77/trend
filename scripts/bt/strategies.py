@@ -35,6 +35,48 @@ class KAMASlope(Strategy):
         signals[kama_diff < 0] = -1
         return signals
 
+class KAMAAdaptivePositionSizing(Strategy):
+    """
+    KAMA + Adaptive Position Sizing strategy.
+    Uses KAMA slope for direction and KAMA's Efficiency Ratio (ER) to
+    dynamically scale position size:
+      - High ER (clean trend) -> larger position (trust the trend)
+      - Low ER (choppy/noisy)  -> smaller position (protect capital)
+
+    This implements the idea that KAMA is useful BOTH for timing AND
+    for adaptive sizing — the ER that drives KAMA's smoothing speed
+    doubles as a real-time regime/strength gauge for sizing.
+
+    Size = base_size * clamp(ER, er_min, er_max)
+    """
+    def __init__(self, period: int = 10, fast: int = 2, slow: int = 30,
+                 er_min: float = 0.1, er_max: float = 1.0,
+                 min_size: float = 0.25):
+        self.period = period
+        self.fast = fast
+        self.slow = slow
+        self.er_min = er_min
+        self.er_max = er_max
+        self.min_size = min_size
+
+    def signals(self, df: pd.DataFrame) -> pd.Series:
+        close = df['Close']
+        kama = calculate_kama(close, period=self.period, fast=self.fast, slow=self.slow)
+        kama_diff = kama.diff()
+
+        direction = pd.Series(0, index=df.index)
+        direction[kama_diff > 0] = 1
+        direction[kama_diff < 0] = -1
+
+        er = rolling_efficiency_ratio(close, period=self.period)
+        er = er.fillna(0.5)
+        size_mult = er.clip(self.er_min, self.er_max)
+
+        signals = pd.Series(0.0, index=df.index)
+        signals = direction * size_mult
+        return signals
+
+
 class DonchianBreakout(Strategy):
     """
     Donchian Breakout strategy with optional regime filters:

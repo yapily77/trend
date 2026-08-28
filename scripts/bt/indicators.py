@@ -28,15 +28,28 @@ def calculate_atr(df, period=14):
 
 
 def calculate_kama(series, period=30, fast=2, slow=30):
-    """Kaufman's Adaptive Moving Average."""
+    """Kaufman's Adaptive Moving Average.
+
+    Uses an efficiency ratio (ER) to modulate the smoothing constant:
+      sc = (ER * (fast_ema - slow_ema) + slow_ema)^2
+    and applies it bar-by-bar so each bar can have a different alpha.
+    """
     direction = series.abs().diff(period)
     volatility = series.diff().abs().rolling(window=period).sum()
     er = direction / volatility.replace(0, np.nan)
     fast_ema = 2.0 / (fast + 1)
     slow_ema = 2.0 / (slow + 1)
     sc = (er * (fast_ema - slow_ema) + slow_ema) ** 2
-    kama = series.ewm(alpha=sc, adjust=False).mean()
-    return kama
+
+    close = series.values
+    kama = np.full(len(close), np.nan)
+    if len(close) > period:
+        kama[period - 1] = close[period - 1]
+        for i in range(period, len(close)):
+            alpha = float(sc.iloc[i]) if hasattr(sc, 'iloc') else float(sc[i])
+            alpha = max(0.0, min(1.0, alpha))
+            kama[i] = kama[i - 1] + alpha * (close[i] - kama[i - 1])
+    return pd.Series(kama, index=series.index)
 
 
 def donchian_channel(df, period=20):
