@@ -1,0 +1,44 @@
+{
+  "Donchian20_Weekly": {
+    "sharpe": 0.1703473088857923,
+    "cagr": 0.0018657392485537105,
+    "trades": 35,
+    "maxdd": -0.14946216462876621,
+    "profit_factor": 1.1912210288703786,
+    "final_value": 105666.88360824279,
+    "avg_oos": -0.28784264859737296,
+    "min_oos": -3.5577741946041628,
+    "max_oos": 5.5722243767511515,
+    "folds_geq_4": 8,
+    "total_folds": 27,
+    "n_folds_pass": 8
+  },
+  "KAMA_Slope_Weekly": {
+    "sharpe": 0.08447815099332083,
+    "cagr": 0.0006409382698642219,
+    "trades": 164,
+    "maxdd": -0.11185372852833293,
+    "profit_factor": 1.0439852836389905,
+    "final_value": 101912.80935701223,
+    "avg_oos": -0.20103050389338903,
+    "min_oos": -3.789662792557182,
+    "max_oos": 1.7987545309670183,
+    "folds_geq_4": 10,
+    "total_folds": 27,
+    "n_folds_pass": 10
+  },
+  "KAMA_AdaptiveSize_Weekly": {
+    "sharpe": -0.47943619478280447,
+    "cagr": -0.002360140001526956,
+    "trades": 1440,
+    "maxdd": -0.07496660769504443,
+    "profit_factor": 0.9150391263086791,
+    "final_value": 93250.99729911762,
+    "avg_oos": -0.7952777121216793,
+    "min_oos": -4.66349431397939,
+    "max_oos": 2.1529832581314303,
+    "folds_geq_4": 5,
+    "total_folds": 27,
+    "n_folds_pass": 5
+  }
+}

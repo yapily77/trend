@@ -13,6 +13,7 @@ realistic cost models (2 pip slippage, 0.002% commission).
 - `JPY/run_jpy.py` — Run both Donchian 20 and TD Seq Breakout on USDJPY=X
 - `JPY/correlation.py` — Signal/return correlation, trade overlap, TDST filter effectiveness, hybrid simulation
 - `JPY/run_jpy_kama.py` — Run KAMA Slope + KAMA Adaptive Position Sizing vs Donchian 20
+- `JPY/run_jpy_weekly.py` — Run KAMA variants + Donchian 20 on weekly USDJPY=X
 - `JPY/reports/` — Fold JSONs, trade logs, results, correlation JSON
 - `JPY/charts/` — Equity curve PNGs
 
@@ -29,21 +30,33 @@ This project uses `bd` (beads) for issue tracking. Run `bd prime` for full workf
 - Reject if OOS Sharpe < 0.4, max DD > 30%, or significant IS→OOS drop
 
 ## Known Results (USDJPY=X, 1996-2026)
+### Daily (29.6 years, ~7634 bars)
 - Donchian 20: Sharpe +0.34, 137 trades, DD -32.71%, OOS avg Sharpe +0.03, 11/27 folds pass 0.4
 - TD Seq Breakout: Sharpe +0.10, 87 trades, DD -19.40%, OOS avg Sharpe -0.05, 1/27 folds pass 0.4
 - KAMA Slope: Sharpe -0.18, 854 trades, DD -38.48%, OOS avg Sharpe -0.26 (fails validation)
 - KAMA Adaptive Size: Sharpe -1.10, 7129 trades, DD -55.28%, OOS avg Sharpe -1.30 (much worse)
 - Donchian 20 + TD Breakout signal correlation: 0.40 (moderate, not redundant)
-- Donchian 20 + TD Breakout return correlation: 0.43
 - TDST filter: keeps only 4.5% of breakouts, produces negative Sharpe (-0.17)
-- Verdict: TD Sequential does NOT make money on JPY as standalone trend-following; does NOT improve Donchian 20 as a filter on daily data
-- KAMA (Kaufman's Adaptive MA) does NOT make money on JPY daily data; adaptive sizing made it much worse
-- Recommended next step: test on weekly data (TD Sequential was designed for weekly charts)
+
+### Weekly (30 years, 1542 bars)
+- Donchian 20 Weekly: Sharpe +0.17, 35 trades, DD -14.95%, OOS avg Sharpe -0.29, 8/27 folds pass 0.4
+- KAMA Slope Weekly: Sharpe +0.08, 164 trades, DD -11.19%, OOS avg Sharpe -0.20, 10/27 folds pass 0.4
+- KAMA Adaptive Size Weekly: Sharpe -0.48, 1440 trades, DD -7.50%, OOS avg Sharpe -0.80, 5/27 folds pass 0.4
+
+### Key findings
+- **No strategy passes walk-forward validation** on USDJPY=X at any frequency tested.
+- Weekly dramatically cuts drawdowns (14.95% vs 32.71%) but also cuts Sharpe (0.17 vs 0.34) and trades (35 vs 137).
+- KAMA Slope IS Sharpe improves on weekly (+0.08 vs -0.18) but still fails OOS validation.
+- KAMA Adaptive Position Sizing fails at BOTH frequencies — adaptive sizing amplifies losses in a noise-dominated regime.
+- Weekly has fewer but larger bars; the 20-period Donchian is a 20-week (~100 trading day) lookback — much slower regime detection.
+- **Verdict: No robust edge found on USDJPY=X at daily or weekly frequency.** The adaptive sizing concept (KAMA ER as regime gauge) does not translate to a profitable sizing rule on JPY.
+- Recommended next step: relax Donchian period to ~10 on weekly, or test multiple JPY cross-pairs where trends may be stronger.
 
 ## Quick Start
 ```bash
 cd trend/
-python3 JPY/run_jpy.py          # Run TD Seq vs Donchian 20 on USDJPY=X
-python3 JPY/correlation.py      # Run correlation analysis
-python3 JPY/run_jpy_kama.py     # Run KAMA variants vs Donchian 20 on USDJPY=X
+python3 JPY/run_jpy.py               # TD Seq vs Donchian 20 on USDJPY=X daily
+python3 JPY/correlation.py           # Correlation analysis
+python3 JPY/run_jpy_kama.py          # KAMA variants vs Donchian 20 daily
+python3 JPY/run_jpy_weekly.py        # KAMA variants + Donchian 20 on USDJPY=X weekly
 ```
