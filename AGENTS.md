@@ -15,6 +15,7 @@ realistic cost models (2 pip slippage, 0.002% commission).
 - `JPY/run_jpy_kama.py` — Run KAMA Slope + KAMA Adaptive Position Sizing vs Donchian 20
 - `JPY/run_jpy_weekly.py` — Run KAMA variants + Donchian 20 on weekly USDJPY=X
 - `JPY/run_jpy_ma200.py` — Run MA200 trend-following vs Donchian 20 on USDJPY=X daily
+- `JPY/run_jpy_ama.py` — Run AMA (KAMA) crossover vs Donchian 20 on USDJPY=X daily
 - `JPY/reports/` — Fold JSONs, trade logs, results, correlation JSON
 - `JPY/charts/` — Equity curve PNGs
 
@@ -50,6 +51,12 @@ This project uses `bd` (beads) for issue tracking. Run `bd prime` for full workf
 - **Fails validation** — roughly 2x the trades of Donchian 20 with no edge (Sharpe ~0, worse than Donchian).
 - Suggests USDJPY does not exhibit a persistent 200-day trend; the visual impression of trend is not exploitable after costs.
 
+### AMA / KAMA crossover (daily, 29.6 years)
+- AMA30 (period=30 KAMA): Sharpe -0.12, 528 trades, DD -33.10%, OOS avg Sharpe -0.29, 5/27 folds pass 0.4
+- AMA10 (period=10 KAMA): Sharpe -0.17, 854 trades, DD -38.48%, OOS avg Sharpe -0.26, 7/27 folds pass 0.4
+- Both AMA variants fail validation — adaptive lookback does not help; USDJPY remains mean-reverting.
+- AMA10 (854 trades) matches KAMA Slope's trade count, confirming AMA crossover ≈ KAMA Slope in practice.
+
 ### Key findings
 - **No strategy passes walk-forward validation** on USDJPY=X at any frequency tested.
 - Donchian 20 is the only strategy with a positive IS Sharpe (+0.34) and a decent profit factor (1.63).
@@ -69,4 +76,5 @@ python3 JPY/correlation.py           # Correlation analysis
 python3 JPY/run_jpy_kama.py          # KAMA variants vs Donchian 20 daily
 python3 JPY/run_jpy_weekly.py        # KAMA variants + Donchian 20 on USDJPY=X weekly
 python3 JPY/run_jpy_ma200.py          # MA200 trend-following vs Donchian 20 on USDJPY=X daily
+python3 JPY/run_jpy_ama.py            # AMA (KAMA) crossover vs Donchian 20 on USDJPY=X daily
 ```
