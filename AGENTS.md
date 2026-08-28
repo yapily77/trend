@@ -14,6 +14,7 @@ realistic cost models (2 pip slippage, 0.002% commission).
 - `JPY/correlation.py` — Signal/return correlation, trade overlap, TDST filter effectiveness, hybrid simulation
 - `JPY/run_jpy_kama.py` — Run KAMA Slope + KAMA Adaptive Position Sizing vs Donchian 20
 - `JPY/run_jpy_weekly.py` — Run KAMA variants + Donchian 20 on weekly USDJPY=X
+- `JPY/run_jpy_ma200.py` — Run MA200 trend-following vs Donchian 20 on USDJPY=X daily
 - `JPY/reports/` — Fold JSONs, trade logs, results, correlation JSON
 - `JPY/charts/` — Equity curve PNGs
 
@@ -43,11 +44,19 @@ This project uses `bd` (beads) for issue tracking. Run `bd prime` for full workf
 - KAMA Slope Weekly: Sharpe +0.08, 164 trades, DD -11.19%, OOS avg Sharpe -0.20, 10/27 folds pass 0.4
 - KAMA Adaptive Size Weekly: Sharpe -0.48, 1440 trades, DD -7.50%, OOS avg Sharpe -0.80, 5/27 folds pass 0.4
 
+### MA200 trend-following (daily, 29.6 years)
+- MA200 Trend: Sharpe -0.02, 269 trades, DD -34.37%, OOS avg Sharpe -0.01, 10/27 folds pass 0.4
+- Buy USD/sell JPY when Close > MA200, reverse when Close < MA200.
+- **Fails validation** — roughly 2x the trades of Donchian 20 with no edge (Sharpe ~0, worse than Donchian).
+- Suggests USDJPY does not exhibit a persistent 200-day trend; the visual impression of trend is not exploitable after costs.
+
 ### Key findings
 - **No strategy passes walk-forward validation** on USDJPY=X at any frequency tested.
+- Donchian 20 is the only strategy with a positive IS Sharpe (+0.34) and a decent profit factor (1.63).
 - Weekly dramatically cuts drawdowns (14.95% vs 32.71%) but also cuts Sharpe (0.17 vs 0.34) and trades (35 vs 137).
 - KAMA Slope IS Sharpe improves on weekly (+0.08 vs -0.18) but still fails OOS validation.
 - KAMA Adaptive Position Sizing fails at BOTH frequencies — adaptive sizing amplifies losses in a noise-dominated regime.
+- MA200 crossover produces 269 trades (~2x Donchian) with ~0 Sharpe — too many whipsaws on a mean-reverting pair.
 - Weekly has fewer but larger bars; the 20-period Donchian is a 20-week (~100 trading day) lookback — much slower regime detection.
 - **Verdict: No robust edge found on USDJPY=X at daily or weekly frequency.** The adaptive sizing concept (KAMA ER as regime gauge) does not translate to a profitable sizing rule on JPY.
 - Recommended next step: relax Donchian period to ~10 on weekly, or test multiple JPY cross-pairs where trends may be stronger.
@@ -59,4 +68,5 @@ python3 JPY/run_jpy.py               # TD Seq vs Donchian 20 on USDJPY=X daily
 python3 JPY/correlation.py           # Correlation analysis
 python3 JPY/run_jpy_kama.py          # KAMA variants vs Donchian 20 daily
 python3 JPY/run_jpy_weekly.py        # KAMA variants + Donchian 20 on USDJPY=X weekly
+python3 JPY/run_jpy_ma200.py          # MA200 trend-following vs Donchian 20 on USDJPY=X daily
 ```
