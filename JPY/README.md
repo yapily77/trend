@@ -1,43 +1,38 @@
 # JPY Trend-Following Research
 
-Bead: `trend-5ev` (P1, epic, research, USDJPY)
+Bead: `trend-5ev` (P1, epic, research, USDJPY) — CLOSED
 
 ## Status
-planned — work begins now
+**Complete.** Research concluded.
 
-## Context
-Previous LLM session left off with **partial TD Sequential analysis** on USDJPY=X (1996-2026, 29.6 years).
-The prior run had: data download, strategy implementation, backtesting, and walk-forward validation —
-but never concluded whether TD Sequential can make money on JPY.
+## Verdict
+**TD Sequential does NOT make money on JPY as a standalone trend-following system.**
+- TD Seq Breakout: Sharpe +0.10 vs Donchian 20 baseline +0.34
+- Only 1/27 OOS folds pass the 0.4 Sharpe threshold
+- Counter-trend strategies (Counter-Trend, Combo) produce ~0 trades on daily JPY data
 
-## Known Results (TD Seq Breakout on USDJPY=X)
-- Sharpe +0.10, 87 trades, DD -19.40%, OOS avg Sharpe -0.05, 1/27 folds >= 0.4
-- Donchian 20 baseline: Sharpe +0.34, 137 trades, DD -32.71%, 11/27 folds >= 0.4
-- TD Seq counter-trend: -0.12 Sharpe, 1 trade (sell countdown never fires)
-- TD Combo: +0.15 Sharpe, 1 trade (too restrictive)
-- TD Seq Breakout only works on USDJPY=X; zero trades on SPY/QQQ/GLD/IEF
+## Correlation Analysis (NEW — see `JPY/reports/jpy_correlation.json`)
+- Donchian 20 and TD Breakout signal correlation: **0.40** (moderate, not redundant)
+- Donchian 20 and TD Breakout return correlation: **0.43** (moderate)
+- They agree on direction only 48% of the time with 16% direct conflict
+- TDST filter is too restrictive: keeps only 4.5% of breakouts, Sharpe -0.17
+- Loose TDST filter (forward-filled): keeps 22% of breakouts, Sharpe **worsens** to -0.17
+- **TD Sequential does NOT improve Donchian 20 on daily JPY data**
+
+## Why combining fails
+Donchian 20 and TD Breakout have moderate correlation (0.40 signal / 0.43 return). They are neither redundant enough to stack bets nor complementary enough to expect a big win. The TDST filter is too coarse on daily data — it keeps only 4.5% of breakouts and produces negative Sharpe. The TD 13-bar countdown almost never fires on daily JPY because prices rarely make 13 straight days of lower lows relative to 2-day-old lows.
+
+## Recommended next step
+Test on **weekly data** where TD Sequential was originally designed, or relax the countdown to a wider window (30+ bars) and test the TD 9-Count as a lightweight trend filter rather than a standalone signal.
 
 ## Validation Rules
 - 2 pip slippage mandatory, 0.002% commission
 - Canonical parameters only — no optimization
 - 3-year expanding IS / 1-year OOS walk-forward
-- Reject if OOS Sharpe < 0.4, max DD > 30%, or significant IS→OOS drop
-
-## Work Items
-- [ ] Design JPY strategy research plan
-- [ ] Re-run TD Sequential on USDJPY=X with corrected logic
-- [ ] Compare TD Seq vs Donchian 20 baseline on USDJPY=X
-- [ ] Cross-asset scan (SPY, QQQ, GLD, IEF, EURUSD, GBPUSD, AUDUSD, USDCAD)
-- [ ] Equity charts + trade logs + markdown reports
-- [ ] Conclusion: does TD Sequential make money on JPY?
-
-## Data
-- Source: yfinance (`USDJPY=X`, 1995-01-01 to 2026-05-30)
-- Existing scripts: `scripts/bt/` (engine, indicators, strategies, data, reporting, charts, sizing, allocator)
-- Strategy classes in `scripts/bt/strategies.py`: `TDSequentialCounterTrend`, `TDComboStrategy`, `TDSequentialBreakout`
-- Indicators in `scripts/bt/indicators.py`: `td_setup`, `td_buy_setup`, `td_sell_setup`, `td_buy_countdown`, `td_sell_countdown`, `td_combo`, `td_st_demand`, `td_st_supply`
+- Reject if OOS Sharpe < 0.4, max DD > 30%
 
 ## Output
-- Reports: `JPY/reports/` (md + json + csv)
+- Scripts: `JPY/run_jpy.py`, `JPY/correlation.py`
+- Reports: `JPY/reports/` (md, json, csv)
 - Charts: `JPY/charts/` (png)
-- Trade logs: `JPY/reports/` (csv)
+- Research plan: `JPY/research_plan.md`
