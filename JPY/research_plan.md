@@ -1,6 +1,6 @@
 # JPY Trend-Following Research — Strategy Plan
 
-Bead: `trend-5ev` (P1, epic, research, USDJPY)
+Bead: `trend-5ev` (P1, epic, research, USDJPY) — CLOSED
 
 ## Question
 Does Tom DeMark Sequential make money on JPY (USDJPY=X)? And can we combine it
@@ -21,7 +21,7 @@ with Donchian 20 to improve the baseline?
 - Counter-trend strategies produce essentially zero trades on daily JPY data.
 - Fundamental issue: TD Sequential was designed for **weekly** charts as a counter-trend/exhaustion system. On daily JPY data, the 13-bar countdown almost never fires and the 9-bar setup rarely completes.
 
-## Correlation Analysis (NEW — see `JPY/reports/jpy_correlation.json`)
+## Correlation Analysis (see `JPY/reports/jpy_correlation.json`)
 
 ### Signal correlation (daily, valid bars)
 | | Donchian 20 | TD Breakout | TD CounterTrend | TD Combo |
