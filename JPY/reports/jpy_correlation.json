@@ -1,0 +1,100 @@
+{
+  "signal_correlation": {
+    "Donchian20": {
+      "Donchian20": 1.0,
+      "TD_Breakout": 0.4,
+      "TD_CounterTrend": -0.036,
+      "TD_Combo": 0.036
+    },
+    "TD_Breakout": {
+      "Donchian20": 0.4,
+      "TD_Breakout": 1.0,
+      "TD_CounterTrend": -0.014,
+      "TD_Combo": 0.014
+    },
+    "TD_CounterTrend": {
+      "Donchian20": -0.036,
+      "TD_Breakout": -0.014,
+      "TD_CounterTrend": 1.0,
+      "TD_Combo": -0.999
+    },
+    "TD_Combo": {
+      "Donchian20": 0.036,
+      "TD_Breakout": 0.014,
+      "TD_CounterTrend": -0.999,
+      "TD_Combo": 1.0
+    }
+  },
+  "signal_agreement": {
+    "donchian_vs_td_breakout": {
+      "agree_pct": 0.48122555410691004,
+      "both_long_pct": 0.2707953063885267,
+      "both_short_pct": 0.2104302477183833,
+      "conflict_pct": 0.1617992177314211
+    }
+  },
+  "trade_counts": {
+    "Donchian20": 137,
+    "TD_Breakout": 87,
+    "TD_CounterTrend": 1,
+    "TD_Combo": 1
+  },
+  "trade_overlap": {
+    "donchian_vs_td_breakout": 169,
+    "donchian_vs_td_counter_trend": 87,
+    "donchian_vs_td_combo": 86
+  },
+  "tdst_filter": {
+    "long_breakout_rate_pct": 5.6975228161668845,
+    "short_breakout_rate_pct": 3.4289439374185138,
+    "breakout_bars_with_valid_tdst": 698,
+    "long_aligned_tdst_pct": 50.11441647597255,
+    "short_aligned_tdst_pct": 47.12643678160919,
+    "any_aligned_pct": 4.458930899608866,
+    "any_breakout_pct": 9.126466753585397,
+    "filtered_out_pct": 95.54106910039113
+  },
+  "td_setup_stats": {
+    "buy_setups_completed": 663,
+    "sell_setups_completed": 450,
+    "buy_countdowns_completed": 26,
+    "sell_countdowns_completed": 0,
+    "tdst_demand_levels": 663,
+    "tdst_supply_levels": 450
+  },
+  "return_correlation": {
+    "Donchian20": {
+      "Donchian20": 1.0,
+      "TD_Breakout": 0.429,
+      "TD_CounterTrend": -0.13,
+      "TD_Combo": 0.112
+    },
+    "TD_Breakout": {
+      "Donchian20": 0.429,
+      "TD_Breakout": 1.0,
+      "TD_CounterTrend": 0.17,
+      "TD_Combo": -0.21
+    },
+    "TD_CounterTrend": {
+      "Donchian20": -0.13,
+      "TD_Breakout": 0.17,
+      "TD_CounterTrend": 1.0,
+      "TD_Combo": -0.97
+    },
+    "TD_Combo": {
+      "Donchian20": 0.112,
+      "TD_Breakout": -0.21,
+      "TD_CounterTrend": -0.97,
+      "TD_Combo": 1.0
+    }
+  },
+  "hybrid_donchian_tdst": {
+    "sharpe": -0.16872009514492686,
+    "trades": 330,
+    "maxdd": -0.23720799123604477,
+    "avg_oos_sharpe": 0.03703257424837876,
+    "folds_geq_4": 14,
+    "total_folds": 27,
+    "signals_filtered_out_pct": 78.41236573225045
+  }
+}
