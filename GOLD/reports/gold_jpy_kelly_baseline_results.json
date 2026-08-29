@@ -1,0 +1,27 @@
+{
+  "strategy": "Baseline (no scale-in, no gate)",
+  "metrics": {
+    "CAGR": 0.14843895363040183,
+    "Max_Drawdown": 0.4736855730607227,
+    "Sharpe": 0.7414620324747498,
+    "Profit_Factor": 6.005404574770291,
+    "Final_Value": 213716768.46877533,
+    "Total_Trades": 168,
+    "Win_Rate": 0.42857142857142855,
+    "Avg_Win": 1997144.1445299191,
+    "Avg_Loss": 249418.35137805555,
+    "Payoff_Ratio": 8.007206099693725,
+    "Stop_Loss_Hits": 22,
+    "Signal_Exits": 145,
+    "Scale_Ins": 0,
+    "Avg_Stop_Width": 2912.951800053499,
+    "Avg_Risk_Per_Trade": 0.0522616623422061,
+    "ATR_Period": 14,
+    "ATR_Mult": 3.0,
+    "Max_Leverage": 2.0,
+    "Lev_Capped_Pct": 0.7797619047619048,
+    "Add_Fraction": 0.0,
+    "Add_Zone_Pct": 0.0,
+    "Max_Additions": 0
+  }
+}
