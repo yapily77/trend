@@ -134,10 +134,10 @@ def atr(df: pd.DataFrame, period: int = ATR_PERIOD) -> pd.Series:
     return d['TR'].rolling(period).mean()
 
 
-def _cap_position(position: float, entry_price: float, capital: float,
+def _cap_position(position: float, entry_price: float, current_equity: float,
                   max_leverage: float) -> float:
-    """Cap position so notional <= max_leverage * capital. Return capped units."""
-    max_notional = max_leverage * capital
+    """Cap position so notional <= max_leverage * current_equity. Return capped units."""
+    max_notional = max_leverage * current_equity
     max_units = max_notional / entry_price if entry_price > 0 else position
     return min(position, max_units)
 
@@ -195,12 +195,12 @@ def run_backtest(gold_df: pd.DataFrame, capital: float = CAPITAL,
             was_long = (pos.iloc[i-1] > 0) if i > 0 else False
             if now_long and not was_long:
                 entry_price = c * 1.0005        # slippage ~5bp on entry
-                risk_dollars = half_kelly * capital
+                risk_dollars = half_kelly * cash
                 stop_distance = atr_mult * atr_val
                 # raw Kelly position
                 raw_units = risk_dollars / stop_distance if stop_distance > 0 else 0.0
-                # cap leverage
-                position = _cap_position(raw_units, entry_price, capital, max_leverage)
+                # cap leverage against current equity (cash)
+                position = _cap_position(raw_units, entry_price, cash, max_leverage)
                 actual_risk = position * stop_distance
                 commission = position * entry_price * 0.00002
                 cash -= commission
@@ -213,7 +213,7 @@ def run_backtest(gold_df: pd.DataFrame, capital: float = CAPITAL,
                     'risk_dollars': actual_risk,
                     'stop_distance': stop_distance,
                     'atr': atr_val,
-                    'risk_pct': actual_risk / capital,
+                    'risk_pct': actual_risk / cash if cash > 0 else 0,
                     'raw_units': raw_units,
                     'lev_capped': raw_units > position,
                 }
