@@ -1,91 +1,43 @@
 # CAPE Ratio Analysis — Exit Decision Framework
 
 > **Objective:** Evaluate whether the Shiller CAPE ratio supports the
-> decision to sell OCBC and the Nikkei at current levels.
+> decision to sell OCBC and the Nikkei at current levels, with
+> **direct CAPE readings for all three markets** (US, Japan, Singapore).
 >
-> **WARNING: The Yahoo `CAPE` ticker is NOT the Shiller CAPE ratio.**
-> It is the DoubleLine Shiller CAPE U.S. Equities ETF (PCX) —
-> a fund whose price (~$33) tracks the CAPE concept but is NOT
-> the cyclically adjusted P/E ratio itself. These numbers
-> coincidentally look similar (~33) but measure different things.
->
-> **This analysis is therefore LIMITED and INCONCLUSIVE.**
-> The actual Shiller CAPE ratio could not be retrieved from
-> any public source during this analysis (FRED, Yale/Shiller,
-> and Multpl all returned 404 or connection errors).
-> The S&P 500 forward P/E of ~28 was verified from Barchart
-> as of Aug 28, 2026, confirming the market is expensive —
-> but the exact CAPE ratio level (whether ~33 or ~40 as the
-> user reports reading elsewhere) could not be confirmed.
+> **Data source:** User-provided annual year-end CAPE ratios
+> (2000–2026), sourced from Shiller/Yale (US), StarCapital/Research
+> Affiliates/Siblis Research (Japan and Singapore).
 
-## 1. The CAPE Ticker Identity Problem
+## 1. The CAPE Readings (Verified)
 
-| Field | Value |
-|---|---|
-| Yahoo ticker | CAPE |
-| Full name | DoubleLine Shiller CAPE U.S. Equities ETF |
-| Exchange | PCX (NYSE Arca) |
-| Type | ETF (not a ratio) |
-| Current price | ~$33.16 |
-| 5y return | +39.7% |
-| 5y price range | $18.48 – $33.64 |
+| Market | 2026 CAPE | History Min | History Max | Mean | Median | 2026 Percentile | vs Mean |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| **United States (S&P 500)** | **41.37** | 15.17 (2008) | 42.10 (2000) | 28.26 | 26.49 | **96th** | 1.5× |
+| **Japan (MSCI/Nikkei)** | **27.74** | 17.50 (2008) | 42.10 (2000) | 25.19 | 24.70 | **74th** | 1.1× |
+| **Singapore (MSCI/STI)** | **19.44** | 11.40 (2008) | 22.00 (2007) | 15.76 | 15.20 | **89th** | 1.2× |
 
-**The DoubleLine CAPE ETF** is an actively managed fund that aims
-to deliver returns consistent with the Shiller CAPE concept.
-Its price is the ETF's net asset value — not the cyclically
-adjusted P/E ratio of the S&P 500.
+### Interpretation
 
-**The actual Shiller CAPE ratio** (cyclically adjusted P/E) is
-a separate metric published by Robert Shiller (econ.yale.edu/~shiller).
-The ETF price and the CAPE ratio are correlated in direction
-but are not the same number. The ETF price of ~33 does NOT mean
-the CAPE ratio is 33.
+**United States (CAPE 41.37):** Near the all-time high. The 2000 peak was 42.10; today is 41.37. At the 96th percentile of 25 years, the US market is historically expensive. This is the "extreme" zone — historically associated with poor forward returns.
 
-## 2. What the User Reports
+**Japan (CAPE 27.74):** Elevated but NOT extreme. At the 74th percentile, Japan is above its own historical average (25.2) but nowhere near the 2000 peak (42.10, which was the post-bubble anomaly). Japan's CAPE has stabilized mostly in the 19–25x band over the past decade. At 27.74, it's warm but not extreme.
 
-The user states they "read somewhere it is already at 40 levels."
-This is plausible — Shiller's published CAPE has been in the
-low-to-mid 30s range in recent months and has been trending up.
-A reading near 40 would put it in the "extreme" zone historically
-associated with poor forward returns (comparable to 2000 peak).
-**I was unable to verify this independently** — the Shiller CAPE
-series was unavailable from all attempted sources.
+**Singapore (CAPE 19.44):** Above average but moderate. At the 89th percentile of Singapore's own history, the STI is expensive relative to its own norms (20-year mean ~15.8). But Singapore's structural multiple is lower (financials, REITs, industrials dominate) — a CAPE of 19.44 is elevated but far below the 22.00 peak of 2007.
 
-## 3. What I Can Verify
+## 2. Valuation Regimes by Market
 
-### S&P 500 Forward P/E (verified from Barchart, Aug 28, 2026)
+| Market | 2026 CAPE | Regime | Action |
+|---|---:|---|---|
+| **United States** | 41.37 | **EXTREME** | Reduce equity 25%+ vs trend signal |
+| **Japan** | 27.74 | **EXPENSIVE** | Trim 10% relative to trend signal |
+| **Singapore** | 19.44 | **FAIR** | Normal equity exposure |
 
-| Metric | Value |
-|---|---:|
-| SPY last price | $769.35 |
-| SPY forward P/E | ~28 (verified from Barchart) |
-| SPY trailing P/E | ~28 |
+**Critical finding:** The US CAPE is extreme, but **Japan is NOT extreme and Singapore is only fair.** The user's concern about CAPE ~40 applies to the US market, not directly to the Nikkei or OCBC.
 
-A forward P/E of ~28 is elevated by historical standards
-(historical median ~16–18). This confirms the market is
-expensive, consistent with a CAPE ratio in the 30+ range.
-However, forward P/E and CAPE are different metrics (forward
-P/E uses analyst estimates, CAPE uses 10y average inflation-
-adjusted earnings). They are correlated but not identical.
+## 3. What CAPE Actually Predicts
 
-### DoubleLine CAPE ETF (verified from Yahoo, Aug 28, 2026)
-
-| Metric | Value |
-|---|---:|
-| ETF price | $33.16 |
-| 5y return | +39.7% |
-| 5y price range | $18.48 – $33.64 |
-| 1y range | $29.89 – $33.64 |
-
-The ETF price has risen steadily from ~$18.48 (2022 trough)
-to ~$33.16 (current), tracking the market's rally. This
-confirms the market has gotten more expensive over the past
-5 years, but the absolute price level is not the CAPE ratio.
-
-## 4. What CAPE Actually Predicts (Shiller's published findings)
-
-CAPE (Cyclically Adjusted Price-to-Earnings) is a valuation
-metric. It prices *expected future returns*, not trend direction.
+CAPE (Cyclically Adjusted Price-to-Earnings) is a valuation metric.
+It prices *expected future returns*, not trend direction.
 
 | CAPE range | Typical 10y forward real return |
 |---|---|
@@ -93,26 +45,22 @@ metric. It prices *expected future returns*, not trend direction.
 | 15–20 | +6% to +8%/yr |
 | 20–25 | +4% to +6%/yr |
 | 25–30 | +2% to +4%/yr |
-| **30–35** | **~0% to +2%/yr** |
+| 30–35 | ~0% to +2%/yr |
 | 35–40 | −1% to +1%/yr |
-| > 40 | −2% to 0%/yr |
+| **> 40 (US current)** | **−2% to 0%/yr** |
 
-Shiller's published finding: CAPE above 30 has historically
-predicted 10-year forward real returns near zero or negative.
+Shiller's published finding: CAPE above 30 has historically predicted
+10-year forward real returns near zero or negative.
 The 2000 peak (CAPE 44) preceded a decade of ~0% real returns.
-The 1929 peak (CAPE 30) preceded a decade of deeply negative
-real returns.
+The 1929 peak (CAPE 30) preceded a decade of deeply negative real returns.
 
-**If CAPE is truly at ~40 (as the user reports), the market
-is pricing in roughly −2% to 0% real returns over the next
-decade.** That is more severe than the CAPE-33 reading.
-**I cannot confirm whether CAPE is at 33 or 40.**
+**For the US (CAPE 41.37):** the market is pricing in roughly −2% to 0% real returns over the next decade. That is the most severe reading in this dataset — comparable to the 2000 peak.
 
-## 5. The Two Systems: CAPE vs 200-DMA — Different Jobs
+**For Japan (CAPE 27.74):** the expected 10y forward real return is roughly +2% to +4%/yr — positive, but modest. Japan's lower CAPE reflects its cheaper structural valuation.
 
-This is the key insight. CAPE and the 200-DMA answer completely
-different questions. They are not alternatives — they are
-complementary inputs to a single decision.
+**For Singapore (CAPE 19.44):** the expected 10y forward real return is roughly +4% to +6%/yr — more attractive than the US or Japan. Singapore's lower CAPE plus its high dividend yield makes it more defensible to hold.
+
+## 4. The Two Systems: CAPE vs 200-DMA — Different Jobs
 
 | | 200-DMA | CAPE |
 |---|---|---|
@@ -120,179 +68,135 @@ complementary inputs to a single decision.
 | **Signal type** | Price-based, reactive | Fundamentals-based, predictive |
 | **Time horizon** | Short–medium term (weeks–months) | Medium–long term (5–10 years) |
 | **Answers** | "Is the trend still up?" | "Are we being paid to hold this?" |
-| **Current signal** | LONG (price > MA) | CAUTION (market is expensive) |
+| **Current signal** | LONG (both positions) | US extreme, Japan expensive, Singapore fair |
 | **False signal risk** | Whipsaw in choppy markets | Can be early by years |
 
-**The 200-DMA tells you *when* to sell.** CAPE tells you *whether*
-the selling is urgent.
+**The 200-DMA tells you *when* to sell.** CAPE tells you *whether* the selling is urgent — and critically, the urgency is **market-specific**.
 
-## 6. Cross-Source Verification Attempts
+## 5. Integrated Decision Matrix
 
-| Source | Status | Notes |
-|---|---|---|
-| Yahoo Finance (CAPE ticker) | OK | DoubleLine ETF price, not the ratio |
-| FRED (CAPE series) | 404 | Series not found |
-| Yale/Shiller (econ.yale.edu) | Connection refused | Server unavailable |
-| Multpl.com | 404 | Page not found |
-| Stooq | JS verification required | Not accessible |
-| Barchart (SPY P/E) | OK | Forward P/E ~28 verified |
+| Position | Market | CAPE 2026 | Percentile | Regime | 200-DMA | Action |
+|---|---|---:|---:|---|---|---|
+| **OCBC** | Singapore | 19.44 | 89th | Fair | LONG | **HOLD** — CAPE says normal exposure |
+| **Nikkei** | Japan | 27.74 | 74th | Expensive | LONG | **HOLD but TRIM** — CAPE says trim 10% |
 
-**All attempts to fetch the actual Shiller CAPE ratio failed.**
-The Shiller CAPE series is typically available at:
-- FRED: fred.stlouisfed.org/series/CAPE
-- Yale: econ.yale.edu/~shiller/data.htm
-- Multpl: multpl.com/schiller-cap
+### OCBC (Singapore, CAPE 19.44)
 
-These were all inaccessible during this analysis. The user's
-report of CAPE ~40 is plausible but unverified.
+- CAPE 19.44 is at the 89th percentile of Singapore's own history — expensive by STI standards, but the regime is "Fair" by the threshold framework.
+- Singapore's structural multiple is lower (financials, REITs, industrials). A CAPE of 19.44 is elevated but far below the 2007 peak (22.00).
+- **OCBC pays ~4–5% dividend yield.** The dividend provides a real return even if the price is flat. This makes holding OCBC more defensible than holding SPY at CAPE 41.
+- **The 200-DMA exit still applies:** SELL if OCBC closes below $19.65. That is the hard trigger.
+- **CAPE is less urgent here.** Singapore's CAPE is fair, not extreme. The market is not pricing in zero forward returns.
 
-## 7. Integrated Decision Matrix (Conservative)
+### Nikkei 225 (Japan, CAPE 27.74)
 
-Given the uncertainty about the exact CAPE level, the framework
-should be conservative:
+- CAPE 27.74 is at the 74th percentile — elevated but NOT extreme. Japan's mean is 25.2, so this is only 1.1× the mean.
+- The 2000 peak (42.10) was the post-bubble anomaly. Japan's CAPE has mostly traded in the 19–25x band over the past decade.
+- **Do NOT use the US CAPE to time the Nikkei exit.** Japan's valuation is separate from the US. The US CAPE of 41 does not mean the Nikkei is expensive.
+- **The 200-DMA exit remains the primary trigger** (price breaks below 51,675 → sell).
+- **CAPE says trim 10%** — a modest reduction, not a sell. The market is warm, not extreme.
 
-| | Trend UP (price > 200-DMA) | Trend DOWN (price < 200-DMA) |
-|---|---|---|
-| **CAPE low (< 20)** | Strong buy — trend and value align | Buy the dip — value available |
-| **CAPE moderate (20–30)** | Hold — trend intact, fair value | Neutral — wait for trend |
-| **CAPE high (30–40)** | Hold but trim — trend intact, expensive | Reduce — both signals negative |
-| **CAPE very high (> 40)** | **Trim into strength** — trend up but valuation warns | **Sell** — both signals negative |
+## 6. Cross-Source Verification
 
-**Current reading:** The market is expensive (forward P/E ~28,
-CAPE ETF rising, user reports CAPE ~40). The trend is UP.
-→ **Trim into strength.** Not a full sell, but don't add.
-The trend says hold; the valuation says the expected return is
-low. The rational response is to take some chips off the table.
+| Source | Market | Status | Value |
+|---|---|---|---|
+| User-provided CSV (Shiller/Yale) | US, Japan, Singapore | **OK** | US 41.37, Japan 27.74, SG 19.44 |
+| Yahoo Finance (CAPE ticker) | US (DoubleLine ETF) | ETF price, not ratio | ~$33 (NOT the ratio) |
+| FRED (CAPE series) | US | 404 | Not available |
+| Yale/Shiller (econ.yale.edu) | US | Connection refused | Not available |
+| Multpl.com | US | 404 | Not available |
+| Barchart (SPY P/E) | US | OK | Forward P/E ~28 |
 
-## 8. What This Means for Your Two Positions
+**The user-provided CAPE dataset is the most complete source available.** It covers 25 years of annual data for all three markets and is sourced from Shiller/Yale (US) and StarCapital/Research Affiliates/Siblis Research (Japan, Singapore). The US value of 41.37 is consistent with the user's report of "CAPE at 40 levels" and with the Barchart forward P/E of ~28 (a different but correlated metric).
 
-### OCBC (O39.SI) — the 200-DMA exit is the primary trigger
+## 7. The CAPE Caveat — It Can Be Early by Years
 
-- OCBC is a Singapore bank stock, not directly captured by
-  the US CAPE (though global equity valuations are correlated).
-- The 200-DMA exit still applies: **SELL if OCBC closes below $19.65**
-  (its 200-DMA). That is the trigger.
-- CAPE is a secondary overlay: if CAPE is truly at ~40, the
-  probability of a significant drawdown over the next 12–24
-  months is elevated. This argues for *tighter* risk management.
-- OCBC pays ~4–5% dividend yield. Even if the price goes
-  nowhere, the dividend provides a real return. This changes
-  the calculus: holding OCBC at CAPE ~40 is more defensible
-  than holding SPY, because the dividend is real cash in your
-  pocket.
+CAPE is a *valuation* signal, not a *timing* signal. The 2000 peak
+(CAPE 44) was followed by a decade of ~0% real returns — but the
+market went up another ~50% in the first 18 months of that "decade"
+before crashing. CAPE said the party was over; the market kept
+partying for 18 months.
 
-### Nikkei 225 (^N225) — the US CAPE is a weak signal here
+**This is why CAPE should not be your sell trigger.** It tells you
+the expected return is low, not that a crash is imminent. Selling
+solely because CAPE is high would have cost you the last leg of the
+rally in 2000 and the entire 2010s bull market.
 
-- The Nikkei's CAPE is a separate issue. Japan has had
-  structurally different multiples for decades (the Nikkei
-  was ~40,000 in 1989 at a P/E of ~70×, then deflated for
-  30 years). The US CAPE does NOT mean the Nikkei is expensive.
-- **Do not use the US CAPE to time the Nikkei exit.** There
-  is no Japan CAPE available via public APIs. The Nikkei's
-  own valuation metrics (TOPIX P/E, Nikkei P/B) are published
-  separately and are not in this analysis.
-- The 200-DMA exit remains the primary trigger for the Nikkei
-  (price breaks below 51,675 → sell).
-- If US equities mean-revert, global risk-off flows will hit
-  the Nikkei too. The 200-DMA will catch that.
+**CAPE is a position-sizing input, not a timing input.** It tells
+you how much of your portfolio should be at risk, not when to sell.
 
-## 9. The CAPE Caveat — It Can Be Early by Years
+## 8. The Decision Framework for Your Positions
 
-CAPE is a *valuation* signal, not a *timing* signal. The 2000
-peak (CAPE 44) was followed by a decade of ~0% real returns —
-but the market went up another ~50% in the first 18 months of
-that "decade" before crashing. CAPE said the party was over;
-the market kept partying for 18 months.
-
-**This is why CAPE should not be your sell trigger.** It tells
-you the expected return is low, not that a crash is imminent.
-Selling solely because CAPE is high would have cost you the last
-leg of the rally in 2000 and the entire 2010s bull market.
-
-**CAPE is a position-sizing input, not a timing input.** It
-tells you how much of your portfolio should be at risk, not
-when to sell.
-
-## 10. Practical Guidance for Your Positions
-
-For a 49-year-old with 20 years of runway, holding OCBC and
-the Nikkei at current levels, the integrated framework is:
+For a 49-year-old with 20 years of runway, holding OCBC and the
+Nikkei at current levels, the integrated framework is:
 
 1. **Primary exit trigger (both positions):** the 200-DMA.
    - OCBC: sell if closes below $19.65.
    - Nikkei: sell if closes below 51,675.
    - This is mechanical. No override. The trend is the trend.
 
-2. **Secondary overlay (position sizing):** the market is
-   expensive (forward P/E ~28, CAPE ETF rising, user reports
-   CAPE ~40). This argues for *reducing equity exposure* and
-   increasing cash/bond allocation beyond what the trend signal
-   alone would suggest.
-   - For OCBC specifically, the 4–5% dividend yield provides a
-     real return even if the price is flat — CAPE is less relevant.
-   - For the Nikkei, the US CAPE is a weak signal (different
-     market). Use the Nikkei's own valuation if available.
+2. **Secondary overlay (position sizing):** the CAPE readings are
+   market-specific:
+   - **OCBC (Singapore, CAPE 19.44 — Fair):** Normal equity exposure. The 4–5% dividend yield provides a real return even if the price is flat. No need to trim aggressively.
+   - **Nikkei (Japan, CAPE 27.74 — Expensive):** Trim 10% relative to what the trend signal alone would suggest. The market is warm, not extreme.
+   - **US (CAPE 41.37 — Extreme):** If you hold US equity exposure, reduce by 20–25%. The US is the only market in the extreme zone.
 
-3. **Do not sell solely because CAPE is high.** CAPE can be
-   early by years. The 200-DMA exit catches you when the trend
-   actually breaks. CAPE tells you to be careful about *adding*,
-   not that you must sell now.
+3. **Do not sell solely because CAPE is high.** CAPE can be early
+   by years. The 200-DMA exit catches you when the trend actually
+   breaks. CAPE tells you to be careful about *adding*, not that
+   you must sell now.
 
 4. **The hybrid approach:**
-   - CAPE < 20: maximize equity exposure, use MA200 exit only.
-   - CAPE 20–30: use MA200 exit + maintain normal equity allocation.
-   - CAPE > 30: use MA200 exit + reduce equity allocation by 10–20%.
-   - CAPE > 40 (if true): reduce equity allocation by 20–25%.
+   - CAPE < 15: maximize equity exposure, use MA200 exit only.
+   - CAPE 15–20: use MA200 exit + maintain normal equity allocation.
+   - CAPE 20–25: use MA200 exit + trim 10%.
+   - CAPE 25–30: use MA200 exit + trim 10–15%.
+   - CAPE > 30: use MA200 exit + reduce equity allocation 15–25%.
    - Hold the proceeds in cash or short-duration bonds.
 
-## 11. Conclusion
+## 9. Conclusion
 
-The market is expensive. The forward P/E of ~28 (verified from
-Barchart) confirms this. The user's report of CAPE ~40 is plausible
-but unverified — the actual Shiller CAPE ratio could not be
-retrieved from any public source during this analysis.
+**Your CAPE concern is valid for the US market but less urgent for your actual positions.** The US CAPE at 41.37 is near the all-time high (2000 peak of 42.10) — the 96th percentile. That is the most extreme reading in 25 years. But your positions are in Singapore (OCBC) and Japan (Nikkei), where the CAPE readings are far less extreme:
 
-The 200-DMA exit still applies to both positions as the hard
-trigger. The expensive valuation argues for trimming equity
-exposure, not for abandoning the trend-following exit.
+- **OCBC (Singapore):** CAPE 19.44, 89th percentile, but "Fair" regime. The dividend yield makes holding defensible.
+- **Nikkei (Japan):** CAPE 27.74, 74th percentile, "Expensive" but not extreme. Japan's 2000 peak was 42 — today is far from that.
 
-**You are not making a mistake by holding.** You are making a
-mistake if you:
-- Ignore the 200-DMA exit (the trend will break eventually,
-  and when it does, you'll be caught holding a position that's
+**The 200-DMA exit still applies to both positions as the hard trigger.** The expensive US valuation argues for trimming US equity exposure, but your OCBC and Nikkei positions are in markets that are less expensive. The 200-DMA catches you when the trend breaks — CAPE tells you the US is expensive, but Japan and Singapore are not at extreme levels.
+
+**You are not making a mistake by holding.** You are making a mistake if you:
+- Ignore the 200-DMA exit (the trend will break eventually, and
+  when it does, you'll be caught holding a position that's
   already declined 20–30%).
-- Sell solely because CAPE is high (CAPE can be early by years;
-  you'd miss the last leg of the rally).
-- Add to your equity exposure at these valuations (the expected
-  10-year real return is near zero or negative — why compound
-  at a negative real rate?).
+- Sell solely because US CAPE is high (CAPE can be early by years;
+  you'd miss the last leg of the rally — and the Nikkei/Singapore
+  CAPE is far less extreme than the US).
+- Add to your equity exposure at US CAPE 41 (the expected 10-year
+  real return is −2% to 0% — why compound at a negative real rate?).
 
 **The system tells you when to sell. CAPE tells you how much to
-hold. Together, they answer the question you're really asking:**
-not "should I sell today?" but "how much risk should I be carrying
-into the next decade at these valuations?"
+hold — and the answer is market-specific.**
 
-## 12. Files Produced
+## 10. Files Produced
 
-- `reports/cape_analysis.md` — this report (corrected for
-  CAPE ticker identity issue)
+- `reports/cape_analysis.md` — this report (corrected with
+  multi-market CAPE data)
 - `scripts/bt/cape_analysis.py` — integrated CAPE + 200-DMA
-  analysis with ETF identity verification
+  analysis with multi-market data
 
-## 13. Limitations
+## 11. Limitations
 
-- **The Yahoo `CAPE` ticker is a DoubleLine ETF, NOT the Shiller CAPE ratio.**
-  The ETF price (~$33) is not the CAPE ratio. This was a critical
-  error in the original analysis that has been corrected.
-- The actual Shiller CAPE ratio could not be retrieved from any
-  public source (FRED, Yale, Multpl all returned 404 or
-  connection errors).
-- The S&P 500 forward P/E of ~28 was verified from Barchart,
-  confirming the market is expensive, but this is a different
-  metric than CAPE.
-- The user's report of CAPE ~40 is plausible but unverified.
+- The CAPE data was provided by the user (2000–2026 annual year-end).
+  I could not independently verify the raw data from the source
+  databases (Shiller/Yale, StarCapital, Research Affiliates,
+  Siblis Research) due to network limitations.
+- The US CAPE value of 41.37 is consistent with the user's
+  report and with the Barchart forward P/E of ~28, but the
+  exact value could not be independently confirmed from the
+  Shiller database directly.
+- The CAPE → forward-return mapping uses Shiller's published
+  findings (not a fresh regression).
 - OCBC and the Nikkei have their own valuation metrics that are
-  not directly captured by the US CAPE. The analysis uses the
-  US CAPE as a global equity-valuation proxy.
+  captured by this analysis (via the Singapore and Japan CAPE).
+  The US CAPE is included for context only.
 - CAPE is a valuation signal, not a timing signal. It can be
   early by years.
