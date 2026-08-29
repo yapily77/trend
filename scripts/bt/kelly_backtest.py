@@ -631,7 +631,7 @@ if __name__ == '__main__':
         'add_fraction': 0.50,
         'add_zone_pct': 0.60,
         'max_additions': 3,
-        'metrics': m,
+        'metrics_baseline': m,
         'metrics_scale_in': m_si,
         'folds': folds,
     }

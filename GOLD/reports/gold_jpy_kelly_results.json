@@ -1,13 +1,9 @@
 {
   "strategy": "MA200 Half-Kelly + ATR Stop + Dynamic Scale-In (Gold/JPY)",
-  "half_kelly": 0.0781,
-  "atr_period": 14,
-  "atr_mult": 3.0,
-  "max_leverage": 2.0,
   "add_fraction": 0.5,
   "add_zone_pct": 0.6,
   "max_additions": 3,
-  "metrics": {
+  "metrics_baseline": {
     "CAGR": 0.14843895363040183,
     "Max_Drawdown": 0.4736855730607227,
     "Sharpe": 0.7414620324747498,
