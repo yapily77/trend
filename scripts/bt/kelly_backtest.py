@@ -480,7 +480,6 @@ def _metrics(df: pd.DataFrame, trades: list[dict], capital: float,
     dd = (equity - roll_max) / roll_max
     max_dd_idx = dd.idxmin()
     max_dd = abs(dd.min())
-    # MaxDD info available in metrics
 
     days = (equity.index[-1] - equity.index[0]).days / 365.25
     final = equity.iloc[-1]
@@ -512,14 +511,13 @@ def _metrics(df: pd.DataFrame, trades: list[dict], capital: float,
         'ATR_Period': atr_period, 'ATR_Mult': atr_mult, 'Max_Leverage': max_leverage,
         'Lev_Capped_Pct': capped_frac,
         'Add_Fraction': add_fraction, 'Add_Zone_Pct': add_zone_pct, 'Max_Additions': max_additions,
-        'Scale_Ins': scale_ins,
     }
 
 
 def walk_forward(gold_df, is_years=5, oos_years=2, capital=CAPITAL,
                  half_kelly=HALF_KELLY, atr_period=ATR_PERIOD, atr_mult=ATR_MULT,
                  max_leverage=MAX_LEVERAGE,
-                 add_fraction=0.50, add_zone_pct=0.40, max_additions=3):
+                 add_fraction=0.50, add_zone_pct=0.60, max_additions=3):
     dates = gold_df.index
     start = dates[0]; end = dates[-1]
     folds = []; is_end = start + pd.DateOffset(years=is_years)
