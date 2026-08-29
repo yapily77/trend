@@ -161,7 +161,7 @@ class DynamicPositionManager:
     max_additions : int
         Maximum number of additions per trade cycle.
     """
-    def __init__(self, add_fraction=0.50, add_zone_pct=0.40, max_additions=3):
+    def __init__(self, add_fraction=0.50, add_zone_pct=0.60, max_additions=3):
         self.add_fraction = add_fraction
         self.add_zone_pct = add_zone_pct
         self.max_additions = max_additions
@@ -477,16 +477,17 @@ def _metrics(df: pd.DataFrame, trades: list[dict], capital: float,
     equity = df['Equity']
     daily = df['Daily_Return']
     roll_max = equity.cummax()
-    # Floor equity at 0 for drawdown calculation to avoid division by zero
-    equity_safe = equity.clip(lower=0.0)
-    roll_max = equity.cummax()
-    dd = (equity_safe - roll_max) / roll_max
-    max_dd = dd.min()
+    dd = (equity - roll_max) / roll_max
+    max_dd_idx = dd.idxmin()
+    max_dd = abs(dd.min())
+    # MaxDD info available in metrics
+
     days = (equity.index[-1] - equity.index[0]).days / 365.25
-    final = max(0.0, equity.iloc[-1])
+    final = equity.iloc[-1]
     cagr = ((final / capital) ** (1 / days) - 1) if (days > 0 and final > 0 and capital > 0) else 0
     mean = daily.mean(); std = daily.std()
     sharpe = (mean / std) * np.sqrt(252) if std > 0 else 0
+
     pnls = [t['pnl'] for t in trades]
     gross_profit = sum(p for p in pnls if p > 0)
     gross_loss = abs(sum(p for p in pnls if p < 0))
@@ -551,10 +552,10 @@ def walk_forward(gold_df, is_years=5, oos_years=2, capital=CAPITAL,
 
 def atr_sweep(gold_df, half_kelly=HALF_KELLY, capital=CAPITAL):
     """Show how ATR multiple trades off risk/trade, leverage cap, and equity quality."""
-    print(f"\n{'ATRx':>5} | {'Sharpe':>6} | {'CAGR':>7} | {'DD':>7} | {'Stops':>5} | {'SigEx':>5} | {'Risk/tr':>7} | {'Capped':>6} | {'Final$':>11}")
+    print(f"\n{'ATRx':>5} | {'Sharpe':>6} | {'CAGR':>7} | {'MaxDD':>7} | {'Stops':>5} | {'SigEx':>5} | {'Risk/tr':>7} | {'Capped':>6} | {'Final$':>11}")
     print('-' * 105)
     for mult in [1.0, 1.5, 2.0, 3.0, 4.0, 6.0, 8.7]:
-        r = run_backtest(gold_df, half_kelly=half_kelly, atr_mult=mult)
+        r = run_backtest(gold_df, half_kelly=half_kelly, atr_mult=mult, add_fraction=0.0, add_zone_pct=0.0, max_additions=0)
         m = r['metrics']
         print(f"{mult:5.1f} | {m['Sharpe']:+.2f} | {m['CAGR']:+.2%} | {m['Max_Drawdown']:>6.2%} | {m['Stop_Loss_Hits']:5d} | {m['Signal_Exits']:5d} | {m['Avg_Risk_Per_Trade']:>6.2%} | {m['Lev_Capped_Pct']:>5.0%} | ${m['Final_Value']:>10,.0f}")
 
@@ -577,7 +578,7 @@ if __name__ == '__main__':
     print()
 
     # ATR sweep
-    print(f"=== MA200 + Half-Kelly (7.8%) + ATR({ATR_PERIOD}) sweep, 1x leverage cap ===")
+    print(f"=== ATR({ATR_PERIOD}) sweep ===")
     atr_sweep(gold_jpy)
 
     # Dynamic scale-in run: same base but with add-on-near-stop
@@ -585,7 +586,7 @@ if __name__ == '__main__':
     print(f"  add_fraction={0.50}, add_zone_pct={0.60}, max_additions={3}")
     r_si = run_backtest(gold_jpy, add_fraction=0.5, add_zone_pct=0.6, max_additions=3)
     m_si = r_si['metrics']
-    print(f"  Sharpe={m_si['Sharpe']:+.2f}  CAGR={m_si['CAGR']:+.2%}  Trades={m_si['Total_Trades']}  DD={m_si['Max_Drawdown']:.2%}")
+    print(f"  Sharpe={m_si['Sharpe']:+.2f}  CAGR={m_si['CAGR']:+.2%}  Trades={m_si['Total_Trades']}  MaxDD={m_si['Max_Drawdown']:.2%}")
     print(f"  WinRate={m_si['Win_Rate']:.1%}  Payoff={m_si['Payoff_Ratio']:.2f}x  PF={m_si['Profit_Factor']:.2f}")
     print(f"  Final=${m_si['Final_Value']:,.0f}  Stops={m_si['Stop_Loss_Hits']}  SigExits={m_si['Signal_Exits']}  Scale-Ins={m_si['Scale_Ins']}")
     print(f"  Avg Win=${m_si['Avg_Win']:,.0f}  Avg Loss=${m_si['Avg_Loss']:,.0f}")
@@ -598,7 +599,7 @@ if __name__ == '__main__':
     print(f"\n=== BASELINE (no scale-in): MA200 + Half-Kelly (7.8%) + {ATR_MULT}xATR({ATR_PERIOD}) Stop ===")
     r = run_backtest(gold_jpy, add_fraction=0.0, add_zone_pct=0.0, max_additions=0)
     m = r['metrics']
-    print(f"  Sharpe={m['Sharpe']:+.2f}  CAGR={m['CAGR']:+.2%}  Trades={m['Total_Trades']}  DD={m['Max_Drawdown']:.2%}")
+    print(f"  Sharpe={m['Sharpe']:+.2f}  CAGR={m['CAGR']:+.2%}  Trades={m['Total_Trades']}  MaxDD={m['Max_Drawdown']:.2%}")
     print(f"  WinRate={m['Win_Rate']:.1%}  Payoff={m['Payoff_Ratio']:.2f}x  PF={m['Profit_Factor']:.2f}")
     print(f"  Final=${m['Final_Value']:,.0f}  Stops={m['Stop_Loss_Hits']}  SigExits={m['Signal_Exits']}")
     print(f"  Avg Win=${m['Avg_Win']:,.0f}  Avg Loss=${m['Avg_Loss']:,.0f}")
