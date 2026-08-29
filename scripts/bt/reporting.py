@@ -32,9 +32,11 @@ def generate_markdown_report(
         report.append("|---|---|---|---|---|---|---|")
         
         for fold in walk_forward_folds:
-            num = fold['fold_num']
-            is_dates = f"{fold['is_start'].strftime('%Y-%m-%d')} to {fold['is_end'].strftime('%Y-%m-%d')}"
-            oos_dates = f"{fold['oos_start'].strftime('%Y-%m-%d')} to {fold['oos_end'].strftime('%Y-%m-%d')}"
+            num = fold['fold']
+            def _d(x):
+                return x.strftime('%Y-%m-%d') if hasattr(x, 'strftime') else str(x)
+            is_dates = f"{_d(fold['is_start'])} to {_d(fold['is_end'])}"
+            oos_dates = f"{_d(fold['oos_start'])} to {_d(fold['oos_end'])}"
             
             is_sharpe = fold['is_metrics']['Sharpe']
             is_dd = fold['is_metrics']['Max_Drawdown']
