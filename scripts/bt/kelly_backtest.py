@@ -628,7 +628,7 @@ if __name__ == '__main__':
         'atr_mult': ATR_MULT,
         'max_leverage': MAX_LEVERAGE,
         'add_fraction': 0.50,
-        'add_zone_pct': 0.40,
+        'add_zone_pct': 0.60,
         'max_additions': 3,
         'metrics': m,
         'metrics_scale_in': m_si,
