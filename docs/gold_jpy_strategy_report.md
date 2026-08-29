@@ -245,12 +245,3 @@ Keep a gold_jpy core at Half-Kelly and add a USD/JPY overlay sized at 30% of cor
 4. **For a risk-conscious investor, the trend-weighted split is the best choice.** It maintains similar CAGR to the baseline while significantly reducing drawdowns. The dynamic allocation is intuitive: when gold is trending strongly, overweight gold; when USD/JPY is trending strongly, overweight the FX leg.
 
 5. **The negative gold_usd/USDJPY correlation is the key economic relationship.** When the dollar weakens, gold rallies and USD/JPY falls. A pure gold_jpy position implicitly holds both legs — the decomposition lets you control the relative sizing.
-
-| `GOLD/reports/static_50_50_results.json` | Static 50/50 split metrics |
-| `GOLD/reports/trend_weighted_results.json` | Trend-weighted split metrics |
-| `GOLD/reports/core_plus_overlay_results.json` | Core + overlay metrics |
-| `GOLD/reports/decomposition_walkforward.json` | Walk-forward results |
-| `GOLD/reports/decomposition_correlation.json` | Leg correlation analysis |
-| `GOLD/charts/static_50_50_equity.png` | Static split equity curve |
-| `GOLD/charts/trend_weighted_equity.png` | Trend-weighted equity curve |
-| `GOLD/charts/core_plus_overlay_equity.png` | Core+overlay equity curve |
