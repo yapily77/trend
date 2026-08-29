@@ -5,3 +5,10 @@
 .beads-credential-key
 .beads/proxieddb/
 scripts/data/fred_api_key.txt
+
+# Cache files (downloaded data, large binary-ish CSVs)
+.bt_cache/*.csv
+GOLD/charts/*.png
+GOLD/reports/*.json
+GOLD/reports/*.csv
+GOLD/reports/*.md
