@@ -4,3 +4,4 @@
 *.db
 .beads-credential-key
 .beads/proxieddb/
+scripts/data/fred_api_key.txt

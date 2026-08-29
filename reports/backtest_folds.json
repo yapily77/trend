@@ -1,0 +1,5098 @@
+{
+  "USDJPY=X": {
+    "TDSequentialBreakout": [
+      {
+        "fold_num": 1,
+        "is_start": "1996-10-30 00:00:00",
+        "is_end": "1999-10-30 00:00:00",
+        "oos_start": "1999-10-30 00:00:00",
+        "oos_end": "2000-10-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 2,
+        "is_start": "1996-10-30 00:00:00",
+        "is_end": "2000-10-30 00:00:00",
+        "oos_start": "2000-10-30 00:00:00",
+        "oos_end": "2001-10-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 3,
+        "is_start": "1996-10-30 00:00:00",
+        "is_end": "2001-10-30 00:00:00",
+        "oos_start": "2001-10-30 00:00:00",
+        "oos_end": "2002-10-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 4,
+        "is_start": "1996-10-30 00:00:00",
+        "is_end": "2002-10-30 00:00:00",
+        "oos_start": "2002-10-30 00:00:00",
+        "oos_end": "2003-10-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 5,
+        "is_start": "1996-10-30 00:00:00",
+        "is_end": "2003-10-30 00:00:00",
+        "oos_start": "2003-10-30 00:00:00",
+        "oos_end": "2004-10-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 6,
+        "is_start": "1996-10-30 00:00:00",
+        "is_end": "2004-10-30 00:00:00",
+        "oos_start": "2004-10-30 00:00:00",
+        "oos_end": "2005-10-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 7,
+        "is_start": "1996-10-30 00:00:00",
+        "is_end": "2005-10-30 00:00:00",
+        "oos_start": "2005-10-30 00:00:00",
+        "oos_end": "2006-10-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 8,
+        "is_start": "1996-10-30 00:00:00",
+        "is_end": "2006-10-30 00:00:00",
+        "oos_start": "2006-10-30 00:00:00",
+        "oos_end": "2007-10-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.035455825385361406,
+          "Max_Drawdown": -0.051553851887986384,
+          "Sharpe": 0.6145145233514794,
+          "Profit_Factor": 2.439216865316263,
+          "Final_Value": 103543.11322619772,
+          "Total_Trades": 4
+        }
+      },
+      {
+        "fold_num": 9,
+        "is_start": "1996-10-30 00:00:00",
+        "is_end": "2007-10-30 00:00:00",
+        "oos_start": "2007-10-30 00:00:00",
+        "oos_end": "2008-10-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0031708705736912535,
+          "Max_Drawdown": -0.051553851887986384,
+          "Sharpe": 0.18606402320662044,
+          "Profit_Factor": 2.439216865316263,
+          "Final_Value": 103543.11322619772,
+          "Total_Trades": 4
+        },
+        "oos_metrics": {
+          "CAGR": 0.016716703032150892,
+          "Max_Drawdown": -0.04596450888379947,
+          "Sharpe": 0.2423793043573947,
+          "Profit_Factor": 1.854493472105942,
+          "Final_Value": 101675.13148224681,
+          "Total_Trades": 5
+        }
+      },
+      {
+        "fold_num": 10,
+        "is_start": "1996-10-30 00:00:00",
+        "is_end": "2008-10-30 00:00:00",
+        "oos_start": "2008-10-30 00:00:00",
+        "oos_end": "2009-10-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0010995073724038296,
+          "Max_Drawdown": -0.11450654562025984,
+          "Sharpe": 0.04928639420687791,
+          "Profit_Factor": 1.1495340614322689,
+          "Final_Value": 101327.41701068054,
+          "Total_Trades": 12
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 11,
+        "is_start": "1996-10-30 00:00:00",
+        "is_end": "2009-10-30 00:00:00",
+        "oos_start": "2009-10-30 00:00:00",
+        "oos_end": "2010-10-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.004201747848891602,
+          "Max_Drawdown": -0.11450654562025984,
+          "Sharpe": 0.11910100520266433,
+          "Profit_Factor": 1.5776735622355949,
+          "Final_Value": 105601.81969628805,
+          "Total_Trades": 15
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 12,
+        "is_start": "1996-10-30 00:00:00",
+        "is_end": "2010-10-30 00:00:00",
+        "oos_start": "2010-10-30 00:00:00",
+        "oos_end": "2011-10-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.00403513628869101,
+          "Max_Drawdown": -0.11450654562025984,
+          "Sharpe": 0.11189102617725823,
+          "Profit_Factor": 1.3702919282816526,
+          "Final_Value": 105798.0285364891,
+          "Total_Trades": 22
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 13,
+        "is_start": "1996-10-30 00:00:00",
+        "is_end": "2011-10-30 00:00:00",
+        "oos_start": "2011-10-30 00:00:00",
+        "oos_end": "2012-10-30 00:00:00",
+        "is_metrics": {
+          "CAGR": -7.649848681590132e-05,
+          "Max_Drawdown": -0.11450654562025984,
+          "Sharpe": 0.020073222571292442,
+          "Profit_Factor": 0.9964711405443681,
+          "Final_Value": 99885.37122816448,
+          "Total_Trades": 28
+        },
+        "oos_metrics": {
+          "CAGR": -0.0049042970938462105,
+          "Max_Drawdown": -0.02846439293412606,
+          "Sharpe": -0.138985739386629,
+          "Profit_Factor": 0.3722680282603407,
+          "Final_Value": 99509.90514753202,
+          "Total_Trades": 3
+        }
+      },
+      {
+        "fold_num": 14,
+        "is_start": "1996-10-30 00:00:00",
+        "is_end": "2012-10-30 00:00:00",
+        "oos_start": "2012-10-30 00:00:00",
+        "oos_end": "2013-10-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.00022319806731663228,
+          "Max_Drawdown": -0.11450654562025984,
+          "Sharpe": 0.026676765474318263,
+          "Profit_Factor": 1.0166423208571482,
+          "Final_Value": 100357.71533935744,
+          "Total_Trades": 31
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 15,
+        "is_start": "1996-10-30 00:00:00",
+        "is_end": "2013-10-30 00:00:00",
+        "oos_start": "2013-10-30 00:00:00",
+        "oos_end": "2014-10-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.008058734235387721,
+          "Max_Drawdown": -0.11450654562025984,
+          "Sharpe": 0.18786893424209242,
+          "Profit_Factor": 1.5686647326674055,
+          "Final_Value": 114619.05963706443,
+          "Total_Trades": 34
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 16,
+        "is_start": "1996-10-30 00:00:00",
+        "is_end": "2014-10-30 00:00:00",
+        "oos_start": "2014-10-30 00:00:00",
+        "oos_end": "2015-10-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0083322333295337,
+          "Max_Drawdown": -0.11450654562025984,
+          "Sharpe": 0.19360804627219053,
+          "Profit_Factor": 1.5654093607581645,
+          "Final_Value": 116107.6341229684,
+          "Total_Trades": 36
+        },
+        "oos_metrics": {
+          "CAGR": -0.0715511391304432,
+          "Max_Drawdown": -0.09438425565456988,
+          "Sharpe": -1.4963017461874477,
+          "Profit_Factor": 0.09429419201769401,
+          "Final_Value": 92849.60407280378,
+          "Total_Trades": 6
+        }
+      },
+      {
+        "fold_num": 17,
+        "is_start": "1996-10-30 00:00:00",
+        "is_end": "2015-10-30 00:00:00",
+        "oos_start": "2015-10-30 00:00:00",
+        "oos_end": "2016-10-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.005772289390890029,
+          "Max_Drawdown": -0.11450654562025984,
+          "Sharpe": 0.14095004135259875,
+          "Profit_Factor": 1.3035424981367614,
+          "Final_Value": 111554.86637576367,
+          "Total_Trades": 42
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 18,
+        "is_start": "1996-10-30 00:00:00",
+        "is_end": "2016-10-30 00:00:00",
+        "oos_start": "2016-10-30 00:00:00",
+        "oos_end": "2017-10-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.001291707691877253,
+          "Max_Drawdown": -0.19195844634158588,
+          "Sharpe": 0.050142385466517565,
+          "Profit_Factor": 1.0537661946266612,
+          "Final_Value": 102614.63877219048,
+          "Total_Trades": 49
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 19,
+        "is_start": "1996-10-30 00:00:00",
+        "is_end": "2017-10-30 00:00:00",
+        "oos_start": "2017-10-30 00:00:00",
+        "oos_end": "2018-10-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.003083823058888102,
+          "Max_Drawdown": -0.19195844634158588,
+          "Sharpe": 0.08650489281389888,
+          "Profit_Factor": 1.1319510968856799,
+          "Final_Value": 106679.46805044601,
+          "Total_Trades": 53
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 20,
+        "is_start": "1996-10-30 00:00:00",
+        "is_end": "2018-10-30 00:00:00",
+        "oos_start": "2018-10-30 00:00:00",
+        "oos_end": "2019-10-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0038590440539920667,
+          "Max_Drawdown": -0.19195844634158588,
+          "Sharpe": 0.10212329003308233,
+          "Profit_Factor": 1.1705147488705194,
+          "Final_Value": 108842.34819196093,
+          "Total_Trades": 55
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 21,
+        "is_start": "1996-10-30 00:00:00",
+        "is_end": "2019-10-30 00:00:00",
+        "oos_start": "2019-10-30 00:00:00",
+        "oos_end": "2020-10-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.004688450986459758,
+          "Max_Drawdown": -0.19195844634158588,
+          "Sharpe": 0.11798945956241569,
+          "Profit_Factor": 1.2187447931178903,
+          "Final_Value": 111357.18893588716,
+          "Total_Trades": 57
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 22,
+        "is_start": "1996-10-30 00:00:00",
+        "is_end": "2020-10-30 00:00:00",
+        "oos_start": "2020-10-30 00:00:00",
+        "oos_end": "2021-10-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0022578970214779392,
+          "Max_Drawdown": -0.19195844634158588,
+          "Sharpe": 0.06939171045748886,
+          "Profit_Factor": 1.0949148960480402,
+          "Final_Value": 105562.0180745311,
+          "Total_Trades": 62
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 23,
+        "is_start": "1996-10-30 00:00:00",
+        "is_end": "2021-10-30 00:00:00",
+        "oos_start": "2021-10-30 00:00:00",
+        "oos_end": "2022-10-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.004410132033765279,
+          "Max_Drawdown": -0.19195844634158588,
+          "Sharpe": 0.11240450800990003,
+          "Profit_Factor": 1.1962140048324836,
+          "Final_Value": 111627.34242870855,
+          "Total_Trades": 65
+        },
+        "oos_metrics": {
+          "CAGR": -0.022197501065599923,
+          "Max_Drawdown": -0.07836679397646404,
+          "Sharpe": -0.47221072814909376,
+          "Profit_Factor": 0.6457388702001188,
+          "Final_Value": 97805.79313224187,
+          "Total_Trades": 5
+        }
+      },
+      {
+        "fold_num": 24,
+        "is_start": "1996-10-30 00:00:00",
+        "is_end": "2022-10-30 00:00:00",
+        "oos_start": "2022-10-30 00:00:00",
+        "oos_end": "2023-10-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.00623033043853316,
+          "Max_Drawdown": -0.19195844634158588,
+          "Sharpe": 0.14738786084625025,
+          "Profit_Factor": 1.262387683874951,
+          "Final_Value": 117520.61093300676,
+          "Total_Trades": 69
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 25,
+        "is_start": "1996-10-30 00:00:00",
+        "is_end": "2023-10-30 00:00:00",
+        "oos_start": "2023-10-30 00:00:00",
+        "oos_end": "2024-10-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.004067106174343804,
+          "Max_Drawdown": -0.19195844634158588,
+          "Sharpe": 0.10508509339392474,
+          "Profit_Factor": 1.1561331339560625,
+          "Final_Value": 111581.0255638386,
+          "Total_Trades": 74
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 26,
+        "is_start": "1996-10-30 00:00:00",
+        "is_end": "2024-10-30 00:00:00",
+        "oos_start": "2024-10-30 00:00:00",
+        "oos_end": "2025-10-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.004948991910473488,
+          "Max_Drawdown": -0.19195844634158588,
+          "Sharpe": 0.12255314116315202,
+          "Profit_Factor": 1.1979577665492034,
+          "Final_Value": 114823.96211504954,
+          "Total_Trades": 78
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 27,
+        "is_start": "1996-10-30 00:00:00",
+        "is_end": "2025-10-30 00:00:00",
+        "oos_start": "2025-10-30 00:00:00",
+        "oos_end": "2026-05-29 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.004380224059935323,
+          "Max_Drawdown": -0.19195844634158588,
+          "Sharpe": 0.11124315829627564,
+          "Profit_Factor": 1.1722978128468144,
+          "Final_Value": 113512.87874975048,
+          "Total_Trades": 83
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      }
+    ]
+  },
+  "SPY": {
+    "TDSequentialBreakout": [
+      {
+        "fold_num": 1,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "1998-01-03 00:00:00",
+        "oos_start": "1998-01-03 00:00:00",
+        "oos_end": "1999-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 2,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "1999-01-03 00:00:00",
+        "oos_start": "1999-01-03 00:00:00",
+        "oos_end": "2000-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 3,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2000-01-03 00:00:00",
+        "oos_start": "2000-01-03 00:00:00",
+        "oos_end": "2001-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 4,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2001-01-03 00:00:00",
+        "oos_start": "2001-01-03 00:00:00",
+        "oos_end": "2002-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 5,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2002-01-03 00:00:00",
+        "oos_start": "2002-01-03 00:00:00",
+        "oos_end": "2003-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 6,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2003-01-03 00:00:00",
+        "oos_start": "2003-01-03 00:00:00",
+        "oos_end": "2004-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 7,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2004-01-03 00:00:00",
+        "oos_start": "2004-01-03 00:00:00",
+        "oos_end": "2005-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 8,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2005-01-03 00:00:00",
+        "oos_start": "2005-01-03 00:00:00",
+        "oos_end": "2006-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 9,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2006-01-03 00:00:00",
+        "oos_start": "2006-01-03 00:00:00",
+        "oos_end": "2007-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 10,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2007-01-03 00:00:00",
+        "oos_start": "2007-01-03 00:00:00",
+        "oos_end": "2008-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 11,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2008-01-03 00:00:00",
+        "oos_start": "2008-01-03 00:00:00",
+        "oos_end": "2009-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 12,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2009-01-03 00:00:00",
+        "oos_start": "2009-01-03 00:00:00",
+        "oos_end": "2010-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 13,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2010-01-03 00:00:00",
+        "oos_start": "2010-01-03 00:00:00",
+        "oos_end": "2011-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 14,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2011-01-03 00:00:00",
+        "oos_start": "2011-01-03 00:00:00",
+        "oos_end": "2012-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 15,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2012-01-03 00:00:00",
+        "oos_start": "2012-01-03 00:00:00",
+        "oos_end": "2013-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 16,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2013-01-03 00:00:00",
+        "oos_start": "2013-01-03 00:00:00",
+        "oos_end": "2014-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 17,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2014-01-03 00:00:00",
+        "oos_start": "2014-01-03 00:00:00",
+        "oos_end": "2015-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 18,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2015-01-03 00:00:00",
+        "oos_start": "2015-01-03 00:00:00",
+        "oos_end": "2016-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 19,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2016-01-03 00:00:00",
+        "oos_start": "2016-01-03 00:00:00",
+        "oos_end": "2017-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 20,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2017-01-03 00:00:00",
+        "oos_start": "2017-01-03 00:00:00",
+        "oos_end": "2018-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 21,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2018-01-03 00:00:00",
+        "oos_start": "2018-01-03 00:00:00",
+        "oos_end": "2019-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 22,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2019-01-03 00:00:00",
+        "oos_start": "2019-01-03 00:00:00",
+        "oos_end": "2020-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 23,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2020-01-03 00:00:00",
+        "oos_start": "2020-01-03 00:00:00",
+        "oos_end": "2021-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 24,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2021-01-03 00:00:00",
+        "oos_start": "2021-01-03 00:00:00",
+        "oos_end": "2022-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 25,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2022-01-03 00:00:00",
+        "oos_start": "2022-01-03 00:00:00",
+        "oos_end": "2023-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 26,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2023-01-03 00:00:00",
+        "oos_start": "2023-01-03 00:00:00",
+        "oos_end": "2024-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 27,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2024-01-03 00:00:00",
+        "oos_start": "2024-01-03 00:00:00",
+        "oos_end": "2025-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 28,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2025-01-03 00:00:00",
+        "oos_start": "2025-01-03 00:00:00",
+        "oos_end": "2026-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 29,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2026-01-03 00:00:00",
+        "oos_start": "2026-01-03 00:00:00",
+        "oos_end": "2026-05-29 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      }
+    ]
+  },
+  "^GSPC": {
+    "TDSequentialBreakout": [
+      {
+        "fold_num": 1,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "1998-01-03 00:00:00",
+        "oos_start": "1998-01-03 00:00:00",
+        "oos_end": "1999-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 2,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "1999-01-03 00:00:00",
+        "oos_start": "1999-01-03 00:00:00",
+        "oos_end": "2000-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 3,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2000-01-03 00:00:00",
+        "oos_start": "2000-01-03 00:00:00",
+        "oos_end": "2001-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 4,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2001-01-03 00:00:00",
+        "oos_start": "2001-01-03 00:00:00",
+        "oos_end": "2002-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 5,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2002-01-03 00:00:00",
+        "oos_start": "2002-01-03 00:00:00",
+        "oos_end": "2003-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 6,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2003-01-03 00:00:00",
+        "oos_start": "2003-01-03 00:00:00",
+        "oos_end": "2004-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 7,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2004-01-03 00:00:00",
+        "oos_start": "2004-01-03 00:00:00",
+        "oos_end": "2005-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 8,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2005-01-03 00:00:00",
+        "oos_start": "2005-01-03 00:00:00",
+        "oos_end": "2006-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 9,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2006-01-03 00:00:00",
+        "oos_start": "2006-01-03 00:00:00",
+        "oos_end": "2007-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 10,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2007-01-03 00:00:00",
+        "oos_start": "2007-01-03 00:00:00",
+        "oos_end": "2008-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 11,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2008-01-03 00:00:00",
+        "oos_start": "2008-01-03 00:00:00",
+        "oos_end": "2009-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 12,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2009-01-03 00:00:00",
+        "oos_start": "2009-01-03 00:00:00",
+        "oos_end": "2010-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 13,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2010-01-03 00:00:00",
+        "oos_start": "2010-01-03 00:00:00",
+        "oos_end": "2011-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 14,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2011-01-03 00:00:00",
+        "oos_start": "2011-01-03 00:00:00",
+        "oos_end": "2012-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 15,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2012-01-03 00:00:00",
+        "oos_start": "2012-01-03 00:00:00",
+        "oos_end": "2013-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 16,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2013-01-03 00:00:00",
+        "oos_start": "2013-01-03 00:00:00",
+        "oos_end": "2014-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 17,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2014-01-03 00:00:00",
+        "oos_start": "2014-01-03 00:00:00",
+        "oos_end": "2015-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 18,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2015-01-03 00:00:00",
+        "oos_start": "2015-01-03 00:00:00",
+        "oos_end": "2016-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 19,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2016-01-03 00:00:00",
+        "oos_start": "2016-01-03 00:00:00",
+        "oos_end": "2017-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 20,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2017-01-03 00:00:00",
+        "oos_start": "2017-01-03 00:00:00",
+        "oos_end": "2018-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 21,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2018-01-03 00:00:00",
+        "oos_start": "2018-01-03 00:00:00",
+        "oos_end": "2019-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 22,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2019-01-03 00:00:00",
+        "oos_start": "2019-01-03 00:00:00",
+        "oos_end": "2020-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 23,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2020-01-03 00:00:00",
+        "oos_start": "2020-01-03 00:00:00",
+        "oos_end": "2021-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 24,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2021-01-03 00:00:00",
+        "oos_start": "2021-01-03 00:00:00",
+        "oos_end": "2022-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 25,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2022-01-03 00:00:00",
+        "oos_start": "2022-01-03 00:00:00",
+        "oos_end": "2023-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 26,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2023-01-03 00:00:00",
+        "oos_start": "2023-01-03 00:00:00",
+        "oos_end": "2024-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 27,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2024-01-03 00:00:00",
+        "oos_start": "2024-01-03 00:00:00",
+        "oos_end": "2025-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 28,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2025-01-03 00:00:00",
+        "oos_start": "2025-01-03 00:00:00",
+        "oos_end": "2026-01-03 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 29,
+        "is_start": "1995-01-03 00:00:00",
+        "is_end": "2026-01-03 00:00:00",
+        "oos_start": "2026-01-03 00:00:00",
+        "oos_end": "2026-05-29 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      }
+    ]
+  },
+  "CL=F": {
+    "TDSequentialBreakout": [
+      {
+        "fold_num": 1,
+        "is_start": "2000-08-23 00:00:00",
+        "is_end": "2003-08-23 00:00:00",
+        "oos_start": "2003-08-23 00:00:00",
+        "oos_end": "2004-08-23 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 2,
+        "is_start": "2000-08-23 00:00:00",
+        "is_end": "2004-08-23 00:00:00",
+        "oos_start": "2004-08-23 00:00:00",
+        "oos_end": "2005-08-23 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 3,
+        "is_start": "2000-08-23 00:00:00",
+        "is_end": "2005-08-23 00:00:00",
+        "oos_start": "2005-08-23 00:00:00",
+        "oos_end": "2006-08-23 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 4,
+        "is_start": "2000-08-23 00:00:00",
+        "is_end": "2006-08-23 00:00:00",
+        "oos_start": "2006-08-23 00:00:00",
+        "oos_end": "2007-08-23 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 5,
+        "is_start": "2000-08-23 00:00:00",
+        "is_end": "2007-08-23 00:00:00",
+        "oos_start": "2007-08-23 00:00:00",
+        "oos_end": "2008-08-23 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 6,
+        "is_start": "2000-08-23 00:00:00",
+        "is_end": "2008-08-23 00:00:00",
+        "oos_start": "2008-08-23 00:00:00",
+        "oos_end": "2009-08-23 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 7,
+        "is_start": "2000-08-23 00:00:00",
+        "is_end": "2009-08-23 00:00:00",
+        "oos_start": "2009-08-23 00:00:00",
+        "oos_end": "2010-08-23 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 8,
+        "is_start": "2000-08-23 00:00:00",
+        "is_end": "2010-08-23 00:00:00",
+        "oos_start": "2010-08-23 00:00:00",
+        "oos_end": "2011-08-23 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 9,
+        "is_start": "2000-08-23 00:00:00",
+        "is_end": "2011-08-23 00:00:00",
+        "oos_start": "2011-08-23 00:00:00",
+        "oos_end": "2012-08-23 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 10,
+        "is_start": "2000-08-23 00:00:00",
+        "is_end": "2012-08-23 00:00:00",
+        "oos_start": "2012-08-23 00:00:00",
+        "oos_end": "2013-08-23 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 11,
+        "is_start": "2000-08-23 00:00:00",
+        "is_end": "2013-08-23 00:00:00",
+        "oos_start": "2013-08-23 00:00:00",
+        "oos_end": "2014-08-23 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 12,
+        "is_start": "2000-08-23 00:00:00",
+        "is_end": "2014-08-23 00:00:00",
+        "oos_start": "2014-08-23 00:00:00",
+        "oos_end": "2015-08-23 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 13,
+        "is_start": "2000-08-23 00:00:00",
+        "is_end": "2015-08-23 00:00:00",
+        "oos_start": "2015-08-23 00:00:00",
+        "oos_end": "2016-08-23 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 14,
+        "is_start": "2000-08-23 00:00:00",
+        "is_end": "2016-08-23 00:00:00",
+        "oos_start": "2016-08-23 00:00:00",
+        "oos_end": "2017-08-23 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 15,
+        "is_start": "2000-08-23 00:00:00",
+        "is_end": "2017-08-23 00:00:00",
+        "oos_start": "2017-08-23 00:00:00",
+        "oos_end": "2018-08-23 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 16,
+        "is_start": "2000-08-23 00:00:00",
+        "is_end": "2018-08-23 00:00:00",
+        "oos_start": "2018-08-23 00:00:00",
+        "oos_end": "2019-08-23 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 17,
+        "is_start": "2000-08-23 00:00:00",
+        "is_end": "2019-08-23 00:00:00",
+        "oos_start": "2019-08-23 00:00:00",
+        "oos_end": "2020-08-23 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 18,
+        "is_start": "2000-08-23 00:00:00",
+        "is_end": "2020-08-23 00:00:00",
+        "oos_start": "2020-08-23 00:00:00",
+        "oos_end": "2021-08-23 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 19,
+        "is_start": "2000-08-23 00:00:00",
+        "is_end": "2021-08-23 00:00:00",
+        "oos_start": "2021-08-23 00:00:00",
+        "oos_end": "2022-08-23 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 20,
+        "is_start": "2000-08-23 00:00:00",
+        "is_end": "2022-08-23 00:00:00",
+        "oos_start": "2022-08-23 00:00:00",
+        "oos_end": "2023-08-23 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 21,
+        "is_start": "2000-08-23 00:00:00",
+        "is_end": "2023-08-23 00:00:00",
+        "oos_start": "2023-08-23 00:00:00",
+        "oos_end": "2024-08-23 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 22,
+        "is_start": "2000-08-23 00:00:00",
+        "is_end": "2024-08-23 00:00:00",
+        "oos_start": "2024-08-23 00:00:00",
+        "oos_end": "2025-08-23 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 23,
+        "is_start": "2000-08-23 00:00:00",
+        "is_end": "2025-08-23 00:00:00",
+        "oos_start": "2025-08-23 00:00:00",
+        "oos_end": "2026-05-29 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      }
+    ]
+  },
+  "GC=F": {
+    "TDSequentialBreakout": [
+      {
+        "fold_num": 1,
+        "is_start": "2000-08-30 00:00:00",
+        "is_end": "2003-08-30 00:00:00",
+        "oos_start": "2003-08-30 00:00:00",
+        "oos_end": "2004-08-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0038093063367961033,
+          "Max_Drawdown": -0.09669158721874105,
+          "Sharpe": 0.09191170836837767,
+          "Profit_Factor": 1169.3081178962411,
+          "Final_Value": 101145.30813042936,
+          "Total_Trades": 1
+        },
+        "oos_metrics": {
+          "CAGR": -0.1804903424197961,
+          "Max_Drawdown": -0.19510678265250272,
+          "Sharpe": -1.745962954963859,
+          "Profit_Factor": 0.04793784637315526,
+          "Final_Value": 82051.51362618324,
+          "Total_Trades": 7
+        }
+      },
+      {
+        "fold_num": 2,
+        "is_start": "2000-08-30 00:00:00",
+        "is_end": "2004-08-30 00:00:00",
+        "oos_start": "2004-08-30 00:00:00",
+        "oos_end": "2005-08-30 00:00:00",
+        "is_metrics": {
+          "CAGR": -0.012660544680833219,
+          "Max_Drawdown": -0.20678721314681184,
+          "Sharpe": -0.08157279785820032,
+          "Profit_Factor": 0.6694915611943819,
+          "Final_Value": 95031.14659150309,
+          "Total_Trades": 7
+        },
+        "oos_metrics": {
+          "CAGR": -0.0406426896462414,
+          "Max_Drawdown": -0.13208020884064237,
+          "Sharpe": -0.40446915196454264,
+          "Profit_Factor": 0.05696951688532022,
+          "Final_Value": 95938.45560201282,
+          "Total_Trades": 5
+        }
+      },
+      {
+        "fold_num": 3,
+        "is_start": "2000-08-30 00:00:00",
+        "is_end": "2005-08-30 00:00:00",
+        "oos_start": "2005-08-30 00:00:00",
+        "oos_end": "2006-08-30 00:00:00",
+        "is_metrics": {
+          "CAGR": -0.014931250530107354,
+          "Max_Drawdown": -0.22573604244743753,
+          "Sharpe": -0.11422400083276674,
+          "Profit_Factor": 0.6206903230866496,
+          "Final_Value": 92754.96803661602,
+          "Total_Trades": 11
+        },
+        "oos_metrics": {
+          "CAGR": 0.00636906906164203,
+          "Max_Drawdown": -0.08479546437039684,
+          "Sharpe": 0.11691238037858623,
+          "Profit_Factor": 1.1166746662373297,
+          "Final_Value": 100636.46958277092,
+          "Total_Trades": 7
+        }
+      },
+      {
+        "fold_num": 4,
+        "is_start": "2000-08-30 00:00:00",
+        "is_end": "2006-08-30 00:00:00",
+        "oos_start": "2006-08-30 00:00:00",
+        "oos_end": "2007-08-30 00:00:00",
+        "is_metrics": {
+          "CAGR": -0.007710280070472586,
+          "Max_Drawdown": -0.22573604244743753,
+          "Sharpe": -0.036045615027490194,
+          "Profit_Factor": 0.8391125452686907,
+          "Final_Value": 95463.10463573296,
+          "Total_Trades": 19
+        },
+        "oos_metrics": {
+          "CAGR": 0.029574587442326328,
+          "Max_Drawdown": -0.04212424193619269,
+          "Sharpe": 0.470907575236813,
+          "Profit_Factor": 5.566274010125989,
+          "Final_Value": 102955.40485185629,
+          "Total_Trades": 3
+        }
+      },
+      {
+        "fold_num": 5,
+        "is_start": "2000-08-30 00:00:00",
+        "is_end": "2007-08-30 00:00:00",
+        "oos_start": "2007-08-30 00:00:00",
+        "oos_end": "2008-08-30 00:00:00",
+        "is_metrics": {
+          "CAGR": -0.003940073791179888,
+          "Max_Drawdown": -0.23634562130672485,
+          "Sharpe": 0.004529086649768344,
+          "Profit_Factor": 0.9184255002061021,
+          "Final_Value": 97275.1244420879,
+          "Total_Trades": 23
+        },
+        "oos_metrics": {
+          "CAGR": 0.0561097074884056,
+          "Max_Drawdown": -0.10258820965077708,
+          "Sharpe": 0.6289580022952072,
+          "Profit_Factor": 5622.894888564257,
+          "Final_Value": 105607.02453820106,
+          "Total_Trades": 2
+        }
+      },
+      {
+        "fold_num": 6,
+        "is_start": "2000-08-30 00:00:00",
+        "is_end": "2008-08-30 00:00:00",
+        "oos_start": "2008-08-30 00:00:00",
+        "oos_end": "2009-08-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.025117584802776927,
+          "Max_Drawdown": -0.23634562130672485,
+          "Sharpe": 0.2981924221082253,
+          "Profit_Factor": 1.744705504868038,
+          "Final_Value": 121943.86920455217,
+          "Total_Trades": 24
+        },
+        "oos_metrics": {
+          "CAGR": -0.018745561575501002,
+          "Max_Drawdown": -0.04645573139788294,
+          "Sharpe": -0.31488934943195784,
+          "Profit_Factor": 0.4223702568642159,
+          "Final_Value": 98152.13767531342,
+          "Total_Trades": 8
+        }
+      },
+      {
+        "fold_num": 7,
+        "is_start": "2000-08-30 00:00:00",
+        "is_end": "2009-08-30 00:00:00",
+        "oos_start": "2009-08-30 00:00:00",
+        "oos_end": "2010-08-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.021588290847405434,
+          "Max_Drawdown": -0.23634562130672485,
+          "Sharpe": 0.2679707311228701,
+          "Profit_Factor": 1.652420012681826,
+          "Final_Value": 121178.62425135612,
+          "Total_Trades": 31
+        },
+        "oos_metrics": {
+          "CAGR": -0.01835636008024566,
+          "Max_Drawdown": -0.07514147254055639,
+          "Sharpe": -0.26593260497683385,
+          "Profit_Factor": 0.6399831139100882,
+          "Final_Value": 98170.58829664168,
+          "Total_Trades": 3
+        }
+      },
+      {
+        "fold_num": 8,
+        "is_start": "2000-08-30 00:00:00",
+        "is_end": "2010-08-30 00:00:00",
+        "oos_start": "2010-08-30 00:00:00",
+        "oos_end": "2011-08-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.02674336946697453,
+          "Max_Drawdown": -0.23634562130672485,
+          "Sharpe": 0.3241029984143383,
+          "Profit_Factor": 1.8584962414572983,
+          "Final_Value": 130197.71995460714,
+          "Total_Trades": 33
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 9,
+        "is_start": "2000-08-30 00:00:00",
+        "is_end": "2011-08-30 00:00:00",
+        "oos_start": "2011-08-30 00:00:00",
+        "oos_end": "2012-08-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.037974282547137195,
+          "Max_Drawdown": -0.23634562130672485,
+          "Sharpe": 0.4436954068003085,
+          "Profit_Factor": 2.3766514516718056,
+          "Final_Value": 150667.39832926006,
+          "Total_Trades": 35
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 10,
+        "is_start": "2000-08-30 00:00:00",
+        "is_end": "2012-08-30 00:00:00",
+        "oos_start": "2012-08-30 00:00:00",
+        "oos_end": "2013-08-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.025154384771270744,
+          "Max_Drawdown": -0.23634562130672485,
+          "Sharpe": 0.3118657944426796,
+          "Profit_Factor": 1.7928570155984824,
+          "Final_Value": 134732.16333251356,
+          "Total_Trades": 39
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 11,
+        "is_start": "2000-08-30 00:00:00",
+        "is_end": "2013-08-30 00:00:00",
+        "oos_start": "2013-08-30 00:00:00",
+        "oos_end": "2014-08-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.01912612673535863,
+          "Max_Drawdown": -0.23634562130672485,
+          "Sharpe": 0.24961123130039445,
+          "Profit_Factor": 1.4604052430378467,
+          "Final_Value": 127925.61973166901,
+          "Total_Trades": 49
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 12,
+        "is_start": "2000-08-30 00:00:00",
+        "is_end": "2014-08-30 00:00:00",
+        "oos_start": "2014-08-30 00:00:00",
+        "oos_end": "2015-08-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.014548322806805514,
+          "Max_Drawdown": -0.23634562130672485,
+          "Sharpe": 0.2034508224254572,
+          "Profit_Factor": 1.3393306252872543,
+          "Final_Value": 122403.14054319123,
+          "Total_Trades": 56
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 13,
+        "is_start": "2000-08-30 00:00:00",
+        "is_end": "2015-08-30 00:00:00",
+        "oos_start": "2015-08-30 00:00:00",
+        "oos_end": "2016-08-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.011659941893133574,
+          "Max_Drawdown": -0.24009651596080941,
+          "Sharpe": 0.17386033922886768,
+          "Profit_Factor": 1.2592067693458244,
+          "Final_Value": 118981.76357295112,
+          "Total_Trades": 60
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 14,
+        "is_start": "2000-08-30 00:00:00",
+        "is_end": "2016-08-30 00:00:00",
+        "oos_start": "2016-08-30 00:00:00",
+        "oos_end": "2017-08-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.00973253478454228,
+          "Max_Drawdown": -0.25622054119733984,
+          "Sharpe": 0.15358844498038435,
+          "Profit_Factor": 1.210712214655513,
+          "Final_Value": 116762.01994318762,
+          "Total_Trades": 66
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 15,
+        "is_start": "2000-08-30 00:00:00",
+        "is_end": "2017-08-30 00:00:00",
+        "oos_start": "2017-08-30 00:00:00",
+        "oos_end": "2018-08-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.009017613347854336,
+          "Max_Drawdown": -0.2701428035548356,
+          "Sharpe": 0.1465026994580891,
+          "Profit_Factor": 1.188144707057684,
+          "Final_Value": 116486.61786132661,
+          "Total_Trades": 75
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 16,
+        "is_start": "2000-08-30 00:00:00",
+        "is_end": "2018-08-30 00:00:00",
+        "oos_start": "2018-08-30 00:00:00",
+        "oos_end": "2019-08-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.01255887758603813,
+          "Max_Drawdown": -0.2701428035548356,
+          "Sharpe": 0.18808169126655244,
+          "Profit_Factor": 1.2832226814345893,
+          "Final_Value": 125186.56480775896,
+          "Total_Trades": 78
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 17,
+        "is_start": "2000-08-30 00:00:00",
+        "is_end": "2019-08-30 00:00:00",
+        "oos_start": "2019-08-30 00:00:00",
+        "oos_end": "2020-08-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.01561051113554024,
+          "Max_Drawdown": -0.2701428035548356,
+          "Sharpe": 0.2240788909580659,
+          "Profit_Factor": 1.373568225707834,
+          "Final_Value": 134215.52027710096,
+          "Total_Trades": 81
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 18,
+        "is_start": "2000-08-30 00:00:00",
+        "is_end": "2020-08-30 00:00:00",
+        "oos_start": "2020-08-30 00:00:00",
+        "oos_end": "2021-08-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.013648370431135204,
+          "Max_Drawdown": -0.2701428035548356,
+          "Sharpe": 0.19991155050107032,
+          "Profit_Factor": 1.328011861680408,
+          "Final_Value": 131133.69340307405,
+          "Total_Trades": 83
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 19,
+        "is_start": "2000-08-30 00:00:00",
+        "is_end": "2021-08-30 00:00:00",
+        "oos_start": "2021-08-30 00:00:00",
+        "oos_end": "2022-08-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.010280980590104516,
+          "Max_Drawdown": -0.2701428035548356,
+          "Sharpe": 0.16249998791746564,
+          "Profit_Factor": 1.2422565310052867,
+          "Final_Value": 123960.31710977799,
+          "Total_Trades": 88
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 20,
+        "is_start": "2000-08-30 00:00:00",
+        "is_end": "2022-08-30 00:00:00",
+        "oos_start": "2022-08-30 00:00:00",
+        "oos_end": "2023-08-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.011175334042241358,
+          "Max_Drawdown": -0.2701428035548356,
+          "Sharpe": 0.17303504647386303,
+          "Profit_Factor": 1.2693577342470175,
+          "Final_Value": 127695.52283867422,
+          "Total_Trades": 94
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 21,
+        "is_start": "2000-08-30 00:00:00",
+        "is_end": "2023-08-30 00:00:00",
+        "oos_start": "2023-08-30 00:00:00",
+        "oos_end": "2024-08-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.009296672138060513,
+          "Max_Drawdown": -0.2701428035548356,
+          "Sharpe": 0.15178208698388956,
+          "Profit_Factor": 1.2186389405157463,
+          "Final_Value": 123715.77998859197,
+          "Total_Trades": 100
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 22,
+        "is_start": "2000-08-30 00:00:00",
+        "is_end": "2024-08-30 00:00:00",
+        "oos_start": "2024-08-30 00:00:00",
+        "oos_end": "2025-08-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.007832806100196876,
+          "Max_Drawdown": -0.2792997390829642,
+          "Sharpe": 0.13441025339273943,
+          "Profit_Factor": 1.1684162090491497,
+          "Final_Value": 120593.46799348107,
+          "Total_Trades": 111
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 23,
+        "is_start": "2000-08-30 00:00:00",
+        "is_end": "2025-08-30 00:00:00",
+        "oos_start": "2025-08-30 00:00:00",
+        "oos_end": "2026-05-29 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.013345481296297868,
+          "Max_Drawdown": -0.2792997390829642,
+          "Sharpe": 0.1975872783577613,
+          "Profit_Factor": 1.3085755403756532,
+          "Final_Value": 139289.59535351844,
+          "Total_Trades": 113
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      }
+    ]
+  },
+  "DX-Y.NYB": {
+    "TDSequentialBreakout": [
+      {
+        "fold_num": 1,
+        "is_start": "1995-01-02 00:00:00",
+        "is_end": "1998-01-02 00:00:00",
+        "oos_start": "1998-01-02 00:00:00",
+        "oos_end": "1999-01-02 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 2,
+        "is_start": "1995-01-02 00:00:00",
+        "is_end": "1999-01-02 00:00:00",
+        "oos_start": "1999-01-02 00:00:00",
+        "oos_end": "2000-01-02 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 3,
+        "is_start": "1995-01-02 00:00:00",
+        "is_end": "2000-01-02 00:00:00",
+        "oos_start": "2000-01-02 00:00:00",
+        "oos_end": "2001-01-02 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 4,
+        "is_start": "1995-01-02 00:00:00",
+        "is_end": "2001-01-02 00:00:00",
+        "oos_start": "2001-01-02 00:00:00",
+        "oos_end": "2002-01-02 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 5,
+        "is_start": "1995-01-02 00:00:00",
+        "is_end": "2002-01-02 00:00:00",
+        "oos_start": "2002-01-02 00:00:00",
+        "oos_end": "2003-01-02 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 6,
+        "is_start": "1995-01-02 00:00:00",
+        "is_end": "2003-01-02 00:00:00",
+        "oos_start": "2003-01-02 00:00:00",
+        "oos_end": "2004-01-02 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 7,
+        "is_start": "1995-01-02 00:00:00",
+        "is_end": "2004-01-02 00:00:00",
+        "oos_start": "2004-01-02 00:00:00",
+        "oos_end": "2005-01-02 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 8,
+        "is_start": "1995-01-02 00:00:00",
+        "is_end": "2005-01-02 00:00:00",
+        "oos_start": "2005-01-02 00:00:00",
+        "oos_end": "2006-01-02 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 9,
+        "is_start": "1995-01-02 00:00:00",
+        "is_end": "2006-01-02 00:00:00",
+        "oos_start": "2006-01-02 00:00:00",
+        "oos_end": "2007-01-02 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 10,
+        "is_start": "1995-01-02 00:00:00",
+        "is_end": "2007-01-02 00:00:00",
+        "oos_start": "2007-01-02 00:00:00",
+        "oos_end": "2008-01-02 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 11,
+        "is_start": "1995-01-02 00:00:00",
+        "is_end": "2008-01-02 00:00:00",
+        "oos_start": "2008-01-02 00:00:00",
+        "oos_end": "2009-01-02 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 12,
+        "is_start": "1995-01-02 00:00:00",
+        "is_end": "2009-01-02 00:00:00",
+        "oos_start": "2009-01-02 00:00:00",
+        "oos_end": "2010-01-02 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 13,
+        "is_start": "1995-01-02 00:00:00",
+        "is_end": "2010-01-02 00:00:00",
+        "oos_start": "2010-01-02 00:00:00",
+        "oos_end": "2011-01-02 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 14,
+        "is_start": "1995-01-02 00:00:00",
+        "is_end": "2011-01-02 00:00:00",
+        "oos_start": "2011-01-02 00:00:00",
+        "oos_end": "2012-01-02 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 15,
+        "is_start": "1995-01-02 00:00:00",
+        "is_end": "2012-01-02 00:00:00",
+        "oos_start": "2012-01-02 00:00:00",
+        "oos_end": "2013-01-02 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 16,
+        "is_start": "1995-01-02 00:00:00",
+        "is_end": "2013-01-02 00:00:00",
+        "oos_start": "2013-01-02 00:00:00",
+        "oos_end": "2014-01-02 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 17,
+        "is_start": "1995-01-02 00:00:00",
+        "is_end": "2014-01-02 00:00:00",
+        "oos_start": "2014-01-02 00:00:00",
+        "oos_end": "2015-01-02 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 18,
+        "is_start": "1995-01-02 00:00:00",
+        "is_end": "2015-01-02 00:00:00",
+        "oos_start": "2015-01-02 00:00:00",
+        "oos_end": "2016-01-02 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 19,
+        "is_start": "1995-01-02 00:00:00",
+        "is_end": "2016-01-02 00:00:00",
+        "oos_start": "2016-01-02 00:00:00",
+        "oos_end": "2017-01-02 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 20,
+        "is_start": "1995-01-02 00:00:00",
+        "is_end": "2017-01-02 00:00:00",
+        "oos_start": "2017-01-02 00:00:00",
+        "oos_end": "2018-01-02 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 21,
+        "is_start": "1995-01-02 00:00:00",
+        "is_end": "2018-01-02 00:00:00",
+        "oos_start": "2018-01-02 00:00:00",
+        "oos_end": "2019-01-02 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 22,
+        "is_start": "1995-01-02 00:00:00",
+        "is_end": "2019-01-02 00:00:00",
+        "oos_start": "2019-01-02 00:00:00",
+        "oos_end": "2020-01-02 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 23,
+        "is_start": "1995-01-02 00:00:00",
+        "is_end": "2020-01-02 00:00:00",
+        "oos_start": "2020-01-02 00:00:00",
+        "oos_end": "2021-01-02 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 24,
+        "is_start": "1995-01-02 00:00:00",
+        "is_end": "2021-01-02 00:00:00",
+        "oos_start": "2021-01-02 00:00:00",
+        "oos_end": "2022-01-02 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 25,
+        "is_start": "1995-01-02 00:00:00",
+        "is_end": "2022-01-02 00:00:00",
+        "oos_start": "2022-01-02 00:00:00",
+        "oos_end": "2023-01-02 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 26,
+        "is_start": "1995-01-02 00:00:00",
+        "is_end": "2023-01-02 00:00:00",
+        "oos_start": "2023-01-02 00:00:00",
+        "oos_end": "2024-01-02 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 27,
+        "is_start": "1995-01-02 00:00:00",
+        "is_end": "2024-01-02 00:00:00",
+        "oos_start": "2024-01-02 00:00:00",
+        "oos_end": "2025-01-02 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 28,
+        "is_start": "1995-01-02 00:00:00",
+        "is_end": "2025-01-02 00:00:00",
+        "oos_start": "2025-01-02 00:00:00",
+        "oos_end": "2026-01-02 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 29,
+        "is_start": "1995-01-02 00:00:00",
+        "is_end": "2026-01-02 00:00:00",
+        "oos_start": "2026-01-02 00:00:00",
+        "oos_end": "2026-05-29 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      }
+    ]
+  },
+  "EURUSD=X": {
+    "TDSequentialBreakout": [
+      {
+        "fold_num": 1,
+        "is_start": "2003-12-01 00:00:00",
+        "is_end": "2006-12-01 00:00:00",
+        "oos_start": "2006-12-01 00:00:00",
+        "oos_end": "2007-12-01 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 2,
+        "is_start": "2003-12-01 00:00:00",
+        "is_end": "2007-12-01 00:00:00",
+        "oos_start": "2007-12-01 00:00:00",
+        "oos_end": "2008-12-01 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 3,
+        "is_start": "2003-12-01 00:00:00",
+        "is_end": "2008-12-01 00:00:00",
+        "oos_start": "2008-12-01 00:00:00",
+        "oos_end": "2009-12-01 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 4,
+        "is_start": "2003-12-01 00:00:00",
+        "is_end": "2009-12-01 00:00:00",
+        "oos_start": "2009-12-01 00:00:00",
+        "oos_end": "2010-12-01 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 5,
+        "is_start": "2003-12-01 00:00:00",
+        "is_end": "2010-12-01 00:00:00",
+        "oos_start": "2010-12-01 00:00:00",
+        "oos_end": "2011-12-01 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 6,
+        "is_start": "2003-12-01 00:00:00",
+        "is_end": "2011-12-01 00:00:00",
+        "oos_start": "2011-12-01 00:00:00",
+        "oos_end": "2012-12-01 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 7,
+        "is_start": "2003-12-01 00:00:00",
+        "is_end": "2012-12-01 00:00:00",
+        "oos_start": "2012-12-01 00:00:00",
+        "oos_end": "2013-12-01 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 8,
+        "is_start": "2003-12-01 00:00:00",
+        "is_end": "2013-12-01 00:00:00",
+        "oos_start": "2013-12-01 00:00:00",
+        "oos_end": "2014-12-01 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 9,
+        "is_start": "2003-12-01 00:00:00",
+        "is_end": "2014-12-01 00:00:00",
+        "oos_start": "2014-12-01 00:00:00",
+        "oos_end": "2015-12-01 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": -0.010451172082288407,
+          "Max_Drawdown": -0.0375149248672789,
+          "Sharpe": -0.296304133177097,
+          "Profit_Factor": 0.6260552623104604,
+          "Final_Value": 98955.59438689129,
+          "Total_Trades": 5
+        }
+      },
+      {
+        "fold_num": 10,
+        "is_start": "2003-12-01 00:00:00",
+        "is_end": "2015-12-01 00:00:00",
+        "oos_start": "2015-12-01 00:00:00",
+        "oos_end": "2016-12-01 00:00:00",
+        "is_metrics": {
+          "CAGR": -0.0008745322090206731,
+          "Max_Drawdown": -0.0375149248672789,
+          "Sharpe": -0.08619430492468781,
+          "Profit_Factor": 0.6260552623104604,
+          "Final_Value": 98955.59438689129,
+          "Total_Trades": 5
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 11,
+        "is_start": "2003-12-01 00:00:00",
+        "is_end": "2016-12-01 00:00:00",
+        "oos_start": "2016-12-01 00:00:00",
+        "oos_end": "2017-12-01 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.00028597008501374255,
+          "Max_Drawdown": -0.0375149248672789,
+          "Sharpe": 0.025237532863704833,
+          "Profit_Factor": 1.0824769775409242,
+          "Final_Value": 100372.45858620733,
+          "Total_Trades": 11
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 12,
+        "is_start": "2003-12-01 00:00:00",
+        "is_end": "2017-12-01 00:00:00",
+        "oos_start": "2017-12-01 00:00:00",
+        "oos_end": "2018-12-01 00:00:00",
+        "is_metrics": {
+          "CAGR": -0.0007060679899688616,
+          "Max_Drawdown": -0.07765055392381862,
+          "Sharpe": -0.02061845894358403,
+          "Profit_Factor": 0.9109888029904625,
+          "Final_Value": 99015.93292930206,
+          "Total_Trades": 17
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 13,
+        "is_start": "2003-12-01 00:00:00",
+        "is_end": "2018-12-01 00:00:00",
+        "oos_start": "2018-12-01 00:00:00",
+        "oos_end": "2019-12-01 00:00:00",
+        "is_metrics": {
+          "CAGR": -0.0018869490414824552,
+          "Max_Drawdown": -0.07765055392381862,
+          "Sharpe": -0.06380408327412762,
+          "Profit_Factor": 0.8266843601979577,
+          "Final_Value": 97207.03551600782,
+          "Total_Trades": 23
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 14,
+        "is_start": "2003-12-01 00:00:00",
+        "is_end": "2019-12-01 00:00:00",
+        "oos_start": "2019-12-01 00:00:00",
+        "oos_end": "2020-12-01 00:00:00",
+        "is_metrics": {
+          "CAGR": -0.005356127163383406,
+          "Max_Drawdown": -0.10466124646892458,
+          "Sharpe": -0.18847550944439997,
+          "Profit_Factor": 0.627851814918267,
+          "Final_Value": 91768.69543687292,
+          "Total_Trades": 31
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 15,
+        "is_start": "2003-12-01 00:00:00",
+        "is_end": "2020-12-01 00:00:00",
+        "oos_start": "2020-12-01 00:00:00",
+        "oos_end": "2021-12-01 00:00:00",
+        "is_metrics": {
+          "CAGR": -0.0061849284274015925,
+          "Max_Drawdown": -0.14716443671827698,
+          "Sharpe": -0.20408082031893518,
+          "Profit_Factor": 0.6213175026012523,
+          "Final_Value": 89988.97500565433,
+          "Total_Trades": 34
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 16,
+        "is_start": "2003-12-01 00:00:00",
+        "is_end": "2021-12-01 00:00:00",
+        "oos_start": "2021-12-01 00:00:00",
+        "oos_end": "2022-12-01 00:00:00",
+        "is_metrics": {
+          "CAGR": -0.006242552070113816,
+          "Max_Drawdown": -0.14716443671827698,
+          "Sharpe": -0.19469888907730443,
+          "Profit_Factor": 0.6467293584284294,
+          "Final_Value": 89339.479045771,
+          "Total_Trades": 41
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 17,
+        "is_start": "2003-12-01 00:00:00",
+        "is_end": "2022-12-01 00:00:00",
+        "oos_start": "2022-12-01 00:00:00",
+        "oos_end": "2023-12-01 00:00:00",
+        "is_metrics": {
+          "CAGR": -0.003490213593455249,
+          "Max_Drawdown": -0.14716443671827698,
+          "Sharpe": -0.09527863154014879,
+          "Profit_Factor": 0.803017529552276,
+          "Final_Value": 93572.61253277327,
+          "Total_Trades": 44
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 18,
+        "is_start": "2003-12-01 00:00:00",
+        "is_end": "2023-12-01 00:00:00",
+        "oos_start": "2023-12-01 00:00:00",
+        "oos_end": "2024-12-01 00:00:00",
+        "is_metrics": {
+          "CAGR": -0.004952467864311472,
+          "Max_Drawdown": -0.14716443671827698,
+          "Sharpe": -0.13650347890247078,
+          "Profit_Factor": 0.7540545544480127,
+          "Final_Value": 90547.5155395438,
+          "Total_Trades": 50
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 19,
+        "is_start": "2003-12-01 00:00:00",
+        "is_end": "2024-12-01 00:00:00",
+        "oos_start": "2024-12-01 00:00:00",
+        "oos_end": "2025-12-01 00:00:00",
+        "is_metrics": {
+          "CAGR": -0.00707295557400156,
+          "Max_Drawdown": -0.17457495257990138,
+          "Sharpe": -0.19374366306993993,
+          "Profit_Factor": 0.6888560164574864,
+          "Final_Value": 86153.84904525534,
+          "Total_Trades": 57
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 20,
+        "is_start": "2003-12-01 00:00:00",
+        "is_end": "2025-12-01 00:00:00",
+        "oos_start": "2025-12-01 00:00:00",
+        "oos_end": "2026-05-29 00:00:00",
+        "is_metrics": {
+          "CAGR": -0.0033188424876916534,
+          "Max_Drawdown": -0.17457495257990138,
+          "Sharpe": -0.07844255437582152,
+          "Profit_Factor": 0.8446980840238779,
+          "Final_Value": 92947.02152730153,
+          "Total_Trades": 62
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      }
+    ]
+  },
+  "GLD": {
+    "TDSequentialBreakout": [
+      {
+        "fold_num": 1,
+        "is_start": "2004-11-18 00:00:00",
+        "is_end": "2007-11-18 00:00:00",
+        "oos_start": "2007-11-18 00:00:00",
+        "oos_end": "2008-11-18 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 2,
+        "is_start": "2004-11-18 00:00:00",
+        "is_end": "2008-11-18 00:00:00",
+        "oos_start": "2008-11-18 00:00:00",
+        "oos_end": "2009-11-18 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 3,
+        "is_start": "2004-11-18 00:00:00",
+        "is_end": "2009-11-18 00:00:00",
+        "oos_start": "2009-11-18 00:00:00",
+        "oos_end": "2010-11-18 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 4,
+        "is_start": "2004-11-18 00:00:00",
+        "is_end": "2010-11-18 00:00:00",
+        "oos_start": "2010-11-18 00:00:00",
+        "oos_end": "2011-11-18 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 5,
+        "is_start": "2004-11-18 00:00:00",
+        "is_end": "2011-11-18 00:00:00",
+        "oos_start": "2011-11-18 00:00:00",
+        "oos_end": "2012-11-18 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 6,
+        "is_start": "2004-11-18 00:00:00",
+        "is_end": "2012-11-18 00:00:00",
+        "oos_start": "2012-11-18 00:00:00",
+        "oos_end": "2013-11-18 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 7,
+        "is_start": "2004-11-18 00:00:00",
+        "is_end": "2013-11-18 00:00:00",
+        "oos_start": "2013-11-18 00:00:00",
+        "oos_end": "2014-11-18 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 8,
+        "is_start": "2004-11-18 00:00:00",
+        "is_end": "2014-11-18 00:00:00",
+        "oos_start": "2014-11-18 00:00:00",
+        "oos_end": "2015-11-18 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 9,
+        "is_start": "2004-11-18 00:00:00",
+        "is_end": "2015-11-18 00:00:00",
+        "oos_start": "2015-11-18 00:00:00",
+        "oos_end": "2016-11-18 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 10,
+        "is_start": "2004-11-18 00:00:00",
+        "is_end": "2016-11-18 00:00:00",
+        "oos_start": "2016-11-18 00:00:00",
+        "oos_end": "2017-11-18 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 11,
+        "is_start": "2004-11-18 00:00:00",
+        "is_end": "2017-11-18 00:00:00",
+        "oos_start": "2017-11-18 00:00:00",
+        "oos_end": "2018-11-18 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 12,
+        "is_start": "2004-11-18 00:00:00",
+        "is_end": "2018-11-18 00:00:00",
+        "oos_start": "2018-11-18 00:00:00",
+        "oos_end": "2019-11-18 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 13,
+        "is_start": "2004-11-18 00:00:00",
+        "is_end": "2019-11-18 00:00:00",
+        "oos_start": "2019-11-18 00:00:00",
+        "oos_end": "2020-11-18 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 14,
+        "is_start": "2004-11-18 00:00:00",
+        "is_end": "2020-11-18 00:00:00",
+        "oos_start": "2020-11-18 00:00:00",
+        "oos_end": "2021-11-18 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 15,
+        "is_start": "2004-11-18 00:00:00",
+        "is_end": "2021-11-18 00:00:00",
+        "oos_start": "2021-11-18 00:00:00",
+        "oos_end": "2022-11-18 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 16,
+        "is_start": "2004-11-18 00:00:00",
+        "is_end": "2022-11-18 00:00:00",
+        "oos_start": "2022-11-18 00:00:00",
+        "oos_end": "2023-11-18 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 17,
+        "is_start": "2004-11-18 00:00:00",
+        "is_end": "2023-11-18 00:00:00",
+        "oos_start": "2023-11-18 00:00:00",
+        "oos_end": "2024-11-18 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 18,
+        "is_start": "2004-11-18 00:00:00",
+        "is_end": "2024-11-18 00:00:00",
+        "oos_start": "2024-11-18 00:00:00",
+        "oos_end": "2025-11-18 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 19,
+        "is_start": "2004-11-18 00:00:00",
+        "is_end": "2025-11-18 00:00:00",
+        "oos_start": "2025-11-18 00:00:00",
+        "oos_end": "2026-05-29 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      }
+    ]
+  },
+  "IEF": {
+    "TDSequentialBreakout": [
+      {
+        "fold_num": 1,
+        "is_start": "2002-07-30 00:00:00",
+        "is_end": "2005-07-30 00:00:00",
+        "oos_start": "2005-07-30 00:00:00",
+        "oos_end": "2006-07-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 2,
+        "is_start": "2002-07-30 00:00:00",
+        "is_end": "2006-07-30 00:00:00",
+        "oos_start": "2006-07-30 00:00:00",
+        "oos_end": "2007-07-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 3,
+        "is_start": "2002-07-30 00:00:00",
+        "is_end": "2007-07-30 00:00:00",
+        "oos_start": "2007-07-30 00:00:00",
+        "oos_end": "2008-07-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 4,
+        "is_start": "2002-07-30 00:00:00",
+        "is_end": "2008-07-30 00:00:00",
+        "oos_start": "2008-07-30 00:00:00",
+        "oos_end": "2009-07-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 5,
+        "is_start": "2002-07-30 00:00:00",
+        "is_end": "2009-07-30 00:00:00",
+        "oos_start": "2009-07-30 00:00:00",
+        "oos_end": "2010-07-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 6,
+        "is_start": "2002-07-30 00:00:00",
+        "is_end": "2010-07-30 00:00:00",
+        "oos_start": "2010-07-30 00:00:00",
+        "oos_end": "2011-07-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 7,
+        "is_start": "2002-07-30 00:00:00",
+        "is_end": "2011-07-30 00:00:00",
+        "oos_start": "2011-07-30 00:00:00",
+        "oos_end": "2012-07-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 8,
+        "is_start": "2002-07-30 00:00:00",
+        "is_end": "2012-07-30 00:00:00",
+        "oos_start": "2012-07-30 00:00:00",
+        "oos_end": "2013-07-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 9,
+        "is_start": "2002-07-30 00:00:00",
+        "is_end": "2013-07-30 00:00:00",
+        "oos_start": "2013-07-30 00:00:00",
+        "oos_end": "2014-07-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 10,
+        "is_start": "2002-07-30 00:00:00",
+        "is_end": "2014-07-30 00:00:00",
+        "oos_start": "2014-07-30 00:00:00",
+        "oos_end": "2015-07-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 11,
+        "is_start": "2002-07-30 00:00:00",
+        "is_end": "2015-07-30 00:00:00",
+        "oos_start": "2015-07-30 00:00:00",
+        "oos_end": "2016-07-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 12,
+        "is_start": "2002-07-30 00:00:00",
+        "is_end": "2016-07-30 00:00:00",
+        "oos_start": "2016-07-30 00:00:00",
+        "oos_end": "2017-07-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 13,
+        "is_start": "2002-07-30 00:00:00",
+        "is_end": "2017-07-30 00:00:00",
+        "oos_start": "2017-07-30 00:00:00",
+        "oos_end": "2018-07-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 14,
+        "is_start": "2002-07-30 00:00:00",
+        "is_end": "2018-07-30 00:00:00",
+        "oos_start": "2018-07-30 00:00:00",
+        "oos_end": "2019-07-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 15,
+        "is_start": "2002-07-30 00:00:00",
+        "is_end": "2019-07-30 00:00:00",
+        "oos_start": "2019-07-30 00:00:00",
+        "oos_end": "2020-07-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 16,
+        "is_start": "2002-07-30 00:00:00",
+        "is_end": "2020-07-30 00:00:00",
+        "oos_start": "2020-07-30 00:00:00",
+        "oos_end": "2021-07-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 17,
+        "is_start": "2002-07-30 00:00:00",
+        "is_end": "2021-07-30 00:00:00",
+        "oos_start": "2021-07-30 00:00:00",
+        "oos_end": "2022-07-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 18,
+        "is_start": "2002-07-30 00:00:00",
+        "is_end": "2022-07-30 00:00:00",
+        "oos_start": "2022-07-30 00:00:00",
+        "oos_end": "2023-07-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 19,
+        "is_start": "2002-07-30 00:00:00",
+        "is_end": "2023-07-30 00:00:00",
+        "oos_start": "2023-07-30 00:00:00",
+        "oos_end": "2024-07-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 20,
+        "is_start": "2002-07-30 00:00:00",
+        "is_end": "2024-07-30 00:00:00",
+        "oos_start": "2024-07-30 00:00:00",
+        "oos_end": "2025-07-30 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      },
+      {
+        "fold_num": 21,
+        "is_start": "2002-07-30 00:00:00",
+        "is_end": "2025-07-30 00:00:00",
+        "oos_start": "2025-07-30 00:00:00",
+        "oos_end": "2026-05-29 00:00:00",
+        "is_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        },
+        "oos_metrics": {
+          "CAGR": 0.0,
+          "Max_Drawdown": 0.0,
+          "Sharpe": 0.0,
+          "Profit_Factor": 1.0,
+          "Final_Value": 100000.0,
+          "Total_Trades": 0
+        }
+      }
+    ]
+  }
+}
