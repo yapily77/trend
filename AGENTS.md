@@ -46,6 +46,11 @@ This protocol applies when ending a Beads implementation workflow. It is subordi
 - Explicit user or orchestrator instructions override this Beads block.
 - Do not commit or push without clear authority from the active profile or the current user request.
 - If a required sync or push is blocked, stop and report the exact command and error.
+## Skills
+
+Load these skills when the trigger condition matches:
+- **git-and-files** — use whenever you need to find git repos, check git status, or locate files. Run its orientation flow (read AGENTS.md → CLAUDE.md → MEMORY.md → lookup table) before running any exploratory shell command.
+
 ## Build & Test
 
 _Add your build and test commands here_
