@@ -162,6 +162,7 @@ The wide outcome range means the strategy needs a **regime overlay** to be inves
 | `GOLD/reports/gold_jpy_kelly_results.json` | Full metrics (baseline + scale-in + regime) |
 | `GOLD/reports/gold_jpy_20yr_buckets.json` | Bucket data and statistics |
 | `GOLD/charts/gold_jpy_equity.png` | Equity curve and drawdown chart |
+| `GOLD/charts/gold_jpy_20yr_buckets.png` | Rolling bucket CAGR visualization |
 ---
 
 ## Appendix: Gold/JPY Decomposition — Leg Sizing Strategies
