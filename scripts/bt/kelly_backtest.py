@@ -149,6 +149,10 @@ def run_backtest(gold_df: pd.DataFrame, capital: float = CAPITAL,
                  ticker: str = 'XAU/JPY') -> dict:
     """Run MA200 + half-Kelly + ATR stop backtest on gold/JPY.
 
+    Position sizing uses CURRENT equity (running cash) for both risk dollars
+    and the leverage cap, so risk scales with the portfolio as it compounds
+    or shrinks — proper fractional-Kelly money management.
+
     Exit rules (checked each bar in priority order):
       1. ATR stop: close <= entry_price - atr_mult * ATR  -> STOP_LOSS
       2. MA200 signal goes flat -> SIGNAL_EXIT
