@@ -335,8 +335,8 @@ def run_backtest(gold_df: pd.DataFrame, capital: float = CAPITAL,
             trade_peak = max(trade_peak, c)
             move = trade_peak - pm.weighted_entry
 
-            # Reset add_count when price recovers above the zone
-            if move > 0 and (trade_peak - c) < 0.10 * add_zone_pct * move:
+            # Reset add_count when price recovers above the zone (hysteresis: 50% of zone width)
+            if move > 0 and (trade_peak - c) < 0.50 * add_zone_pct * move:
                 pm.add_count = 0
 
             if pm.add_count >= pm.max_additions:
