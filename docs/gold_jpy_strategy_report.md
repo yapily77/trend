@@ -162,4 +162,95 @@ The wide outcome range means the strategy needs a **regime overlay** to be inves
 | `GOLD/reports/gold_jpy_kelly_results.json` | Full metrics (baseline + scale-in + regime) |
 | `GOLD/reports/gold_jpy_20yr_buckets.json` | Bucket data and statistics |
 | `GOLD/charts/gold_jpy_equity.png` | Equity curve and drawdown chart |
-| `GOLD/charts/gold_jpy_20yr_buckets.png` | Rolling bucket CAGR visualization |
+---
+
+## Appendix: Gold/JPY Decomposition — Leg Sizing Strategies
+
+The gold_jpy position is the product of two components: `gold_jpy = gold_usd × USDJPY`.
+By decomposing the position into its two legs and sizing each independently, we can
+dynamically tilt between gold exposure and JPY exposure based on their relative trend
+strength and correlation regime.
+
+### Gold/USD vs USD/JPY Correlation
+
+| Frequency | gold_usd vs usdjpy | gold_jpy vs usdjpy | gold_usd vs gold_jpy |
+|---|---|---|---|
+| Daily | **-0.19** | +0.52 | +0.73 |
+| Weekly | -0.20 | — | — |
+| Monthly | -0.23 | — | — |
+
+- **gold_usd and USD/JPY are negatively correlated** (-0.19 to -0.23): when the dollar weakens, gold rallies AND USD/JPY falls. This is the real economic signal.
+- **gold_jpy and USD/JPY are positively correlated** (+0.52): this is a mathematical artifact of the multiplicative identity — the gold_usd component dominates.
+- **gold_usd and gold_jpy are strongly positively correlated** (+0.73): gold in any currency tracks gold in USD.
+
+### Strategy 1: Static 50/50 Split
+
+Split the risk budget evenly between gold_usd and USD/JPY. Each leg has its own
+MA200 signal, ATR(14) × 3 stop, and Half-Kelly sizing.
+
+| Metric | Value |
+|---|---|
+| CAGR | +14.03% |
+| Max Drawdown | 48.76% |
+| Sharpe | +0.85 |
+| Profit Factor | 2.59 |
+| Final Value | $144.4M |
+
+### Strategy 2: Trend-Weighted Dynamic Split
+
+Allocate risk proportionally to each leg's trend strength (|price / MA(50) - 1|, smoothed).
+The leg with the stronger trend gets more risk budget.
+
+| Metric | Value |
+|---|---|
+| CAGR | +14.11% |
+| Max Drawdown | **39.13%** |
+| Sharpe | +0.86 |
+| Profit Factor | 3.00 |
+| Final Value | $149.9M |
+
+**Key advantage:** The trend-weighted split reduces MaxDD by ~10 percentage points vs the static split while maintaining similar CAGR. The dynamic allocation naturally shifts risk toward whichever leg is trending more strongly.
+
+### Strategy 3: Core + Overlay Hedge
+
+Keep a gold_jpy core at Half-Kelly and add a USD/JPY overlay sized at 30% of core notional when gold_jpy is long. This amplifies the implicit USD/JPY exposure baked into the gold_jpy position.
+
+| Metric | Value |
+|---|---|
+| CAGR | +14.32% |
+| Max Drawdown | 53.24% |
+| Sharpe | +0.76 |
+| Profit Factor | 5.91 |
+| Final Value | $166.2M |
+
+**Trade-off:** Higher CAGR and profit factor, but also higher MaxDD. The overlay amplifies both gains and losses.
+
+### Comparison Summary
+
+| Strategy | CAGR | Sharpe | MaxDD | PF | Final$ |
+|---|---|---|---|---|---|
+| Static 50/50 | +14.03% | +0.85 | 48.76% | 2.59 | $144.4M |
+| Trend-Weighted | +14.11% | +0.86 | **39.13%** | 3.00 | $149.9M |
+| Core + Overlay | +14.32% | +0.76 | 53.24% | 5.91 | $166.2M |
+| Baseline (gold_jpy) | +14.84% | +0.74 | 47.37% | 6.01 | $213.7M |
+
+### Key Insights
+
+1. **Decomposition doesn't change the fundamental return profile.** All three legs-based strategies deliver ~14% CAGR, similar to the baseline gold_jpy strategy. The magic is in the *distribution* of returns (MaxDD, drawdown profile), not the absolute level.
+
+2. **Trend-weighting reduces drawdowns.** By allocating more risk to the trending leg, the strategy avoids adding to the weaker leg at the wrong time. This reduced MaxDD by ~10pp vs the static split.
+
+3. **The overlay amplifies both ways.** The core+overlay strategy has the highest CAGR and profit factor, but also the highest MaxDD. The USD/JPY overlay adds exposure to the dollar-yen trend, which is positively correlated with gold_jpy — it amplifies the trend but also the drawdowns.
+
+4. **For a risk-conscious investor, the trend-weighted split is the best choice.** It maintains similar CAGR to the baseline while significantly reducing drawdowns. The dynamic allocation is intuitive: when gold is trending strongly, overweight gold; when USD/JPY is trending strongly, overweight the FX leg.
+
+5. **The negative gold_usd/USDJPY correlation is the key economic relationship.** When the dollar weakens, gold rallies and USD/JPY falls. A pure gold_jpy position implicitly holds both legs — the decomposition lets you control the relative sizing.
+
+| `GOLD/reports/static_50_50_results.json` | Static 50/50 split metrics |
+| `GOLD/reports/trend_weighted_results.json` | Trend-weighted split metrics |
+| `GOLD/reports/core_plus_overlay_results.json` | Core + overlay metrics |
+| `GOLD/reports/decomposition_walkforward.json` | Walk-forward results |
+| `GOLD/reports/decomposition_correlation.json` | Leg correlation analysis |
+| `GOLD/charts/static_50_50_equity.png` | Static split equity curve |
+| `GOLD/charts/trend_weighted_equity.png` | Trend-weighted equity curve |
+| `GOLD/charts/core_plus_overlay_equity.png` | Core+overlay equity curve |
