@@ -208,7 +208,7 @@ class DynamicPositionManager:
         initial_shares = self.entries[0][1] if self.entries else 0.0
 
         # Zone: price has retracted add_zone_pct of the move from entry to peak.
-        # E.g. add_zone_pct=0.40 means add when price has pulled back 40%
+        # E.g. add_zone_pct=0.60 means add when price has pulled back 60%
         # of the way from the peak toward the entry.
         if trade_peak is None:
             trade_peak = max(p for p, _ in self.entries)
