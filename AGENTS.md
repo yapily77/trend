@@ -1,80 +1,98 @@
-# Trend Following Research — Agent Context
+# Project Instructions for AI Agents
 
-## Project Overview
-Systematic trend-following strategy research using walk-forward backtesting with
-realistic cost models (2 pip slippage, 0.002% commission).
+This file provides instructions and context for AI coding agents working on this project.
 
-## Architecture
-- `scripts/bt/` — Backtesting engine (engine, data, indicators, strategies, sizing, charts, reporting, allocator)
-- `scripts/bt/indicators.py` — Technical indicators including Tom DeMark Sequential (td_setup, td_countdown, td_combo, td_st_demand, td_st_supply)
-- `scripts/bt/strategies.py` — Strategy classes: DonchianBreakout, KAMASlope, KAMAAdaptivePositionSizing, TDSequentialCounterTrend, TDComboStrategy, TDSequentialBreakout
-- `scripts/bt/engine.py` — Backtest simulation + walk-forward validation
-- `JPY/` — Focused USDJPY=X research (TD Sequential vs Donchian 20)
-- `JPY/run_jpy.py` — Run both Donchian 20 and TD Seq Breakout on USDJPY=X
-- `JPY/correlation.py` — Signal/return correlation, trade overlap, TDST filter effectiveness, hybrid simulation
-- `JPY/run_jpy_kama.py` — Run KAMA Slope + KAMA Adaptive Position Sizing vs Donchian 20
-- `JPY/run_jpy_weekly.py` — Run KAMA variants + Donchian 20 on weekly USDJPY=X
-- `JPY/run_jpy_ma200.py` — Run MA200 trend-following vs Donchian 20 on USDJPY=X daily
-- `JPY/run_jpy_ama.py` — Run AMA (KAMA) crossover vs Donchian 20 on USDJPY=X daily
-- `JPY/reports/` — Fold JSONs, trade logs, results, correlation JSON
-- `JPY/charts/` — Equity curve PNGs
+## Beads Issue Tracker
 
-## Beads Issue Tracker (bd)
-This project uses `bd` (beads) for issue tracking. Run `bd prime` for full workflow context.
-- Database: local Dolt (embedded), no remote configured
-- Issues: `bd list`, `bd show <id>`, `bd create`, `bd update`, `bd close`
-- All task tracking goes through `bd`, not TodoWrite/TaskCreate
+This project uses **bd (beads)** for issue tracking. Run `bd prime` to see full workflow context and commands.
 
-## Validation Rules
-- 2 pip slippage mandatory, 0.002% commission
-- Canonical parameters only — no optimization
-- 3-year expanding IS / 1-year OOS walk-forward
-- Reject if OOS Sharpe < 0.4, max DD > 30%, or significant IS→OOS drop
+### Quick Reference
 
-## Known Results (USDJPY=X, 1996-2026)
-### Daily (29.6 years, ~7634 bars)
-- Donchian 20: Sharpe +0.34, 137 trades, DD -32.71%, OOS avg Sharpe +0.03, 11/27 folds pass 0.4
-- TD Seq Breakout: Sharpe +0.10, 87 trades, DD -19.40%, OOS avg Sharpe -0.05, 1/27 folds pass 0.4
-- KAMA Slope: Sharpe -0.18, 854 trades, DD -38.48%, OOS avg Sharpe -0.26 (fails validation)
-- KAMA Adaptive Size: Sharpe -1.10, 7129 trades, DD -55.28%, OOS avg Sharpe -1.30 (much worse)
-- Donchian 20 + TD Breakout signal correlation: 0.40 (moderate, not redundant)
-- TDST filter: keeps only 4.5% of breakouts, produces negative Sharpe (-0.17)
-
-### Weekly (30 years, 1542 bars)
-- Donchian 20 Weekly: Sharpe +0.17, 35 trades, DD -14.95%, OOS avg Sharpe -0.29, 8/27 folds pass 0.4
-- KAMA Slope Weekly: Sharpe +0.08, 164 trades, DD -11.19%, OOS avg Sharpe -0.20, 10/27 folds pass 0.4
-- KAMA Adaptive Size Weekly: Sharpe -0.48, 1440 trades, DD -7.50%, OOS avg Sharpe -0.80, 5/27 folds pass 0.4
-
-### MA200 trend-following (daily, 29.6 years)
-- MA200 Trend: Sharpe -0.02, 269 trades, DD -34.37%, OOS avg Sharpe -0.01, 10/27 folds pass 0.4
-- Buy USD/sell JPY when Close > MA200, reverse when Close < MA200.
-- **Fails validation** — roughly 2x the trades of Donchian 20 with no edge (Sharpe ~0, worse than Donchian).
-- Suggests USDJPY does not exhibit a persistent 200-day trend; the visual impression of trend is not exploitable after costs.
-
-### AMA / KAMA crossover (daily, 29.6 years)
-- AMA30 (period=30 KAMA): Sharpe -0.12, 528 trades, DD -33.10%, OOS avg Sharpe -0.29, 5/27 folds pass 0.4
-- AMA10 (period=10 KAMA): Sharpe -0.17, 854 trades, DD -38.48%, OOS avg Sharpe -0.26, 7/27 folds pass 0.4
-- Both AMA variants fail validation — adaptive lookback does not help; USDJPY remains mean-reverting.
-- AMA10 (854 trades) matches KAMA Slope's trade count, confirming AMA crossover ≈ KAMA Slope in practice.
-
-### Key findings
-- **No strategy passes walk-forward validation** on USDJPY=X at any frequency tested.
-- Donchian 20 is the only strategy with a positive IS Sharpe (+0.34) and a decent profit factor (1.63).
-- Weekly dramatically cuts drawdowns (14.95% vs 32.71%) but also cuts Sharpe (0.17 vs 0.34) and trades (35 vs 137).
-- KAMA Slope IS Sharpe improves on weekly (+0.08 vs -0.18) but still fails OOS validation.
-- KAMA Adaptive Position Sizing fails at BOTH frequencies — adaptive sizing amplifies losses in a noise-dominated regime.
-- MA200 crossover produces 269 trades (~2x Donchian) with ~0 Sharpe — too many whipsaws on a mean-reverting pair.
-- Weekly has fewer but larger bars; the 20-period Donchian is a 20-week (~100 trading day) lookback — much slower regime detection.
-- **Verdict: No robust edge found on USDJPY=X at daily or weekly frequency.** The adaptive sizing concept (KAMA ER as regime gauge) does not translate to a profitable sizing rule on JPY.
-- Recommended next step: relax Donchian period to ~10 on weekly, or test multiple JPY cross-pairs where trends may be stronger.
-
-## Quick Start
 ```bash
-cd trend/
-python3 JPY/run_jpy.py               # TD Seq vs Donchian 20 on USDJPY=X daily
-python3 JPY/correlation.py           # Correlation analysis
-python3 JPY/run_jpy_kama.py          # KAMA variants vs Donchian 20 daily
-python3 JPY/run_jpy_weekly.py        # KAMA variants + Donchian 20 on USDJPY=X weekly
-python3 JPY/run_jpy_ma200.py          # MA200 trend-following vs Donchian 20 on USDJPY=X daily
-python3 JPY/run_jpy_ama.py            # AMA (KAMA) crossover vs Donchian 20 on USDJPY=X daily
+bd ready              # Find available work
+bd show <id>          # View issue details
+bd update <id> --claim  # Claim work
+bd close <id>         # Complete work
 ```
+
+### Rules
+
+- Use `bd` for ALL task tracking — do NOT use TodoWrite, TaskCreate, or markdown TODO lists
+- Run `bd prime` for detailed command reference and session close protocol
+- Use `bd remember` for persistent knowledge — do NOT use MEMORY.md files
+
+**Architecture in one line:** issues live in a local Dolt DB; sync uses `refs/dolt/data` on your git remote; `.beads/issues.jsonl` is a passive export. See https://github.com/gastownhall/beads/blob/main/docs/SYNC_CONCEPTS.md for details and anti-patterns.
+
+## Session Completion
+
+This protocol applies when ending a Beads implementation workflow. It is subordinate to explicit user, repository, and orchestrator instructions.
+
+1. **File issues for remaining work** - Create beads for anything that needs follow-up
+2. **Run quality gates** (if code changed) - Tests, linters, builds
+3. **Update issue status** - Close finished work, update in-progress items
+4. **Handle git/sync by active profile**:
+   ```bash
+   # Conservative/minimal/default: report status and proposed commands; wait for approval.
+   git status
+
+   # Team-maintainer opt-in only, unless current instructions forbid it:
+   git pull --rebase
+   git push
+   git status
+   ```
+5. **Hand off** - Summarize changes, validation, issue status, and any blocked sync/commit/push step
+
+**Critical rules:**
+- Explicit user or orchestrator instructions override this Beads block.
+- Do not commit or push without clear authority from the active profile or the current user request.
+- If a required sync or push is blocked, stop and report the exact command and error.
+## Build & Test
+
+_Add your build and test commands here_
+
+```bash
+# Example:
+# npm install
+# npm test
+```
+
+## Architecture Overview
+
+This project is a **systematic trend-following backtesting framework** for retail investors.
+
+### Core Modules
+- `scripts/bt/data.py` — DataFeed: yfinance-backed OHLCV with local caching
+- `scripts/bt/indicators.py` — Technical indicators (KAMA, Donchian, ADX, ER, ATR, TD Sequential)
+- `scripts/bt/strategies.py` — Strategy ABC + implementations (KAMA slope, Donchian breakout, TDSequential)
+- `scripts/bt/engine.py` — Backtest engine with walk-forward validation, Carver sizing
+- `scripts/bt/sizing.py` — Position sizing (equal volatility, adaptive)
+- `scripts/bt/allocator.py` — Capital allocation
+- `scripts/bt/charts.py` — Equity curve plotting
+- `scripts/bt/reporting.py` — Markdown report generation
+- `scripts/bt/ma200.py` — **200-day MA crossover strategy** (entry + exit discipline)
+- `scripts/bt/ma200_backtest.py` — 10-year backtest + walk-forward for MA200
+- `scripts/bt/ma200_exit.py` — Regime breakdown + symmetric exit analysis
+- `scripts/bt/cape_analysis.py` — CAPE ratio (US S&P 500 only) + 200-DMA integrated decision matrix
+
+### Reports
+- `reports/ma200_exit_report.md` — MA200 exit discipline analysis for OCBC and Nikkei
+- `reports/cape_analysis.md` — CAPE ratio analysis (US CAPE, global risk proxy) and integrated exit framework
+- `reports/backtest_report_ideas.md` — Citi institutional trade ideas backtest
+- `reports/backtest_results.json`, `reports/backtest_folds.json`, `reports/backtest_summary.csv` — Raw metrics
+- `reports/donchian20_*` — Per-strategy equity curves, trade logs, Markdown reports
+
+### Key Findings
+- Trend following works best on **FX** (USD/JPY) and **cyclical commodities**; it lags on secular uptrends (SPY, GLD, GC=F)
+- The 200-DMA MA200 exit discipline reduces MaxDD significantly on mean-reverting stocks (OCBC: -44% → -26%) but lags on indices in bull runs (Nikkei: CAGR 13% → 5%)
+- CAPE = 33 (Aug 2026, US S&P 500) is ~2× the long-run mean of 16.5 — historically predicts ~0% real 10y forward returns
+- **CAPE is US-only** (Multpl S&P 500 Shiller CAPE). It is a global equity-valuation proxy, NOT a Japan valuation metric. Do not use it to time the Nikkei directly.
+- CAPE is a position-sizing input, not a timing signal
+- For a 49-year-old investor: the 200-DMA is the hard exit trigger; CAPE informs how much equity to hold beyond the trend signal
+- For the Nikkei specifically: use the 200-DMA as the primary trigger; consider ATR trailing stop as an alternative; US CAPE is a secondary global-risk overlay only
+
+### Conventions & Patterns
+- All agent reasoning, tool call arguments, commit messages, and explanations must be in English
+- Chinese characters are strictly reserved for BaZi metaphysics entities (Stems, Branches, Ten Gods, Trigrams, Hexagrams, Solar Terms)
+- Backtest methodology: raw (non-adjusted) closes, prior-close signal timing (no look-ahead), realistic costs (0.002% commission + 0.05% slippage), walk-forward with expanding in-sample window
+- yfinance tickers: O39.SI (OCBC), ^N225 (Nikkei 225), USDJPY=X, SPY, ^GSPC, CL=F, GC=F, DX-Y.NYB
+- CAPE ticker: US S&P 500 Shiller CAPE (Multpl) — NOT a Japan CAPE. No Japan CAPE available via public APIs.
