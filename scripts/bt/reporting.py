@@ -64,19 +64,33 @@ def export_trade_log(trades: List[Dict], output_path: str = "trade_log.csv") -> 
     log_data = []
     for t in trades:
         entry_date = t['entry_date']
-        exit_date = t.get('exit_date', pd.Timestamp.now())
-        holding_days = (exit_date - entry_date).days
+        exit_date = t.get('exit_date', entry_date)
+        holding_days = (exit_date - entry_date).days if 'exit_date' in t else 0
+        exit_reason = t.get('exit_reason', '')
         
-        log_data.append({
-            "Entry Date": entry_date.strftime("%Y-%m-%d"),
-            "Exit Date": exit_date.strftime("%Y-%m-%d") if 'exit_date' in t else "OPEN",
-            "Type": t['type'],
-            "Entry Price": round(t['entry_price'], 4),
-            "Exit Price": round(t['exit_price'], 4) if 'exit_price' in t else 0.0,
-            "Size": round(t['size'], 2),
-            "P&L": round(t.get('pnl', 0.0), 2),
-            "Holding Period (Days)": holding_days
-        })
+        # For scale-in additions, use entry price and mark as ADD
+        if exit_reason == 'SCALE-IN':
+            log_data.append({
+                "Entry Date": entry_date.strftime("%Y-%m-%d"),
+                "Exit Date": "ADD",
+                "Type": "ADD",
+                "Entry Price": round(t['entry_price'], 4),
+                "Exit Price": round(t['entry_price'], 4),
+                "Size": round(t['size'], 2),
+                "P&L": round(t.get('pnl', 0.0), 2),
+                "Holding Period (Days)": holding_days
+            })
+        else:
+            log_data.append({
+                "Entry Date": entry_date.strftime("%Y-%m-%d"),
+                "Exit Date": exit_date.strftime("%Y-%m-%d") if 'exit_date' in t else "OPEN",
+                "Type": t['type'],
+                "Entry Price": round(t['entry_price'], 4),
+                "Exit Price": round(t['exit_price'], 4) if 'exit_price' in t else 0.0,
+                "Size": round(t['size'], 2),
+                "P&L": round(t.get('pnl', 0.0), 2),
+                "Holding Period (Days)": holding_days
+            })
         
     df = pd.DataFrame(log_data)
     df.to_csv(output_path, index=False)

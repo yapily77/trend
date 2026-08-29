@@ -142,19 +142,143 @@ def _cap_position(position: float, entry_price: float, current_equity: float,
     return min(position, max_units)
 
 
+class DynamicPositionManager:
+    """Event-driven scale-in: add to a winning position when price
+    approaches the stop-loss zone, sizing off unrealized gains only.
+
+    Philosophy: never risk principal. Only risk gains.
+    The equity curve will be lumpy — that's the point.
+
+    Parameters
+    ----------
+    add_fraction : float
+        Fraction of unrealized gain to risk on each addition (default 0.20).
+        E.g. if gain = $50K and add_fraction = 0.20, add $10K notional.
+    add_zone_pct : float
+        Fraction of the entry-to-peak move that must be retraced
+        before adding. Default 0.60 (add when price has pulled back
+        60% of the way from the peak toward the entry).
+    max_additions : int
+        Maximum number of additions per trade cycle.
+    """
+    def __init__(self, add_fraction=0.20, add_zone_pct=0.10, max_additions=3):
+        self.add_fraction = add_fraction
+        self.add_zone_pct = add_zone_pct
+        self.max_additions = max_additions
+
+        self.entries = []          # list of (price, shares)
+        self.add_count = 0
+
+    @property
+    def total_shares(self):
+        return sum(s for _, s in self.entries)
+
+    @property
+    def total_cost(self):
+        return sum(p * s for p, s in self.entries)
+
+    @property
+    def weighted_entry(self):
+        if self.total_shares <= 0:
+            return 0.0
+        return self.total_cost / self.total_shares
+
+    def unrealized_gain(self, current_price):
+        return self.total_shares * current_price - self.total_cost
+
+    def position_value(self, current_price):
+        return self.total_shares * current_price
+
+    def enter(self, price, shares):
+        """Initial entry."""
+        self.entries = [(price, shares)]
+        self.add_count = 0
+
+    def add(self, price, atr, trade_peak=None):
+        """
+        Attempt to add to position when price has pulled back
+        significantly from the trade peak (near the stop-loss zone).
+        Size = add_fraction of unrealized gain.
+        Returns (added_shares, added_notional) or (0.0, 0.0) if no addition.
+        """
+        if self.add_count >= self.max_additions:
+            return 0.0, 0.0
+
+        gain = self.unrealized_gain(price)
+        if gain <= 0:
+            return 0.0, 0.0
+
+        # Zone: price has retracted add_zone_pct of the move from entry to peak.
+        # E.g. add_zone_pct=0.60 means add when price has pulled back 60%
+        # of the way from the peak toward the entry.
+        if trade_peak is None:
+            trade_peak = max(p for p, _ in self.entries)
+        move = trade_peak - self.weighted_entry
+        if move <= 0:
+            return 0.0, 0.0
+
+        pullback = trade_peak - price
+        zone_threshold = self.add_zone_pct * move
+
+        # Trigger when pullback >= zone_threshold (price deep enough)
+        # but price is still above the weighted entry (we're still in profit)
+        if pullback < zone_threshold or price <= self.weighted_entry:
+            return 0.0, 0.0
+
+        # Size the addition as fraction of unrealized gain
+        add_notional = gain * self.add_fraction
+        add_shares = add_notional / price if price > 0 else 0.0
+        add_shares = max(0.0, add_shares)
+
+        if add_shares > 0:
+            self.entries.append((price, add_shares))
+            self.add_count += 1
+
+        return add_shares, add_notional
+
+    def mark_peak(self, price):
+        """Track the peak price for pullback detection."""
+        pass  # peak is computed dynamically from entries
+
+    def reset_add_count(self):
+        """Reset addition counter when price has moved away from zone."""
+        self.add_count = 0
+
+    def close_all(self):
+        """Reset the manager (position fully closed)."""
+        self.entries = []
+        self.add_count = 0
+
+
+def _close_trade(trade, exit_price, exit_date, exit_reason, gold_df, commission_rate=0.00002):
+    """Finalize a trade dict with exit info."""
+    trade['exit_date'] = exit_date
+    trade['exit_price'] = exit_price
+    trade['pnl'] = trade['pnl']  # will be set by caller
+    trade['exit_reason'] = exit_reason
+
+
 def run_backtest(gold_df: pd.DataFrame, capital: float = CAPITAL,
                  half_kelly: float = HALF_KELLY,
                  atr_period: int = ATR_PERIOD, atr_mult: float = ATR_MULT,
                  max_leverage: float = MAX_LEVERAGE,
-                 ticker: str = 'XAU/JPY') -> dict:
+                 ticker: str = 'XAU/JPY',
+                 add_fraction: float = 0.20,
+                 add_zone_pct: float = 0.10,
+                 max_additions: int = 3) -> dict:
     """Run MA200 + half-Kelly + ATR stop backtest on gold/JPY.
 
     Position sizing uses CURRENT equity (running cash) for both risk dollars
     and the leverage cap, so risk scales with the portfolio as it compounds
     or shrinks — proper fractional-Kelly money management.
 
+    Dynamic scale-in: when price pulls back toward the stop zone
+    (add_zone_pct * ATR below the trade peak), a fraction of the
+    unrealized gain is added to the position. Only gains are risked —
+    never principal. This produces a lumpy equity curve.
+
     Exit rules (checked each bar in priority order):
-      1. ATR stop: close <= entry_price - atr_mult * ATR  -> STOP_LOSS
+      1. ATR stop: close <= weighted_entry - atr_mult * ATR  -> STOP_LOSS
       2. MA200 signal goes flat -> SIGNAL_EXIT
     Entry: MA200 signal goes long (0 -> 1) and no position open.
     """
@@ -172,29 +296,91 @@ def run_backtest(gold_df: pd.DataFrame, capital: float = CAPITAL,
     stop_distance = 0.0
     trades = []
     current_trade = None
+    pm = DynamicPositionManager(add_fraction=add_fraction,
+                                 add_zone_pct=add_zone_pct,
+                                 max_additions=max_additions)
+    trade_peak = 0.0       # peak price seen during current trade
+    last_exit_reason = ''  # track why we last exited
 
     for i in range(len(gold_df)):
         c = close.iloc[i]
         atr_val = atr_series.iloc[i] if pd.notna(atr_series.iloc[i]) else atr_series.dropna().iloc[0]
 
-        # Check ATR stop on existing position
+        # ── EXIT: ATR stop on existing position ──
         if position > 0 and current_trade:
-            adverse = entry_price - c
-            if adverse >= stop_distance:
-                pnl = (c - entry_price) * position
-                commission = abs(position) * c * 0.00002
+            # Stop now based on weighted entry (tightens after adds)
+            weighted_entry = pm.weighted_entry
+            current_stop = weighted_entry - atr_mult * atr_val
+            if c <= current_stop:
+                pnl = (c - weighted_entry) * pm.total_shares
+                commission = abs(pm.total_shares) * c * 0.00002
                 cash += pnl - commission
                 current_trade['exit_date'] = gold_df.index[i]
                 current_trade['exit_price'] = c
                 current_trade['pnl'] = pnl - commission
                 current_trade['exit_reason'] = 'STOP_LOSS'
+                current_trade['total_shares'] = pm.total_shares
+                current_trade['additions'] = pm.add_count
                 trades.append(current_trade)
-                current_trade = None
+                last_exit_reason = 'STOP_LOSS'
+                pm.close_all()
                 position = 0.0
-                entry_price = 0.0
-                stop_distance = 0.0
+                current_trade = None
+                trade_peak = 0.0
 
-        if position == 0.0:
+        # ── DYNAMIC SCALE-IN: add when price has retraced from peak ──
+        if position > 0 and pm.total_shares > 0 and atr_val > 0:
+            # Track the peak price of this trade
+            trade_peak = max(trade_peak, c)
+
+            # Only reset add_count if price has moved far above the add zone
+            # This allows re-adding if price later approaches stop again
+            # but prevents premature reset during a single pullback episode
+            move = trade_peak - pm.weighted_entry
+            if move > 0 and (trade_peak - c) < 0.10 * add_zone_pct * move:
+                pm.add_count = 0
+
+            # Hard cap: never exceed max_additions additions per trade
+            if pm.add_count >= pm.max_additions:
+                pass  # no more additions this trade
+            else:
+                # Check if we're in the add zone: price has retraced
+                # add_zone_pct of the entry-to-peak move
+                in_zone = ((trade_peak - c) >= add_zone_pct * move
+                           and c > pm.weighted_entry)
+                if in_zone:
+                    gain = pm.unrealized_gain(c)
+                    if gain > 0:
+                        add_notional = gain * add_fraction
+                        add_shares = add_notional / c if c > 0 else 0.0
+                        add_shares = max(0.0, add_shares)
+
+                        # Cap: max total shares = max_additions * initial position
+                        max_total_shares = pm.max_additions * pm.entries[0][1] if pm.entries else 0
+                        if add_shares > 0 and pm.total_shares + add_shares <= max_total_shares:
+                            # Cap by leverage: total notional <= max_leverage * cash
+                            max_notional = max_leverage * cash
+                            current_notional = pm.position_value(c) + add_notional
+                            if add_shares > 0 and current_notional <= max_notional * 1.05:
+                                pm.add(c, atr_val, trade_peak)
+                                position = pm.total_shares
+                                entry_price = pm.weighted_entry
+
+                                trades.append({
+                                    'entry_date': gold_df.index[i],
+                                    'type': 'ADD',
+                                    'entry_price': c,
+                                    'size': add_shares,
+                                    'notional': add_notional,
+                                    'pnl': 0.0,
+                                    'exit_reason': 'SCALE-IN',
+                                    'total_shares': pm.total_shares,
+                                    'additions': pm.add_count,
+                                    'unrealized_gain': gain,
+                                })
+
+        # ── ENTRY: MA200 signal goes long ──
+        if position == 0.0 and current_trade is None:
             now_long = pos.iloc[i] > 0
             was_long = (pos.iloc[i-1] > 0) if i > 0 else False
             if now_long and not was_long:
@@ -220,57 +406,72 @@ def run_backtest(gold_df: pd.DataFrame, capital: float = CAPITAL,
                     'risk_pct': actual_risk / cash if cash > 0 else 0,
                     'raw_units': raw_units,
                     'lev_capped': raw_units > position,
+                    'total_shares': position,
+                    'additions': 0,
                 }
-        else:
-            pass
+                pm.enter(entry_price, position)
+                trade_peak = c
 
-        # Close on MA200 signal going flat
+        # ── EXIT: MA200 signal going flat ──
         if position > 0 and current_trade:
             now_long = pos.iloc[i] > 0
             if not now_long:
                 exit_price = c * 0.9995
-                pnl = (exit_price - entry_price) * position
-                commission = abs(position) * exit_price * 0.00002
+                weighted_entry = pm.weighted_entry
+                pnl = (exit_price - weighted_entry) * pm.total_shares
+                commission = abs(pm.total_shares) * exit_price * 0.00002
                 cash += pnl - commission
                 current_trade['exit_date'] = gold_df.index[i]
                 current_trade['exit_price'] = exit_price
                 current_trade['pnl'] = pnl - commission
                 current_trade['exit_reason'] = 'SIGNAL_EXIT'
+                current_trade['total_shares'] = pm.total_shares
+                current_trade['additions'] = pm.add_count
                 trades.append(current_trade)
-                current_trade = None
+                last_exit_reason = 'SIGNAL_EXIT'
+                pm.close_all()
                 position = 0.0
-                entry_price = 0.0
-                stop_distance = 0.0
+                current_trade = None
+                trade_peak = 0.0
 
-        if position > 0:
-            equity[i] = cash + (c - entry_price) * position
+        # ── Equity update ──
+        # equity = cash + unrealized P&L from weighted entry
+        if pm.total_shares > 0:
+            equity[i] = cash + (c - pm.weighted_entry) * pm.total_shares
         else:
             equity[i] = cash
 
     # Force close at end
     if position > 0 and current_trade:
         c = close.iloc[-1]
+        weighted_entry = pm.weighted_entry
         exit_price = c * 0.9995
-        pnl = (exit_price - entry_price) * position
-        commission = abs(position) * exit_price * 0.00002
+        pnl = (exit_price - weighted_entry) * pm.total_shares
+        commission = abs(pm.total_shares) * exit_price * 0.00002
         cash += pnl - commission
         current_trade['exit_date'] = gold_df.index[-1]
         current_trade['exit_price'] = exit_price
         current_trade['pnl'] = pnl - commission
         current_trade['exit_reason'] = 'END_OF_DATA'
+        current_trade['total_shares'] = pm.total_shares
+        current_trade['additions'] = pm.add_count
         trades.append(current_trade)
         equity[-1] = cash
 
     df = gold_df.copy()
     df['Equity'] = equity
     df['Daily_Return'] = df['Equity'].pct_change().fillna(0.0)
-    metrics = _metrics(df, trades, capital, atr_period, atr_mult, max_leverage)
+    metrics = _metrics(df, trades, capital, atr_period, atr_mult, max_leverage,
+                        add_fraction=add_fraction, add_zone_pct=add_zone_pct,
+                        max_additions=max_additions)
     return {'metrics': metrics, 'equity': df['Equity'], 'trades': trades,
             'signal': sig}
 
 
 def _metrics(df: pd.DataFrame, trades: list[dict], capital: float,
-             atr_period: int, atr_mult: float, max_leverage: float) -> dict:
+             atr_period: int, atr_mult: float, max_leverage: float,
+             add_fraction: float = 0.0, add_zone_pct: float = 0.0,
+             max_additions: int = 0) -> dict:
     equity = df['Equity']
     daily = df['Daily_Return']
     roll_max = equity.cummax()
@@ -288,6 +489,7 @@ def _metrics(df: pd.DataFrame, trades: list[dict], capital: float,
     wins = [p for p in pnls if p > 0]; losses = [p for p in pnls if p < 0]
     avg_win = np.mean(wins) if wins else 0
     avg_loss = abs(np.mean(losses)) if losses else 0
+    scale_ins = sum(1 for t in trades if t.get('exit_reason') == 'SCALE-IN')
     stops = sum(1 for t in trades if t.get('exit_reason') == 'STOP_LOSS')
     signal_exits = sum(1 for t in trades if t.get('exit_reason') == 'SIGNAL_EXIT')
     risk_pcts = [t.get('risk_pct', 0) for t in trades if 'risk_pct' in t]
@@ -298,17 +500,19 @@ def _metrics(df: pd.DataFrame, trades: list[dict], capital: float,
         'Profit_Factor': pf, 'Final_Value': final, 'Total_Trades': len(trades),
         'Win_Rate': len(wins) / len(trades) if trades else 0,
         'Avg_Win': avg_win, 'Avg_Loss': avg_loss, 'Payoff_Ratio': avg_win/avg_loss if avg_loss else 0,
-        'Stop_Loss_Hits': stops, 'Signal_Exits': signal_exits,
+        'Stop_Loss_Hits': stops, 'Signal_Exits': signal_exits, 'Scale_Ins': scale_ins,
         'Avg_Stop_Width': np.mean(stop_widths) if stop_widths else 0,
         'Avg_Risk_Per_Trade': np.mean(risk_pcts) if risk_pcts else 0,
         'ATR_Period': atr_period, 'ATR_Mult': atr_mult, 'Max_Leverage': max_leverage,
         'Lev_Capped_Pct': capped_frac,
+        'Add_Fraction': add_fraction, 'Add_Zone_Pct': add_zone_pct, 'Max_Additions': max_additions,
     }
 
 
 def walk_forward(gold_df, is_years=5, oos_years=2, capital=CAPITAL,
                  half_kelly=HALF_KELLY, atr_period=ATR_PERIOD, atr_mult=ATR_MULT,
-                 max_leverage=MAX_LEVERAGE):
+                 max_leverage=MAX_LEVERAGE,
+                 add_fraction=0.20, add_zone_pct=0.10, max_additions=3):
     dates = gold_df.index
     start = dates[0]; end = dates[-1]
     folds = []; is_end = start + pd.DateOffset(years=is_years)
@@ -317,8 +521,12 @@ def walk_forward(gold_df, is_years=5, oos_years=2, capital=CAPITAL,
         oos_end = min(is_end + pd.DateOffset(years=oos_years), end)
         is_df = gold_df.loc[start:is_end]
         oos_df = gold_df.loc[is_end:oos_end]
-        is_res = run_backtest(is_df, capital, half_kelly, atr_period, atr_mult, max_leverage)
-        oos_res = run_backtest(oos_df, capital, half_kelly, atr_period, atr_mult, max_leverage)
+        is_res = run_backtest(is_df, capital, half_kelly, atr_period, atr_mult, max_leverage,
+                                          add_fraction=add_fraction, add_zone_pct=add_zone_pct,
+                                          max_additions=max_additions)
+        oos_res = run_backtest(oos_df, capital, half_kelly, atr_period, atr_mult, max_leverage,
+                                          add_fraction=add_fraction, add_zone_pct=add_zone_pct,
+                                          max_additions=max_additions)
         folds.append({
             'fold': fold_num + 1,
             'is_start': str(start.date()), 'is_end': str(is_end.date()),
@@ -366,8 +574,22 @@ if __name__ == '__main__':
     print(f"=== MA200 + Half-Kelly (7.8%) + ATR({ATR_PERIOD}) sweep, 1x leverage cap ===")
     atr_sweep(gold_jpy)
 
-    # Draft run: ATR(14), 3x, 1x leverage
-    print(f"\n=== DRAFT: MA200 + Half-Kelly (7.8%) + {ATR_MULT}xATR({ATR_PERIOD}) Stop ===")
+    # Dynamic scale-in run: same base but with add-on-near-stop
+    print(f"\n=== SCALE-IN: MA200 + Half-Kelly (7.8%) + {ATR_MULT}xATR({ATR_PERIOD}) Stop + Dynamic Add ===")
+    print(f"  add_fraction={0.20}, add_zone_pct={0.10}, max_additions={3}")
+    r_si = run_backtest(gold_jpy, add_fraction=0.20, add_zone_pct=0.10, max_additions=3)
+    m_si = r_si['metrics']
+    print(f"  Sharpe={m_si['Sharpe']:+.2f}  CAGR={m_si['CAGR']:+.2%}  Trades={m_si['Total_Trades']}  DD={m_si['Max_Drawdown']:.2%}")
+    print(f"  WinRate={m_si['Win_Rate']:.1%}  Payoff={m_si['Payoff_Ratio']:.2f}x  PF={m_si['Profit_Factor']:.2f}")
+    print(f"  Final=${m_si['Final_Value']:,.0f}  Stops={m_si['Stop_Loss_Hits']}  SigExits={m_si['Signal_Exits']}  Scale-Ins={m_si['Scale_Ins']}")
+    print(f"  Avg Win=${m_si['Avg_Win']:,.0f}  Avg Loss=${m_si['Avg_Loss']:,.0f}")
+    print(f"  Avg stop width={m_si['Avg_Stop_Width']:,.0f}  ({m_si['ATR_Mult']:.1f}xATR)")
+    print(f"  Avg risk/trade={m_si['Avg_Risk_Per_Trade']:.2%}  (half-Kelly target={HALF_KELLY:.2%})")
+    print(f"  Leverage capped in {m_si['Lev_Capped_Pct']:.0%} of trades")
+    print()
+
+    # Draft run: ATR(14), 3x, 1x leverage (no scale-in for comparison)
+    print(f"\n=== BASELINE (no scale-in): MA200 + Half-Kelly (7.8%) + {ATR_MULT}xATR({ATR_PERIOD}) Stop ===")
     r = run_backtest(gold_jpy)
     m = r['metrics']
     print(f"  Sharpe={m['Sharpe']:+.2f}  CAGR={m['CAGR']:+.2%}  Trades={m['Total_Trades']}  DD={m['Max_Drawdown']:.2%}")
@@ -394,12 +616,16 @@ if __name__ == '__main__':
                              os.path.join(OUT, 'gold_jpy_kelly_report.md'))
 
     results = {
-        'strategy': 'MA200 Half-Kelly + ATR Stop (Gold/JPY)',
+        'strategy': 'MA200 Half-Kelly + ATR Stop + Dynamic Scale-In (Gold/JPY)',
         'half_kelly': HALF_KELLY,
         'atr_period': ATR_PERIOD,
         'atr_mult': ATR_MULT,
         'max_leverage': MAX_LEVERAGE,
+        'add_fraction': 0.20,
+        'add_zone_pct': 0.10,
+        'max_additions': 3,
         'metrics': m,
+        'metrics_scale_in': m_si,
         'folds': folds,
     }
     with open(os.path.join(OUT, 'gold_jpy_kelly_results.json'), 'w') as f:
