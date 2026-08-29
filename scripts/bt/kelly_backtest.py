@@ -576,8 +576,8 @@ if __name__ == '__main__':
 
     # Dynamic scale-in run: same base but with add-on-near-stop
     print(f"\n=== SCALE-IN: MA200 + Half-Kelly (7.8%) + {ATR_MULT}xATR({ATR_PERIOD}) Stop + Dynamic Add ===")
-    print(f"  add_fraction={0.20}, add_zone_pct={0.10}, max_additions={3}")
-    r_si = run_backtest(gold_jpy, add_fraction=0.20, add_zone_pct=0.10, max_additions=3)
+    print(f"  add_fraction={0.20}, add_zone_pct={0.60}, max_additions={3}")
+    r_si = run_backtest(gold_jpy, add_fraction=0.20, add_zone_pct=0.60, max_additions=3)
     m_si = r_si['metrics']
     print(f"  Sharpe={m_si['Sharpe']:+.2f}  CAGR={m_si['CAGR']:+.2%}  Trades={m_si['Total_Trades']}  DD={m_si['Max_Drawdown']:.2%}")
     print(f"  WinRate={m_si['Win_Rate']:.1%}  Payoff={m_si['Payoff_Ratio']:.2f}x  PF={m_si['Profit_Factor']:.2f}")
