@@ -27,7 +27,8 @@
       "Lev_Capped_Pct": 0.6666666666666666,
       "Add_Fraction": 0.5,
       "Add_Zone_Pct": 0.6,
-      "Max_Additions": 3
+      "Max_Additions": 3,
+      "Lot_Size": 1.0
     },
     "oos_metrics": {
       "CAGR": 0.07300374621113992,
@@ -51,7 +52,8 @@
       "Lev_Capped_Pct": 0.5,
       "Add_Fraction": 0.5,
       "Add_Zone_Pct": 0.6,
-      "Max_Additions": 3
+      "Max_Additions": 3,
+      "Lot_Size": 1.0
     },
     "is_cagr": 0.47047518494118323,
     "oos_cagr": 0.07300374621113992,
@@ -87,7 +89,8 @@
       "Lev_Capped_Pct": 0.6666666666666666,
       "Add_Fraction": 0.5,
       "Add_Zone_Pct": 0.6,
-      "Max_Additions": 3
+      "Max_Additions": 3,
+      "Lot_Size": 1.0
     },
     "oos_metrics": {
       "CAGR": 0.43831686329830655,
@@ -111,7 +114,8 @@
       "Lev_Capped_Pct": 1.0,
       "Add_Fraction": 0.5,
       "Add_Zone_Pct": 0.6,
-      "Max_Additions": 3
+      "Max_Additions": 3,
+      "Lot_Size": 1.0
     },
     "is_cagr": 0.3735276352318708,
     "oos_cagr": 0.43831686329830655,
@@ -147,7 +151,8 @@
       "Lev_Capped_Pct": 1.0,
       "Add_Fraction": 0.5,
       "Add_Zone_Pct": 0.6,
-      "Max_Additions": 3
+      "Max_Additions": 3,
+      "Lot_Size": 1.0
     },
     "oos_metrics": {
       "CAGR": -0.04823267489367833,
@@ -171,7 +176,8 @@
       "Lev_Capped_Pct": 0.5555555555555556,
       "Add_Fraction": 0.5,
       "Add_Zone_Pct": 0.6,
-      "Max_Additions": 3
+      "Max_Additions": 3,
+      "Lot_Size": 1.0
     },
     "is_cagr": 0.05259925859954073,
     "oos_cagr": -0.04823267489367833,
@@ -207,7 +213,8 @@
       "Lev_Capped_Pct": 0.625,
       "Add_Fraction": 0.5,
       "Add_Zone_Pct": 0.6,
-      "Max_Additions": 3
+      "Max_Additions": 3,
+      "Lot_Size": 1.0
     },
     "oos_metrics": {
       "CAGR": 0.0,
@@ -231,7 +238,8 @@
       "Lev_Capped_Pct": 0,
       "Add_Fraction": 0.5,
       "Add_Zone_Pct": 0.6,
-      "Max_Additions": 3
+      "Max_Additions": 3,
+      "Lot_Size": 1.0
     },
     "is_cagr": -0.02249946221332899,
     "oos_cagr": 0.0,
@@ -267,7 +275,8 @@
       "Lev_Capped_Pct": 0.8333333333333334,
       "Add_Fraction": 0.5,
       "Add_Zone_Pct": 0.6,
-      "Max_Additions": 3
+      "Max_Additions": 3,
+      "Lot_Size": 1.0
     },
     "oos_metrics": {
       "CAGR": -0.05344047989249501,
@@ -291,7 +300,8 @@
       "Lev_Capped_Pct": 1.0,
       "Add_Fraction": 0.5,
       "Add_Zone_Pct": 0.6,
-      "Max_Additions": 3
+      "Max_Additions": 3,
+      "Lot_Size": 1.0
     },
     "is_cagr": 0.06831089102756072,
     "oos_cagr": -0.05344047989249501,
@@ -327,7 +337,8 @@
       "Lev_Capped_Pct": 0.7619047619047619,
       "Add_Fraction": 0.5,
       "Add_Zone_Pct": 0.6,
-      "Max_Additions": 3
+      "Max_Additions": 3,
+      "Lot_Size": 1.0
     },
     "oos_metrics": {
       "CAGR": 0.07626911627391153,
@@ -351,7 +362,8 @@
       "Lev_Capped_Pct": 0.8,
       "Add_Fraction": 0.5,
       "Add_Zone_Pct": 0.6,
-      "Max_Additions": 3
+      "Max_Additions": 3,
+      "Lot_Size": 1.0
     },
     "is_cagr": -0.06731855854555557,
     "oos_cagr": 0.07626911627391153,
@@ -387,7 +399,8 @@
       "Lev_Capped_Pct": 0.7727272727272727,
       "Add_Fraction": 0.5,
       "Add_Zone_Pct": 0.6,
-      "Max_Additions": 3
+      "Max_Additions": 3,
+      "Lot_Size": 1.0
     },
     "oos_metrics": {
       "CAGR": 0.4035098236212238,
@@ -411,7 +424,8 @@
       "Lev_Capped_Pct": 0.2,
       "Add_Fraction": 0.5,
       "Add_Zone_Pct": 0.6,
-      "Max_Additions": 3
+      "Max_Additions": 3,
+      "Lot_Size": 1.0
     },
     "is_cagr": 0.16759452663026098,
     "oos_cagr": 0.4035098236212238,
@@ -447,7 +461,8 @@
       "Lev_Capped_Pct": 0.2222222222222222,
       "Add_Fraction": 0.5,
       "Add_Zone_Pct": 0.6,
-      "Max_Additions": 3
+      "Max_Additions": 3,
+      "Lot_Size": 1.0
     },
     "oos_metrics": {
       "CAGR": 0.18273070902619093,
@@ -471,7 +486,8 @@
       "Lev_Capped_Pct": 0.8,
       "Add_Fraction": 0.5,
       "Add_Zone_Pct": 0.6,
-      "Max_Additions": 3
+      "Max_Additions": 3,
+      "Lot_Size": 1.0
     },
     "is_cagr": 0.1459918649154901,
     "oos_cagr": 0.18273070902619093,
@@ -507,7 +523,8 @@
       "Lev_Capped_Pct": 0.6666666666666666,
       "Add_Fraction": 0.5,
       "Add_Zone_Pct": 0.6,
-      "Max_Additions": 3
+      "Max_Additions": 3,
+      "Lot_Size": 1.0
     },
     "oos_metrics": {
       "CAGR": 0.12512959886475872,
@@ -531,7 +548,8 @@
       "Lev_Capped_Pct": 1.0,
       "Add_Fraction": 0.5,
       "Add_Zone_Pct": 0.6,
-      "Max_Additions": 3
+      "Max_Additions": 3,
+      "Lot_Size": 1.0
     },
     "is_cagr": -0.024513173673447852,
     "oos_cagr": 0.12512959886475872,
@@ -567,7 +585,8 @@
       "Lev_Capped_Pct": 0.625,
       "Add_Fraction": 0.5,
       "Add_Zone_Pct": 0.6,
-      "Max_Additions": 3
+      "Max_Additions": 3,
+      "Lot_Size": 1.0
     },
     "oos_metrics": {
       "CAGR": 0.16037029013888082,
@@ -591,7 +610,8 @@
       "Lev_Capped_Pct": 0.5,
       "Add_Fraction": 0.5,
       "Add_Zone_Pct": 0.6,
-      "Max_Additions": 3
+      "Max_Additions": 3,
+      "Lot_Size": 1.0
     },
     "is_cagr": 0.037743347445607256,
     "oos_cagr": 0.16037029013888082,
@@ -627,7 +647,8 @@
       "Lev_Capped_Pct": 0.3333333333333333,
       "Add_Fraction": 0.5,
       "Add_Zone_Pct": 0.6,
-      "Max_Additions": 3
+      "Max_Additions": 3,
+      "Lot_Size": 1.0
     },
     "oos_metrics": {
       "CAGR": 0.0,
@@ -651,7 +672,8 @@
       "Lev_Capped_Pct": 0,
       "Add_Fraction": 0.5,
       "Add_Zone_Pct": 0.6,
-      "Max_Additions": 3
+      "Max_Additions": 3,
+      "Lot_Size": 1.0
     },
     "is_cagr": 0.5858149940850355,
     "oos_cagr": 0.0,

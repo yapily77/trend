@@ -17,6 +17,13 @@ CACHE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..',
 FRED_SERIES = {
     "USDJPY": "DEXJPUS",   # Japanese Yen to One U.S. Dollar (Daily)
     "GOLD":  "GOLDPMGBD228NLBM",  # Gold Fixing Price (3PM London), USD/oz
+    "EURUSD": "DEXUSEU",  # Euro to One U.S. Dollar
+    "GBPUSD": "DEXUSUK",  # British Pound to One U.S. Dollar
+    "AUDUSD": "DEXUSAL",  # Australian Dollar to One U.S. Dollar
+    "CADUSD": "DEXUSCA",  # Canadian Dollar to One U.S. Dollar
+    "NZDUSD": "DEXUSNZ",  # New Zealand Dollar to One U.S. Dollar
+    "CHFUSD": "DEXUSCH",  # Swiss Franc to One U.S. Dollar
+    "SGDUSD": "DEXSPAG",  # Singapore Dollar to One U.S. Dollar
 }
 
 YF_TICKERS = {

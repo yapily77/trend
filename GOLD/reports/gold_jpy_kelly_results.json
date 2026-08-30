@@ -1,5 +1,5 @@
 {
-  "strategy": "MA200 Half-Kelly + 3xATR Stop + Dynamic Scale-In (Gold/JPY)",
+  "strategy": "MA200 Half-Kelly + ATR Stop + Dynamic Scale-In (Gold/JPY)",
   "half_kelly": 0.0781,
   "atr_period": 14,
   "atr_mult": 3.0,
@@ -7,6 +7,7 @@
   "add_fraction": 0.5,
   "add_zone_pct": 0.6,
   "max_additions": 3,
+  "lot_size": 1.0,
   "metrics_baseline": {
     "CAGR": 0.14843895363040183,
     "Max_Drawdown": 0.4736855730607227,
@@ -29,7 +30,8 @@
     "Lev_Capped_Pct": 0.7797619047619048,
     "Add_Fraction": 0.0,
     "Add_Zone_Pct": 0.0,
-    "Max_Additions": 0
+    "Max_Additions": 0,
+    "Lot_Size": 1.0
   },
   "metrics_scale_in": {
     "CAGR": 0.1398428349936005,
@@ -53,55 +55,8 @@
     "Lev_Capped_Pct": 0.6179245283018868,
     "Add_Fraction": 0.5,
     "Add_Zone_Pct": 0.6,
-    "Max_Additions": 3
-  },
-  "metrics_baseline_regime": {
-    "CAGR": 0.1474587740036919,
-    "Max_Drawdown": 0.4716336583913923,
-    "Sharpe": 0.5674036063801949,
-    "Profit_Factor": 6.825834557095829,
-    "Final_Value": 203843012.77524978,
-    "Total_Trades": 127,
-    "Win_Rate": 0.3937007874015748,
-    "Avg_Win": 2776907.1312526204,
-    "Avg_Loss": 264170.84003168915,
-    "Payoff_Ratio": 10.511785217927576,
-    "Stop_Loss_Hits": 11,
-    "Signal_Exits": 115,
-    "Scale_Ins": 0,
-    "Avg_Stop_Width": 3617.0545810148587,
-    "Avg_Risk_Per_Trade": 0.05211751486950524,
-    "ATR_Period": 14,
-    "ATR_Mult": 3.0,
-    "Max_Leverage": 2.0,
-    "Lev_Capped_Pct": 0.7795275590551181,
-    "Add_Fraction": 0.0,
-    "Add_Zone_Pct": 0.0,
-    "Max_Additions": 0
-  },
-  "metrics_scale_in_regime": {
-    "CAGR": 0.18455443607155675,
-    "Max_Drawdown": 0.5313638017501016,
-    "Sharpe": 0.6024818026829717,
-    "Profit_Factor": 15.081158751982576,
-    "Final_Value": 1187892458.4853387,
-    "Total_Trades": 156,
-    "Win_Rate": 0.3141025641025641,
-    "Avg_Win": 14151038.937713176,
-    "Avg_Loss": 589461.0206217222,
-    "Payoff_Ratio": 24.006742503155934,
-    "Stop_Loss_Hits": 11,
-    "Signal_Exits": 115,
-    "Scale_Ins": 29,
-    "Avg_Stop_Width": 3617.0545810148587,
-    "Avg_Risk_Per_Trade": 0.05211751486950524,
-    "ATR_Period": 14,
-    "ATR_Mult": 3.0,
-    "Max_Leverage": 2.0,
-    "Lev_Capped_Pct": 0.6346153846153846,
-    "Add_Fraction": 0.5,
-    "Add_Zone_Pct": 0.6,
-    "Max_Additions": 3
+    "Max_Additions": 3,
+    "Lot_Size": 1.0
   },
   "folds": [
     {
@@ -132,7 +87,8 @@
         "Lev_Capped_Pct": 0.6666666666666666,
         "Add_Fraction": 0.5,
         "Add_Zone_Pct": 0.6,
-        "Max_Additions": 3
+        "Max_Additions": 3,
+        "Lot_Size": 1.0
       },
       "oos_metrics": {
         "CAGR": 0.07300374621113992,
@@ -156,7 +112,8 @@
         "Lev_Capped_Pct": 0.5,
         "Add_Fraction": 0.5,
         "Add_Zone_Pct": 0.6,
-        "Max_Additions": 3
+        "Max_Additions": 3,
+        "Lot_Size": 1.0
       },
       "is_cagr": 0.47047518494118323,
       "oos_cagr": 0.07300374621113992,
@@ -192,7 +149,8 @@
         "Lev_Capped_Pct": 0.6666666666666666,
         "Add_Fraction": 0.5,
         "Add_Zone_Pct": 0.6,
-        "Max_Additions": 3
+        "Max_Additions": 3,
+        "Lot_Size": 1.0
       },
       "oos_metrics": {
         "CAGR": 0.43831686329830655,
@@ -216,7 +174,8 @@
         "Lev_Capped_Pct": 1.0,
         "Add_Fraction": 0.5,
         "Add_Zone_Pct": 0.6,
-        "Max_Additions": 3
+        "Max_Additions": 3,
+        "Lot_Size": 1.0
       },
       "is_cagr": 0.3735276352318708,
       "oos_cagr": 0.43831686329830655,
@@ -252,7 +211,8 @@
         "Lev_Capped_Pct": 1.0,
         "Add_Fraction": 0.5,
         "Add_Zone_Pct": 0.6,
-        "Max_Additions": 3
+        "Max_Additions": 3,
+        "Lot_Size": 1.0
       },
       "oos_metrics": {
         "CAGR": -0.04823267489367833,
@@ -276,7 +236,8 @@
         "Lev_Capped_Pct": 0.5555555555555556,
         "Add_Fraction": 0.5,
         "Add_Zone_Pct": 0.6,
-        "Max_Additions": 3
+        "Max_Additions": 3,
+        "Lot_Size": 1.0
       },
       "is_cagr": 0.05259925859954073,
       "oos_cagr": -0.04823267489367833,
@@ -312,7 +273,8 @@
         "Lev_Capped_Pct": 0.625,
         "Add_Fraction": 0.5,
         "Add_Zone_Pct": 0.6,
-        "Max_Additions": 3
+        "Max_Additions": 3,
+        "Lot_Size": 1.0
       },
       "oos_metrics": {
         "CAGR": 0.0,
@@ -336,7 +298,8 @@
         "Lev_Capped_Pct": 0,
         "Add_Fraction": 0.5,
         "Add_Zone_Pct": 0.6,
-        "Max_Additions": 3
+        "Max_Additions": 3,
+        "Lot_Size": 1.0
       },
       "is_cagr": -0.02249946221332899,
       "oos_cagr": 0.0,
@@ -372,7 +335,8 @@
         "Lev_Capped_Pct": 0.8333333333333334,
         "Add_Fraction": 0.5,
         "Add_Zone_Pct": 0.6,
-        "Max_Additions": 3
+        "Max_Additions": 3,
+        "Lot_Size": 1.0
       },
       "oos_metrics": {
         "CAGR": -0.05344047989249501,
@@ -396,7 +360,8 @@
         "Lev_Capped_Pct": 1.0,
         "Add_Fraction": 0.5,
         "Add_Zone_Pct": 0.6,
-        "Max_Additions": 3
+        "Max_Additions": 3,
+        "Lot_Size": 1.0
       },
       "is_cagr": 0.06831089102756072,
       "oos_cagr": -0.05344047989249501,
@@ -432,7 +397,8 @@
         "Lev_Capped_Pct": 0.7619047619047619,
         "Add_Fraction": 0.5,
         "Add_Zone_Pct": 0.6,
-        "Max_Additions": 3
+        "Max_Additions": 3,
+        "Lot_Size": 1.0
       },
       "oos_metrics": {
         "CAGR": 0.07626911627391153,
@@ -456,7 +422,8 @@
         "Lev_Capped_Pct": 0.8,
         "Add_Fraction": 0.5,
         "Add_Zone_Pct": 0.6,
-        "Max_Additions": 3
+        "Max_Additions": 3,
+        "Lot_Size": 1.0
       },
       "is_cagr": -0.06731855854555557,
       "oos_cagr": 0.07626911627391153,
@@ -492,7 +459,8 @@
         "Lev_Capped_Pct": 0.7727272727272727,
         "Add_Fraction": 0.5,
         "Add_Zone_Pct": 0.6,
-        "Max_Additions": 3
+        "Max_Additions": 3,
+        "Lot_Size": 1.0
       },
       "oos_metrics": {
         "CAGR": 0.4035098236212238,
@@ -516,7 +484,8 @@
         "Lev_Capped_Pct": 0.2,
         "Add_Fraction": 0.5,
         "Add_Zone_Pct": 0.6,
-        "Max_Additions": 3
+        "Max_Additions": 3,
+        "Lot_Size": 1.0
       },
       "is_cagr": 0.16759452663026098,
       "oos_cagr": 0.4035098236212238,
@@ -552,7 +521,8 @@
         "Lev_Capped_Pct": 0.2222222222222222,
         "Add_Fraction": 0.5,
         "Add_Zone_Pct": 0.6,
-        "Max_Additions": 3
+        "Max_Additions": 3,
+        "Lot_Size": 1.0
       },
       "oos_metrics": {
         "CAGR": 0.18273070902619093,
@@ -576,7 +546,8 @@
         "Lev_Capped_Pct": 0.8,
         "Add_Fraction": 0.5,
         "Add_Zone_Pct": 0.6,
-        "Max_Additions": 3
+        "Max_Additions": 3,
+        "Lot_Size": 1.0
       },
       "is_cagr": 0.1459918649154901,
       "oos_cagr": 0.18273070902619093,
@@ -612,7 +583,8 @@
         "Lev_Capped_Pct": 0.6666666666666666,
         "Add_Fraction": 0.5,
         "Add_Zone_Pct": 0.6,
-        "Max_Additions": 3
+        "Max_Additions": 3,
+        "Lot_Size": 1.0
       },
       "oos_metrics": {
         "CAGR": 0.12512959886475872,
@@ -636,7 +608,8 @@
         "Lev_Capped_Pct": 1.0,
         "Add_Fraction": 0.5,
         "Add_Zone_Pct": 0.6,
-        "Max_Additions": 3
+        "Max_Additions": 3,
+        "Lot_Size": 1.0
       },
       "is_cagr": -0.024513173673447852,
       "oos_cagr": 0.12512959886475872,
@@ -672,7 +645,8 @@
         "Lev_Capped_Pct": 0.625,
         "Add_Fraction": 0.5,
         "Add_Zone_Pct": 0.6,
-        "Max_Additions": 3
+        "Max_Additions": 3,
+        "Lot_Size": 1.0
       },
       "oos_metrics": {
         "CAGR": 0.16037029013888082,
@@ -696,7 +670,8 @@
         "Lev_Capped_Pct": 0.5,
         "Add_Fraction": 0.5,
         "Add_Zone_Pct": 0.6,
-        "Max_Additions": 3
+        "Max_Additions": 3,
+        "Lot_Size": 1.0
       },
       "is_cagr": 0.037743347445607256,
       "oos_cagr": 0.16037029013888082,
@@ -732,7 +707,8 @@
         "Lev_Capped_Pct": 0.3333333333333333,
         "Add_Fraction": 0.5,
         "Add_Zone_Pct": 0.6,
-        "Max_Additions": 3
+        "Max_Additions": 3,
+        "Lot_Size": 1.0
       },
       "oos_metrics": {
         "CAGR": 0.0,
@@ -756,7 +732,8 @@
         "Lev_Capped_Pct": 0,
         "Add_Fraction": 0.5,
         "Add_Zone_Pct": 0.6,
-        "Max_Additions": 3
+        "Max_Additions": 3,
+        "Lot_Size": 1.0
       },
       "is_cagr": 0.5858149940850355,
       "oos_cagr": 0.0,
