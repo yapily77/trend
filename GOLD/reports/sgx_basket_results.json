@@ -1,0 +1,87 @@
+{
+  "USDJPY": {
+    "name": "USDJPY",
+    "CAGR": 0.016453852524716872,
+    "Sharpe": 0.19655860902977845,
+    "Max_Drawdown": 0.6019666258716654,
+    "n_bars": 13889,
+    "start": "1971-01-04",
+    "end": "2026-06-01",
+    "legs": [
+      "USDJPY"
+    ],
+    "legs_count": 1
+  },
+  "GBPUSD": {
+    "name": "GBPUSD",
+    "CAGR": 0.006224608117384234,
+    "Sharpe": 0.11177384222421073,
+    "Max_Drawdown": 0.5441388997249783,
+    "n_bars": 13895,
+    "start": "1971-01-04",
+    "end": "2026-06-01",
+    "legs": [
+      "GBPUSD"
+    ],
+    "legs_count": 1
+  },
+  "USDJPY+GBPUSD": {
+    "name": "USDJPY + GBPUSD",
+    "CAGR": 0.024781374347851548,
+    "Sharpe": 0.1871897649722689,
+    "Max_Drawdown": 0.3641539367953186,
+    "n_bars": 13889,
+    "start": "1971-01-04",
+    "end": "2026-06-01",
+    "legs": [
+      "USDJPY",
+      "GBPUSD"
+    ],
+    "legs_count": 2
+  },
+  "USDJPY+AUDUSD": {
+    "name": "USDJPY + AUDUSD",
+    "CAGR": 0.022305081027005125,
+    "Sharpe": 0.14952742015905454,
+    "Max_Drawdown": 0.35206877153644534,
+    "n_bars": 13882,
+    "start": "1971-01-04",
+    "end": "2026-06-01",
+    "legs": [
+      "USDJPY",
+      "AUDUSD"
+    ],
+    "legs_count": 2
+  },
+  "USDJPY+GBPUSD+AUDUSD": {
+    "name": "USDJPY + GBPUSD + AUDUSD",
+    "CAGR": 0.028683985085340424,
+    "Sharpe": 0.15052448987698513,
+    "Max_Drawdown": 0.2824624186952663,
+    "n_bars": 13882,
+    "start": "1971-01-04",
+    "end": "2026-06-01",
+    "legs": [
+      "USDJPY",
+      "GBPUSD",
+      "AUDUSD"
+    ],
+    "legs_count": 3
+  },
+  "USDJPY+GBPUSD+AUDUSD+NZDUSD": {
+    "name": "USDJPY + GBPUSD + AUDUSD + NZDUSD",
+    "CAGR": 0.032096566660480885,
+    "Sharpe": 0.1253668014813598,
+    "Max_Drawdown": 0.3508722143648572,
+    "n_bars": 13873,
+    "start": "1971-01-04",
+    "end": "2026-06-01",
+    "legs": [
+      "USDJPY",
+      "GBPUSD",
+      "AUDUSD",
+      "NZDUSD"
+    ],
+    "legs_count": 4
+  }
+}

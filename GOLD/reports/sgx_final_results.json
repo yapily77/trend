@@ -1,0 +1,97 @@
+{
+  "ATR_1.0": {
+    "CAGR": 0.11415027134778688,
+    "Sharpe": 0.68860078571784,
+    "Max_Drawdown": -0.4347696061158778,
+    "Trades": 168
+  },
+  "ATR_1.5": {
+    "CAGR": 0.10798174750301537,
+    "Sharpe": 0.6448963100342968,
+    "Max_Drawdown": -0.4330547462536234,
+    "Trades": 168
+  },
+  "ATR_2.0": {
+    "CAGR": 0.10639948729960325,
+    "Sharpe": 0.6335226005417295,
+    "Max_Drawdown": -0.46494003669671374,
+    "Trades": 168
+  },
+  "ATR_2.5": {
+    "CAGR": 0.12757530947093354,
+    "Sharpe": 0.7131315140838497,
+    "Max_Drawdown": -0.47980189743613066,
+    "Trades": 168
+  },
+  "ATR_3.0": {
+    "CAGR": 0.14503865858620202,
+    "Sharpe": 0.7923204280017343,
+    "Max_Drawdown": -0.4874738369567456,
+    "Trades": 168
+  },
+  "ATR_3.5": {
+    "CAGR": 0.14133655840209824,
+    "Sharpe": 0.784252137544001,
+    "Max_Drawdown": -0.4910642184015501,
+    "Trades": 168
+  },
+  "ATR_4.0": {
+    "CAGR": 0.1399294034509737,
+    "Sharpe": 0.7849303670408394,
+    "Max_Drawdown": -0.48425561203887685,
+    "Trades": 168
+  },
+  "ATR_5.0": {
+    "CAGR": 0.1347932238245786,
+    "Sharpe": 0.7915398245857117,
+    "Max_Drawdown": -0.468426180284014,
+    "Trades": 168
+  },
+  "Gold/JPY + USD/JPY": {
+    "name": "Gold/JPY + USD/JPY",
+    "CAGR": 0.14506813770982818,
+    "Sharpe": 0.7396686328087616,
+    "Max_Drawdown": -0.48288230126555914,
+    "Trades": 0,
+    "Legs": [
+      "gold_jpy",
+      "USDJPY"
+    ]
+  },
+  "Gold/JPY + AUD/USD": {
+    "name": "Gold/JPY + AUD/USD",
+    "CAGR": 0.14500342473706862,
+    "Sharpe": 0.7377630904151807,
+    "Max_Drawdown": -0.48618940191448046,
+    "Trades": 0,
+    "Legs": [
+      "gold_jpy",
+      "AUDUSD"
+    ]
+  },
+  "Gold/JPY + USD/JPY + AUD/USD": {
+    "name": "Gold/JPY + USD/JPY + AUD/USD",
+    "CAGR": 0.1450330537981004,
+    "Sharpe": 0.7078631045946185,
+    "Max_Drawdown": -0.4815937862815703,
+    "Trades": 0,
+    "Legs": [
+      "gold_jpy",
+      "USDJPY",
+      "AUDUSD"
+    ]
+  },
+  "Gold/JPY + 3 FX": {
+    "name": "Gold/JPY + 3 FX",
+    "CAGR": 0.1450488179702185,
+    "Sharpe": 0.6894449345860398,
+    "Max_Drawdown": -0.4795549208198729,
+    "Trades": 0,
+    "Legs": [
+      "gold_jpy",
+      "USDJPY",
+      "AUDUSD",
+      "GBPUSD"
+    ]
+  }
+}
