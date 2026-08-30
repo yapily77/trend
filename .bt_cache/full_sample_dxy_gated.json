@@ -1,0 +1,38 @@
+{
+  "gated": {
+    "cagr": 0.052988,
+    "sharpe": 0.963841,
+    "maxdd": -0.133868,
+    "profit_factor": 3.633186,
+    "total_trades": 216,
+    "final_value": 1746677.61,
+    "is_full_sample": true,
+    "description": "MA200 + DXY<200MA gate + Half-Kelly(0.0781) + 3xATR trailing stop, prior-close timing, full sample 1971-2026"
+  },
+  "ungated": {
+    "cagr": 0.056964,
+    "sharpe": 1.037866,
+    "maxdd": -0.110386,
+    "profit_factor": 5.839438,
+    "total_trades": 168,
+    "final_value": 2152177.74,
+    "is_full_sample": true,
+    "description": "MA200 only (no DXY filter), Half-Kelly(0.0781) + 3xATR trailing stop, prior-close timing, full sample 1971-2026"
+  },
+  "config": {
+    "capital": 100000.0,
+    "risk_pct": 0.0781,
+    "slip_pips": 2.0,
+    "commission_pct": 2e-05,
+    "atr_mult": 3.0,
+    "ma_period": 200,
+    "pip_value": 0.01,
+    "ticker": "gold_jpy",
+    "signal_shift": 1,
+    "date_range": [
+      "1971-01-04",
+      "2026-05-29"
+    ],
+    "n_bars": 13836
+  }
+}
