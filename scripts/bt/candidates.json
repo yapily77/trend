@@ -1,0 +1,1176 @@
+[
+  {
+    "id": "DONCHIAN_BREAKOUT_10_USDJPY_SIGNAL-FLAT_HALFKELLY_ADX25",
+    "market": "USDJPY=X",
+    "entry_rule": "Donchian breakout",
+    "entry_params": {
+      "period": 10
+    },
+    "exit_rule": "signal-flat",
+    "exit_params": {},
+    "lookback": 10,
+    "sizing": "half_kelly",
+    "filters": [
+      "ADX > 25"
+    ],
+    "strategy_class": "DonchianBreakout"
+  },
+  {
+    "id": "DONCHIAN_BREAKOUT_10_USDJPY_3X_ATR_TRAILING_HALFKELLY_ADX25",
+    "market": "USDJPY=X",
+    "entry_rule": "Donchian breakout",
+    "entry_params": {
+      "period": 10
+    },
+    "exit_rule": "3x ATR trailing",
+    "exit_params": {
+      "atr_mult": 3
+    },
+    "lookback": 10,
+    "sizing": "half_kelly",
+    "filters": [
+      "ADX > 25"
+    ],
+    "strategy_class": "DonchianBreakout"
+  },
+  {
+    "id": "DONCHIAN_BREAKOUT_10_EURUSD_SIGNAL-FLAT_HALFKELLY_ER30",
+    "market": "EURUSD=X",
+    "entry_rule": "Donchian breakout",
+    "entry_params": {
+      "period": 10
+    },
+    "exit_rule": "signal-flat",
+    "exit_params": {},
+    "lookback": 10,
+    "sizing": "half_kelly",
+    "filters": [
+      "ER > 0.3"
+    ],
+    "strategy_class": "DonchianBreakout"
+  },
+  {
+    "id": "DONCHIAN_BREAKOUT_10_EURUSD_3X_ATR_TRAILING_HALFKELLY_ER30",
+    "market": "EURUSD=X",
+    "entry_rule": "Donchian breakout",
+    "entry_params": {
+      "period": 10
+    },
+    "exit_rule": "3x ATR trailing",
+    "exit_params": {
+      "atr_mult": 3
+    },
+    "lookback": 10,
+    "sizing": "half_kelly",
+    "filters": [
+      "ER > 0.3"
+    ],
+    "strategy_class": "DonchianBreakout"
+  },
+  {
+    "id": "DONCHIAN_BREAKOUT_10_GBPUSD_SIGNAL-FLAT_HALFKELLY_ADX25",
+    "market": "GBPUSD=X",
+    "entry_rule": "Donchian breakout",
+    "entry_params": {
+      "period": 10
+    },
+    "exit_rule": "signal-flat",
+    "exit_params": {},
+    "lookback": 10,
+    "sizing": "half_kelly",
+    "filters": [
+      "ADX > 25"
+    ],
+    "strategy_class": "DonchianBreakout"
+  },
+  {
+    "id": "DONCHIAN_BREAKOUT_10_GBPUSD_3X_ATR_TRAILING_HALFKELLY_ADX25",
+    "market": "GBPUSD=X",
+    "entry_rule": "Donchian breakout",
+    "entry_params": {
+      "period": 10
+    },
+    "exit_rule": "3x ATR trailing",
+    "exit_params": {
+      "atr_mult": 3
+    },
+    "lookback": 10,
+    "sizing": "half_kelly",
+    "filters": [
+      "ADX > 25"
+    ],
+    "strategy_class": "DonchianBreakout"
+  },
+  {
+    "id": "DONCHIAN_BREAKOUT_20_USDJPY_SIGNAL-FLAT_QUARTERKELLY_ADX25",
+    "market": "USDJPY=X",
+    "entry_rule": "Donchian breakout",
+    "entry_params": {
+      "period": 20
+    },
+    "exit_rule": "signal-flat",
+    "exit_params": {},
+    "lookback": 20,
+    "sizing": "quarter_kelly",
+    "filters": [
+      "ADX > 25"
+    ],
+    "strategy_class": "DonchianBreakout"
+  },
+  {
+    "id": "DONCHIAN_BREAKOUT_20_USDJPY_3X_ATR_TRAILING_QUARTERKELLY_ADX25",
+    "market": "USDJPY=X",
+    "entry_rule": "Donchian breakout",
+    "entry_params": {
+      "period": 20
+    },
+    "exit_rule": "3x ATR trailing",
+    "exit_params": {
+      "atr_mult": 3
+    },
+    "lookback": 20,
+    "sizing": "quarter_kelly",
+    "filters": [
+      "ADX > 25"
+    ],
+    "strategy_class": "DonchianBreakout"
+  },
+  {
+    "id": "DONCHIAN_BREAKOUT_20_EURUSD_SIGNAL-FLAT_QUARTERKELLY_ER30",
+    "market": "EURUSD=X",
+    "entry_rule": "Donchian breakout",
+    "entry_params": {
+      "period": 20
+    },
+    "exit_rule": "signal-flat",
+    "exit_params": {},
+    "lookback": 20,
+    "sizing": "quarter_kelly",
+    "filters": [
+      "ER > 0.3"
+    ],
+    "strategy_class": "DonchianBreakout"
+  },
+  {
+    "id": "DONCHIAN_BREAKOUT_20_EURUSD_3X_ATR_TRAILING_QUARTERKELLY_ER30",
+    "market": "EURUSD=X",
+    "entry_rule": "Donchian breakout",
+    "entry_params": {
+      "period": 20
+    },
+    "exit_rule": "3x ATR trailing",
+    "exit_params": {
+      "atr_mult": 3
+    },
+    "lookback": 20,
+    "sizing": "quarter_kelly",
+    "filters": [
+      "ER > 0.3"
+    ],
+    "strategy_class": "DonchianBreakout"
+  },
+  {
+    "id": "DONCHIAN_BREAKOUT_20_GBPUSD_SIGNAL-FLAT_QUARTERKELLY_ADX25",
+    "market": "GBPUSD=X",
+    "entry_rule": "Donchian breakout",
+    "entry_params": {
+      "period": 20
+    },
+    "exit_rule": "signal-flat",
+    "exit_params": {},
+    "lookback": 20,
+    "sizing": "quarter_kelly",
+    "filters": [
+      "ADX > 25"
+    ],
+    "strategy_class": "DonchianBreakout"
+  },
+  {
+    "id": "DONCHIAN_BREAKOUT_20_GBPUSD_3X_ATR_TRAILING_QUARTERKELLY_ADX25",
+    "market": "GBPUSD=X",
+    "entry_rule": "Donchian breakout",
+    "entry_params": {
+      "period": 20
+    },
+    "exit_rule": "3x ATR trailing",
+    "exit_params": {
+      "atr_mult": 3
+    },
+    "lookback": 20,
+    "sizing": "quarter_kelly",
+    "filters": [
+      "ADX > 25"
+    ],
+    "strategy_class": "DonchianBreakout"
+  },
+  {
+    "id": "DONCHIAN_BREAKOUT_50_USDJPY_SIGNAL-FLAT_HALFKELLY_ADX25",
+    "market": "USDJPY=X",
+    "entry_rule": "Donchian breakout",
+    "entry_params": {
+      "period": 50
+    },
+    "exit_rule": "signal-flat",
+    "exit_params": {},
+    "lookback": 50,
+    "sizing": "half_kelly",
+    "filters": [
+      "ADX > 25"
+    ],
+    "strategy_class": "DonchianBreakout"
+  },
+  {
+    "id": "DONCHIAN_BREAKOUT_50_USDJPY_3X_ATR_TRAILING_HALFKELLY_ADX25",
+    "market": "USDJPY=X",
+    "entry_rule": "Donchian breakout",
+    "entry_params": {
+      "period": 50
+    },
+    "exit_rule": "3x ATR trailing",
+    "exit_params": {
+      "atr_mult": 3
+    },
+    "lookback": 50,
+    "sizing": "half_kelly",
+    "filters": [
+      "ADX > 25"
+    ],
+    "strategy_class": "DonchianBreakout"
+  },
+  {
+    "id": "DONCHIAN_BREAKOUT_50_EURUSD_SIGNAL-FLAT_HALFKELLY_ER30",
+    "market": "EURUSD=X",
+    "entry_rule": "Donchian breakout",
+    "entry_params": {
+      "period": 50
+    },
+    "exit_rule": "signal-flat",
+    "exit_params": {},
+    "lookback": 50,
+    "sizing": "half_kelly",
+    "filters": [
+      "ER > 0.3"
+    ],
+    "strategy_class": "DonchianBreakout"
+  },
+  {
+    "id": "DONCHIAN_BREAKOUT_50_EURUSD_3X_ATR_TRAILING_HALFKELLY_ER30",
+    "market": "EURUSD=X",
+    "entry_rule": "Donchian breakout",
+    "entry_params": {
+      "period": 50
+    },
+    "exit_rule": "3x ATR trailing",
+    "exit_params": {
+      "atr_mult": 3
+    },
+    "lookback": 50,
+    "sizing": "half_kelly",
+    "filters": [
+      "ER > 0.3"
+    ],
+    "strategy_class": "DonchianBreakout"
+  },
+  {
+    "id": "DONCHIAN_BREAKOUT_50_GBPUSD_SIGNAL-FLAT_HALFKELLY_ADX25",
+    "market": "GBPUSD=X",
+    "entry_rule": "Donchian breakout",
+    "entry_params": {
+      "period": 50
+    },
+    "exit_rule": "signal-flat",
+    "exit_params": {},
+    "lookback": 50,
+    "sizing": "half_kelly",
+    "filters": [
+      "ADX > 25"
+    ],
+    "strategy_class": "DonchianBreakout"
+  },
+  {
+    "id": "DONCHIAN_BREAKOUT_50_GBPUSD_3X_ATR_TRAILING_HALFKELLY_ADX25",
+    "market": "GBPUSD=X",
+    "entry_rule": "Donchian breakout",
+    "entry_params": {
+      "period": 50
+    },
+    "exit_rule": "3x ATR trailing",
+    "exit_params": {
+      "atr_mult": 3
+    },
+    "lookback": 50,
+    "sizing": "half_kelly",
+    "filters": [
+      "ADX > 25"
+    ],
+    "strategy_class": "DonchianBreakout"
+  },
+  {
+    "id": "DONCHIAN_BREAKOUT_100_USDJPY_SIGNAL-FLAT_QUARTERKELLY_ADX25",
+    "market": "USDJPY=X",
+    "entry_rule": "Donchian breakout",
+    "entry_params": {
+      "period": 100
+    },
+    "exit_rule": "signal-flat",
+    "exit_params": {},
+    "lookback": 100,
+    "sizing": "quarter_kelly",
+    "filters": [
+      "ADX > 25"
+    ],
+    "strategy_class": "DonchianBreakout"
+  },
+  {
+    "id": "DONCHIAN_BREAKOUT_100_USDJPY_3X_ATR_TRAILING_QUARTERKELLY_ADX25",
+    "market": "USDJPY=X",
+    "entry_rule": "Donchian breakout",
+    "entry_params": {
+      "period": 100
+    },
+    "exit_rule": "3x ATR trailing",
+    "exit_params": {
+      "atr_mult": 3
+    },
+    "lookback": 100,
+    "sizing": "quarter_kelly",
+    "filters": [
+      "ADX > 25"
+    ],
+    "strategy_class": "DonchianBreakout"
+  },
+  {
+    "id": "DONCHIAN_BREAKOUT_100_EURUSD_SIGNAL-FLAT_QUARTERKELLY_ER30",
+    "market": "EURUSD=X",
+    "entry_rule": "Donchian breakout",
+    "entry_params": {
+      "period": 100
+    },
+    "exit_rule": "signal-flat",
+    "exit_params": {},
+    "lookback": 100,
+    "sizing": "quarter_kelly",
+    "filters": [
+      "ER > 0.3"
+    ],
+    "strategy_class": "DonchianBreakout"
+  },
+  {
+    "id": "DONCHIAN_BREAKOUT_100_EURUSD_3X_ATR_TRAILING_QUARTERKELLY_ER30",
+    "market": "EURUSD=X",
+    "entry_rule": "Donchian breakout",
+    "entry_params": {
+      "period": 100
+    },
+    "exit_rule": "3x ATR trailing",
+    "exit_params": {
+      "atr_mult": 3
+    },
+    "lookback": 100,
+    "sizing": "quarter_kelly",
+    "filters": [
+      "ER > 0.3"
+    ],
+    "strategy_class": "DonchianBreakout"
+  },
+  {
+    "id": "DONCHIAN_BREAKOUT_100_GBPUSD_SIGNAL-FLAT_QUARTERKELLY_ADX25",
+    "market": "GBPUSD=X",
+    "entry_rule": "Donchian breakout",
+    "entry_params": {
+      "period": 100
+    },
+    "exit_rule": "signal-flat",
+    "exit_params": {},
+    "lookback": 100,
+    "sizing": "quarter_kelly",
+    "filters": [
+      "ADX > 25"
+    ],
+    "strategy_class": "DonchianBreakout"
+  },
+  {
+    "id": "DONCHIAN_BREAKOUT_100_GBPUSD_3X_ATR_TRAILING_QUARTERKELLY_ADX25",
+    "market": "GBPUSD=X",
+    "entry_rule": "Donchian breakout",
+    "entry_params": {
+      "period": 100
+    },
+    "exit_rule": "3x ATR trailing",
+    "exit_params": {
+      "atr_mult": 3
+    },
+    "lookback": 100,
+    "sizing": "quarter_kelly",
+    "filters": [
+      "ADX > 25"
+    ],
+    "strategy_class": "DonchianBreakout"
+  },
+  {
+    "id": "DONCHIAN_BREAKOUT_200_USDJPY_SIGNAL-FLAT_HALFKELLY_ADX25",
+    "market": "USDJPY=X",
+    "entry_rule": "Donchian breakout",
+    "entry_params": {
+      "period": 200
+    },
+    "exit_rule": "signal-flat",
+    "exit_params": {},
+    "lookback": 200,
+    "sizing": "half_kelly",
+    "filters": [
+      "ADX > 25"
+    ],
+    "strategy_class": "DonchianBreakout"
+  },
+  {
+    "id": "DONCHIAN_BREAKOUT_200_USDJPY_3X_ATR_TRAILING_HALFKELLY_ADX25",
+    "market": "USDJPY=X",
+    "entry_rule": "Donchian breakout",
+    "entry_params": {
+      "period": 200
+    },
+    "exit_rule": "3x ATR trailing",
+    "exit_params": {
+      "atr_mult": 3
+    },
+    "lookback": 200,
+    "sizing": "half_kelly",
+    "filters": [
+      "ADX > 25"
+    ],
+    "strategy_class": "DonchianBreakout"
+  },
+  {
+    "id": "DONCHIAN_BREAKOUT_200_EURUSD_SIGNAL-FLAT_HALFKELLY_ER30",
+    "market": "EURUSD=X",
+    "entry_rule": "Donchian breakout",
+    "entry_params": {
+      "period": 200
+    },
+    "exit_rule": "signal-flat",
+    "exit_params": {},
+    "lookback": 200,
+    "sizing": "half_kelly",
+    "filters": [
+      "ER > 0.3"
+    ],
+    "strategy_class": "DonchianBreakout"
+  },
+  {
+    "id": "DONCHIAN_BREAKOUT_200_EURUSD_3X_ATR_TRAILING_HALFKELLY_ER30",
+    "market": "EURUSD=X",
+    "entry_rule": "Donchian breakout",
+    "entry_params": {
+      "period": 200
+    },
+    "exit_rule": "3x ATR trailing",
+    "exit_params": {
+      "atr_mult": 3
+    },
+    "lookback": 200,
+    "sizing": "half_kelly",
+    "filters": [
+      "ER > 0.3"
+    ],
+    "strategy_class": "DonchianBreakout"
+  },
+  {
+    "id": "DONCHIAN_BREAKOUT_200_GBPUSD_SIGNAL-FLAT_HALFKELLY_ADX25",
+    "market": "GBPUSD=X",
+    "entry_rule": "Donchian breakout",
+    "entry_params": {
+      "period": 200
+    },
+    "exit_rule": "signal-flat",
+    "exit_params": {},
+    "lookback": 200,
+    "sizing": "half_kelly",
+    "filters": [
+      "ADX > 25"
+    ],
+    "strategy_class": "DonchianBreakout"
+  },
+  {
+    "id": "DONCHIAN_BREAKOUT_200_GBPUSD_3X_ATR_TRAILING_HALFKELLY_ADX25",
+    "market": "GBPUSD=X",
+    "entry_rule": "Donchian breakout",
+    "entry_params": {
+      "period": 200
+    },
+    "exit_rule": "3x ATR trailing",
+    "exit_params": {
+      "atr_mult": 3
+    },
+    "lookback": 200,
+    "sizing": "half_kelly",
+    "filters": [
+      "ADX > 25"
+    ],
+    "strategy_class": "DonchianBreakout"
+  },
+  {
+    "id": "MA_CROSSOVER_10/50_AUDUSD_2X_ATR_TRAILING_EQUALVOL10PCT",
+    "market": "AUDUSD=X",
+    "entry_rule": "MA crossover",
+    "entry_params": {
+      "fast": 10,
+      "slow": 50
+    },
+    "exit_rule": "2x ATR trailing",
+    "exit_params": {
+      "atr_mult": 2
+    },
+    "lookback": 50,
+    "sizing": "equal_vol_10pct",
+    "filters": [],
+    "strategy_class": "MACrossover"
+  },
+  {
+    "id": "MA_CROSSOVER_20/50_SPY_TIME50_FIXED1PCT_MA200",
+    "market": "SPY",
+    "entry_rule": "MA crossover",
+    "entry_params": {
+      "fast": 20,
+      "slow": 50
+    },
+    "exit_rule": "time-based",
+    "exit_params": {
+      "bars": 50
+    },
+    "lookback": 50,
+    "sizing": "fixed_1pct",
+    "filters": [
+      "MA200 regime gate"
+    ],
+    "strategy_class": "MACrossover"
+  },
+  {
+    "id": "MA_CROSSOVER_50/200_QQQ_2X_ATR_TRAILING_EQUALVOL10PCT",
+    "market": "QQQ",
+    "entry_rule": "MA crossover",
+    "entry_params": {
+      "fast": 50,
+      "slow": 200
+    },
+    "exit_rule": "2x ATR trailing",
+    "exit_params": {
+      "atr_mult": 2
+    },
+    "lookback": 200,
+    "sizing": "equal_vol_10pct",
+    "filters": [],
+    "strategy_class": "MACrossover"
+  },
+  {
+    "id": "MA_CROSSOVER_10/50_GLD_TIME50_FIXED1PCT_MA200",
+    "market": "GLD",
+    "entry_rule": "MA crossover",
+    "entry_params": {
+      "fast": 10,
+      "slow": 50
+    },
+    "exit_rule": "time-based",
+    "exit_params": {
+      "bars": 50
+    },
+    "lookback": 50,
+    "sizing": "fixed_1pct",
+    "filters": [
+      "MA200 regime gate"
+    ],
+    "strategy_class": "MACrossover"
+  },
+  {
+    "id": "MA_CROSSOVER_20/50_GC=F_2X_ATR_TRAILING_EQUALVOL10PCT",
+    "market": "GC=F",
+    "entry_rule": "MA crossover",
+    "entry_params": {
+      "fast": 20,
+      "slow": 50
+    },
+    "exit_rule": "2x ATR trailing",
+    "exit_params": {
+      "atr_mult": 2
+    },
+    "lookback": 50,
+    "sizing": "equal_vol_10pct",
+    "filters": [],
+    "strategy_class": "MACrossover"
+  },
+  {
+    "id": "KAMA_SLOPE_10_USDJPY_3X_ATR_TRAILING_HALFKELLY_ER30",
+    "market": "USDJPY=X",
+    "entry_rule": "KAMA slope",
+    "entry_params": {
+      "period": 10,
+      "fast": 2,
+      "slow": 30
+    },
+    "exit_rule": "3x ATR trailing",
+    "exit_params": {
+      "atr_mult": 3
+    },
+    "lookback": 10,
+    "sizing": "half_kelly",
+    "filters": [
+      "ER > 0.3"
+    ],
+    "strategy_class": "KAMASlope"
+  },
+  {
+    "id": "KAMA_SLOPE_20_EURJPY_2X_ATR_TRAILING_EQUALVOL5PCT_DD30",
+    "market": "EURJPY=X",
+    "entry_rule": "KAMA slope",
+    "entry_params": {
+      "period": 20,
+      "fast": 2,
+      "slow": 30
+    },
+    "exit_rule": "2x ATR trailing",
+    "exit_params": {
+      "atr_mult": 2
+    },
+    "lookback": 20,
+    "sizing": "equal_vol_5pct",
+    "filters": [
+      "Drawdown gate > -30%"
+    ],
+    "strategy_class": "KAMASlope"
+  },
+  {
+    "id": "KAMA_SLOPE_30_GBPJPY_3X_ATR_TRAILING_HALFKELLY_ER30",
+    "market": "GBPJPY=X",
+    "entry_rule": "KAMA slope",
+    "entry_params": {
+      "period": 30,
+      "fast": 3,
+      "slow": 50
+    },
+    "exit_rule": "3x ATR trailing",
+    "exit_params": {
+      "atr_mult": 3
+    },
+    "lookback": 30,
+    "sizing": "half_kelly",
+    "filters": [
+      "ER > 0.3"
+    ],
+    "strategy_class": "KAMASlope"
+  },
+  {
+    "id": "KAMA_SLOPE_50_AUDJPY_2X_ATR_TRAILING_EQUALVOL5PCT_DD30",
+    "market": "AUDJPY=X",
+    "entry_rule": "KAMA slope",
+    "entry_params": {
+      "period": 50,
+      "fast": 2,
+      "slow": 50
+    },
+    "exit_rule": "2x ATR trailing",
+    "exit_params": {
+      "atr_mult": 2
+    },
+    "lookback": 50,
+    "sizing": "equal_vol_5pct",
+    "filters": [
+      "Drawdown gate > -30%"
+    ],
+    "strategy_class": "KAMASlope"
+  },
+  {
+    "id": "KAMA_SLOPE_10_NZDUSD_3X_ATR_TRAILING_HALFKELLY_ER30",
+    "market": "NZDUSD=X",
+    "entry_rule": "KAMA slope",
+    "entry_params": {
+      "period": 10,
+      "fast": 2,
+      "slow": 30
+    },
+    "exit_rule": "3x ATR trailing",
+    "exit_params": {
+      "atr_mult": 3
+    },
+    "lookback": 10,
+    "sizing": "half_kelly",
+    "filters": [
+      "ER > 0.3"
+    ],
+    "strategy_class": "KAMASlope"
+  },
+  {
+    "id": "ROC_THRESHOLD_10_CL=F_SIGNAL-FLAT_QUARTERKELLY",
+    "market": "CL=F",
+    "entry_rule": "ROC threshold",
+    "entry_params": {
+      "period": 10,
+      "threshold": 0.01
+    },
+    "exit_rule": "signal-flat",
+    "exit_params": {},
+    "lookback": 10,
+    "sizing": "quarter_kelly",
+    "filters": [],
+    "strategy_class": "ROCThreshold"
+  },
+  {
+    "id": "ROC_THRESHOLD_20_GC=F_3X_ATR_TRAILING_EQUALVOL10PCT_ADX25",
+    "market": "GC=F",
+    "entry_rule": "ROC threshold",
+    "entry_params": {
+      "period": 20,
+      "threshold": 0.02
+    },
+    "exit_rule": "3x ATR trailing",
+    "exit_params": {
+      "atr_mult": 3
+    },
+    "lookback": 20,
+    "sizing": "equal_vol_10pct",
+    "filters": [
+      "ADX > 25"
+    ],
+    "strategy_class": "ROCThreshold"
+  },
+  {
+    "id": "ROC_THRESHOLD_50_IEF_SIGNAL-FLAT_QUARTERKELLY",
+    "market": "IEF",
+    "entry_rule": "ROC threshold",
+    "entry_params": {
+      "period": 50,
+      "threshold": 0.01
+    },
+    "exit_rule": "signal-flat",
+    "exit_params": {},
+    "lookback": 50,
+    "sizing": "quarter_kelly",
+    "filters": [],
+    "strategy_class": "ROCThreshold"
+  },
+  {
+    "id": "ROC_THRESHOLD_50_VNQ_3X_ATR_TRAILING_EQUALVOL10PCT_ADX25",
+    "market": "VNQ",
+    "entry_rule": "ROC threshold",
+    "entry_params": {
+      "period": 50,
+      "threshold": 0.02
+    },
+    "exit_rule": "3x ATR trailing",
+    "exit_params": {
+      "atr_mult": 3
+    },
+    "lookback": 50,
+    "sizing": "equal_vol_10pct",
+    "filters": [
+      "ADX > 25"
+    ],
+    "strategy_class": "ROCThreshold"
+  },
+  {
+    "id": "ROC_THRESHOLD_10_O39.SI_SIGNAL-FLAT_QUARTERKELLY",
+    "market": "O39.SI",
+    "entry_rule": "ROC threshold",
+    "entry_params": {
+      "period": 10,
+      "threshold": 0.01
+    },
+    "exit_rule": "signal-flat",
+    "exit_params": {},
+    "lookback": 10,
+    "sizing": "quarter_kelly",
+    "filters": [],
+    "strategy_class": "ROCThreshold"
+  },
+  {
+    "id": "TD_SEQUENTIAL_TD_USDJPY_3X_ATR_TRAILING_HALFKELLY_ADX25",
+    "market": "USDJPY=X",
+    "entry_rule": "TD Sequential",
+    "entry_params": {
+      "setup": 9,
+      "countdown": 13
+    },
+    "exit_rule": "3x ATR trailing",
+    "exit_params": {
+      "atr_mult": 3
+    },
+    "lookback": 0,
+    "sizing": "half_kelly",
+    "filters": [
+      "ADX > 25"
+    ],
+    "strategy_class": "TDSequentialCounterTrend"
+  },
+  {
+    "id": "TD_SEQUENTIAL_TD_SPY_2X_ATR_TRAILING_QUARTERKELLY_ER30",
+    "market": "SPY",
+    "entry_rule": "TD Sequential",
+    "entry_params": {
+      "setup": 9,
+      "countdown": 13
+    },
+    "exit_rule": "2x ATR trailing",
+    "exit_params": {
+      "atr_mult": 2
+    },
+    "lookback": 0,
+    "sizing": "quarter_kelly",
+    "filters": [
+      "ER > 0.3"
+    ],
+    "strategy_class": "TDSequentialCounterTrend"
+  },
+  {
+    "id": "TD_SEQUENTIAL_TD_GLD_SIGNAL-FLAT_HALFKELLY_MA200",
+    "market": "GLD",
+    "entry_rule": "TD Sequential",
+    "entry_params": {
+      "setup": 9,
+      "countdown": 13
+    },
+    "exit_rule": "signal-flat",
+    "exit_params": {},
+    "lookback": 0,
+    "sizing": "half_kelly",
+    "filters": [
+      "MA200 regime gate"
+    ],
+    "strategy_class": "TDSequentialCounterTrend"
+  },
+  {
+    "id": "REGRESSION_CHANNEL_20_QQQ_2X_ATR_TRAILING_EQUALVOL10PCT_DD30",
+    "market": "QQQ",
+    "entry_rule": "Regression channel",
+    "entry_params": {
+      "lookback": 20
+    },
+    "exit_rule": "2x ATR trailing",
+    "exit_params": {
+      "atr_mult": 2
+    },
+    "lookback": 20,
+    "sizing": "equal_vol_10pct",
+    "filters": [
+      "Drawdown gate > -30%"
+    ],
+    "strategy_class": "RegressionChannel"
+  },
+  {
+    "id": "REGRESSION_CHANNEL_50_N225_TIME100_HALFKELLY_ER30",
+    "market": "^N225",
+    "entry_rule": "Regression channel",
+    "entry_params": {
+      "lookback": 50
+    },
+    "exit_rule": "time-based",
+    "exit_params": {
+      "bars": 100
+    },
+    "lookback": 50,
+    "sizing": "half_kelly",
+    "filters": [
+      "ER > 0.3"
+    ],
+    "strategy_class": "RegressionChannel"
+  },
+  {
+    "id": "REGRESSION_CHANNEL_100_GC=F_2X_ATR_TRAILING_EQUALVOL10PCT_DD30",
+    "market": "GC=F",
+    "entry_rule": "Regression channel",
+    "entry_params": {
+      "lookback": 100
+    },
+    "exit_rule": "2x ATR trailing",
+    "exit_params": {
+      "atr_mult": 2
+    },
+    "lookback": 100,
+    "sizing": "equal_vol_10pct",
+    "filters": [
+      "Drawdown gate > -30%"
+    ],
+    "strategy_class": "RegressionChannel"
+  },
+  {
+    "id": "DONCHIAN_BREAKOUT_20_USDJPY_OPPOSITE_DONCHIAN_CHANNEL_HALFKELLY_ADX25",
+    "market": "USDJPY=X",
+    "entry_rule": "Donchian breakout",
+    "entry_params": {
+      "period": 20
+    },
+    "exit_rule": "opposite Donchian channel",
+    "exit_params": {},
+    "lookback": 20,
+    "sizing": "half_kelly",
+    "filters": [
+      "ADX > 25"
+    ],
+    "strategy_class": "DonchianBreakout"
+  },
+  {
+    "id": "DONCHIAN_BREAKOUT_50_EURUSD_OPPOSITE_DONCHIAN_CHANNEL_HALFKELLY_ADX25",
+    "market": "EURUSD=X",
+    "entry_rule": "Donchian breakout",
+    "entry_params": {
+      "period": 50
+    },
+    "exit_rule": "opposite Donchian channel",
+    "exit_params": {},
+    "lookback": 50,
+    "sizing": "half_kelly",
+    "filters": [
+      "ADX > 25"
+    ],
+    "strategy_class": "DonchianBreakout"
+  },
+  {
+    "id": "DONCHIAN_BREAKOUT_20_AUDUSD_OPPOSITE_DONCHIAN_CHANNEL_HALFKELLY_ADX25",
+    "market": "AUDUSD=X",
+    "entry_rule": "Donchian breakout",
+    "entry_params": {
+      "period": 20
+    },
+    "exit_rule": "opposite Donchian channel",
+    "exit_params": {},
+    "lookback": 20,
+    "sizing": "half_kelly",
+    "filters": [
+      "ADX > 25"
+    ],
+    "strategy_class": "DonchianBreakout"
+  },
+  {
+    "id": "DONCHIAN_BREAKOUT_50_NZDUSD_OPPOSITE_DONCHIAN_CHANNEL_HALFKELLY_ADX25",
+    "market": "NZDUSD=X",
+    "entry_rule": "Donchian breakout",
+    "entry_params": {
+      "period": 50
+    },
+    "exit_rule": "opposite Donchian channel",
+    "exit_params": {},
+    "lookback": 50,
+    "sizing": "half_kelly",
+    "filters": [
+      "ADX > 25"
+    ],
+    "strategy_class": "DonchianBreakout"
+  },
+  {
+    "id": "DONCHIAN_BREAKOUT_20_USDCAD_OPPOSITE_DONCHIAN_CHANNEL_HALFKELLY_ADX25",
+    "market": "USDCAD=X",
+    "entry_rule": "Donchian breakout",
+    "entry_params": {
+      "period": 20
+    },
+    "exit_rule": "opposite Donchian channel",
+    "exit_params": {},
+    "lookback": 20,
+    "sizing": "half_kelly",
+    "filters": [
+      "ADX > 25"
+    ],
+    "strategy_class": "DonchianBreakout"
+  },
+  {
+    "id": "DONCHIAN_BREAKOUT_50_EURJPY_OPPOSITE_DONCHIAN_CHANNEL_HALFKELLY_ADX25",
+    "market": "EURJPY=X",
+    "entry_rule": "Donchian breakout",
+    "entry_params": {
+      "period": 50
+    },
+    "exit_rule": "opposite Donchian channel",
+    "exit_params": {},
+    "lookback": 50,
+    "sizing": "half_kelly",
+    "filters": [
+      "ADX > 25"
+    ],
+    "strategy_class": "DonchianBreakout"
+  },
+  {
+    "id": "DONCHIAN_BREAKOUT_20_GBPJPY_OPPOSITE_DONCHIAN_CHANNEL_HALFKELLY_ADX25",
+    "market": "GBPJPY=X",
+    "entry_rule": "Donchian breakout",
+    "entry_params": {
+      "period": 20
+    },
+    "exit_rule": "opposite Donchian channel",
+    "exit_params": {},
+    "lookback": 20,
+    "sizing": "half_kelly",
+    "filters": [
+      "ADX > 25"
+    ],
+    "strategy_class": "DonchianBreakout"
+  },
+  {
+    "id": "DONCHIAN_BREAKOUT_50_AUDJPY_OPPOSITE_DONCHIAN_CHANNEL_HALFKELLY_ADX25",
+    "market": "AUDJPY=X",
+    "entry_rule": "Donchian breakout",
+    "entry_params": {
+      "period": 50
+    },
+    "exit_rule": "opposite Donchian channel",
+    "exit_params": {},
+    "lookback": 50,
+    "sizing": "half_kelly",
+    "filters": [
+      "ADX > 25"
+    ],
+    "strategy_class": "DonchianBreakout"
+  },
+  {
+    "id": "DONCHIAN_BREAKOUT_20_QQQ_OPPOSITE_DONCHIAN_CHANNEL_HALFKELLY_ADX25",
+    "market": "QQQ",
+    "entry_rule": "Donchian breakout",
+    "entry_params": {
+      "period": 20
+    },
+    "exit_rule": "opposite Donchian channel",
+    "exit_params": {},
+    "lookback": 20,
+    "sizing": "half_kelly",
+    "filters": [
+      "ADX > 25"
+    ],
+    "strategy_class": "DonchianBreakout"
+  },
+  {
+    "id": "DONCHIAN_BREAKOUT_50_SPY_OPPOSITE_DONCHIAN_CHANNEL_HALFKELLY_ADX25",
+    "market": "SPY",
+    "entry_rule": "Donchian breakout",
+    "entry_params": {
+      "period": 50
+    },
+    "exit_rule": "opposite Donchian channel",
+    "exit_params": {},
+    "lookback": 50,
+    "sizing": "half_kelly",
+    "filters": [
+      "ADX > 25"
+    ],
+    "strategy_class": "DonchianBreakout"
+  },
+  {
+    "id": "DONCHIAN_BREAKOUT_20_N225_OPPOSITE_DONCHIAN_CHANNEL_HALFKELLY_ADX25",
+    "market": "^N225",
+    "entry_rule": "Donchian breakout",
+    "entry_params": {
+      "period": 20
+    },
+    "exit_rule": "opposite Donchian channel",
+    "exit_params": {},
+    "lookback": 20,
+    "sizing": "half_kelly",
+    "filters": [
+      "ADX > 25"
+    ],
+    "strategy_class": "DonchianBreakout"
+  },
+  {
+    "id": "DONCHIAN_BREAKOUT_50_GLD_OPPOSITE_DONCHIAN_CHANNEL_HALFKELLY_ADX25",
+    "market": "GLD",
+    "entry_rule": "Donchian breakout",
+    "entry_params": {
+      "period": 50
+    },
+    "exit_rule": "opposite Donchian channel",
+    "exit_params": {},
+    "lookback": 50,
+    "sizing": "half_kelly",
+    "filters": [
+      "ADX > 25"
+    ],
+    "strategy_class": "DonchianBreakout"
+  },
+  {
+    "id": "DONCHIAN_BREAKOUT_20_USDJPY_3X_ATR_TRAILING_HALFKELLY_ADX20",
+    "market": "USDJPY=X",
+    "entry_rule": "Donchian breakout",
+    "entry_params": {
+      "period": 20
+    },
+    "exit_rule": "3x ATR trailing",
+    "exit_params": {
+      "atr_mult": 3
+    },
+    "lookback": 20,
+    "sizing": "half_kelly",
+    "filters": [
+      "ADX > 20"
+    ],
+    "strategy_class": "DonchianBreakout"
+  },
+  {
+    "id": "DONCHIAN_BREAKOUT_20_EURUSD_3X_ATR_TRAILING_HALFKELLY_ADX30",
+    "market": "EURUSD=X",
+    "entry_rule": "Donchian breakout",
+    "entry_params": {
+      "period": 20
+    },
+    "exit_rule": "3x ATR trailing",
+    "exit_params": {
+      "atr_mult": 3
+    },
+    "lookback": 20,
+    "sizing": "half_kelly",
+    "filters": [
+      "ADX > 30"
+    ],
+    "strategy_class": "DonchianBreakout"
+  },
+  {
+    "id": "DONCHIAN_BREAKOUT_20_GBPUSD_3X_ATR_TRAILING_HALFKELLY_ER20",
+    "market": "GBPUSD=X",
+    "entry_rule": "Donchian breakout",
+    "entry_params": {
+      "period": 20
+    },
+    "exit_rule": "3x ATR trailing",
+    "exit_params": {
+      "atr_mult": 3
+    },
+    "lookback": 20,
+    "sizing": "half_kelly",
+    "filters": [
+      "ER > 0.2"
+    ],
+    "strategy_class": "DonchianBreakout"
+  },
+  {
+    "id": "DONCHIAN_BREAKOUT_20_SPY_3X_ATR_TRAILING_HALFKELLY_ER40",
+    "market": "SPY",
+    "entry_rule": "Donchian breakout",
+    "entry_params": {
+      "period": 20
+    },
+    "exit_rule": "3x ATR trailing",
+    "exit_params": {
+      "atr_mult": 3
+    },
+    "lookback": 20,
+    "sizing": "half_kelly",
+    "filters": [
+      "ER > 0.4"
+    ],
+    "strategy_class": "DonchianBreakout"
+  },
+  {
+    "id": "DONCHIAN_BREAKOUT_20_GLD_3X_ATR_TRAILING_HALFKELLY_ADX25_ER30",
+    "market": "GLD",
+    "entry_rule": "Donchian breakout",
+    "entry_params": {
+      "period": 20
+    },
+    "exit_rule": "3x ATR trailing",
+    "exit_params": {
+      "atr_mult": 3
+    },
+    "lookback": 20,
+    "sizing": "half_kelly",
+    "filters": [
+      "ADX > 25",
+      "ER > 0.3"
+    ],
+    "strategy_class": "DonchianBreakout"
+  }
+]
