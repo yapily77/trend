@@ -17,7 +17,9 @@ class Backtest:
         risk_pct: float = 0.01,
         slippage_pips: float = 2.0,
         commission_pct: float = 0.00002, # 0.002% IBKR approx or similar
-        ticker: str = "USDJPY=X"
+        ticker: str = "USDJPY=X",
+        signal_shift: int = 0,          # 0 = use raw signals[i] as current; 1 = shift signals by 1 (for prior-close timing when strategy does NOT internally shift)
+        precomputed_signals: pd.Series = None,  # override strategy.signals(df) when provided
     ):
         self.df = df.copy()
         self.strategy = strategy_instance
@@ -26,7 +28,9 @@ class Backtest:
         self.slippage_pips = slippage_pips
         self.commission_pct = commission_pct
         self.ticker = ticker
-        
+        self.signal_shift = signal_shift
+        self._precomputed_signals = precomputed_signals
+
         # Determine pip size (standard FX pip logic: 0.01 for JPY pairs, 0.0001 otherwise)
         if "JPY" in ticker.upper() or "JPY" in df.columns or (isinstance(ticker, str) and "JPY" in ticker):
             self.pip_value = 0.01
@@ -47,8 +51,15 @@ class Backtest:
         if len(df) == 0:
             return self._empty_results()
             
-        # Generate signals
-        df['Signal'] = self.strategy.signals(df)
+        # Generate signals (apply optional shift for prior-close timing convention)
+        if self._precomputed_signals is not None:
+            # Use precomputed signals aligned to the current df subset
+            sig = self._precomputed_signals.reindex(df.index)
+        else:
+            sig = self.strategy.signals(df)
+        if self.signal_shift:
+            sig = sig.shift(self.signal_shift)
+        df['Signal'] = sig
         
         # Simulation arrays
         equity = np.zeros(len(df))

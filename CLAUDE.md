@@ -74,4 +74,18 @@ _Add a brief overview of your project architecture_
 
 ## Conventions & Patterns
 
-_Add your project-specific conventions here_
+### The plan must funnel toward a tradeable strategy — not produce academic structure
+The user's goal is simple: "find me a trend following strategy I can trade and make money." Every phase of the ultracode funnel (Scout→Design→Evaluate→Synthesize, or the 6-stage funnel-down) must converge on **one or a few concrete, backtest-validated trend-following strategies the user can actually deploy**. The deliverable is not a theoretical portfolio plan or a structured JSON with 21 candidates — it is a clear answer to "what should I trade, with what rules, on what capital, with what risk?"
+
+### Experience markets = edge evidence, not product constraints
+The user's experience in XAU/SiMSCI/A50/FX is evidence of where they have demonstrated edge (regime shifts, parabolic moves, structural breaks). It EXPANDS the strategy universe, not constrains it. When data is missing for a market the user trades (e.g., no SiMSCI/A50 backtest data), flag it as a research gap to source — do NOT proxy with N225 and move on. The user explicitly corrected: "I say I have experience doesn't mean i only want to trade these product."
+
+### Agent role: ORCHESTRATOR, NOT CODER (standing instruction)
+**The agent's job is to DELIVER A PLAN to make money — NOT to run scripts, write backtests, or report results.** Running scripts and producing backtest output is the job of SUBAGENTS. The agent orchestrates via ultracode fan-out, synthesizes subagent outputs into a decision, and delivers the plan. The agent must NOT lose context in reading/analysis loops. If you catch yourself writing or running scripts directly, STOP — dispatch a subagent instead. The goal is always: what should I trade, with what rules, on what capital, with what risk?
+
+### Ultracode workflow conventions
+- Workflow script body is plain JS (NOT TypeScript) — no type annotations
+- `agent()` calls use template literals for multi-line prompts; return raw text JSON when no schema
+- `meta` must be a PURE LITERAL — no variables, function calls, spreads
+- `bd remember` for persistent knowledge — do NOT use MEMORY.md files
+- When data gaps block the funnel, source the data rather than substituting proxies

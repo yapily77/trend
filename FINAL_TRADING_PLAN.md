@@ -24,14 +24,15 @@ This plan is built on the strongest evidence available, with the validation land
 
 **Ground truth (full-history backtests, not walkforward):**
 - **GC=F MA200 (ungated): ~9.5% CAGR / 33.6% DD** — full-sample ground truth on COMEX gold futures (DXY-gated variant FAILS OOS, removed). [Source: scripts/bt/cross_asset_scan.py]
-- **Gold/JPY cross MA200+HK+3xATR (ungated): ~5.7% CAGR, Sharpe 1.04, MaxDD -11%** — full-sample ground truth on Gold/JPY FX cross, ATR(14), 1971-2026. [Source: scripts/bt/full_sample_dxy_gated.py]
-- **Gold/JPY cross MA200+HK+3xATR (DXY-gated): ~5.3% CAGR, Sharpe 0.96, MaxDD -13%** — gated variant adds DXY<200MA filter. [Same source]
+- **Gold/JPY cross MA200+HK+3xATR (ungated, ATR14): 5.70% CAGR, Sharpe 1.04, MaxDD -11.0%** — full-sample ground truth on Gold/JPY FX cross, ATR(14), 1971-2026. [Source: scripts/bt/full_sample_dxy_gated.py]
+- **Gold/JPY cross MA200+HK+3xATR (DXY-gated): 5.30% CAGR, Sharpe 0.96, MaxDD -13.4%** — gated variant adds DXY<200MA filter. [Same source]
 - **Correction (2026-08-30):** Original "5.78% ground truth" used ATR(200) instead of ATR(14) — `/tmp/dxy_fullsample.py` (now `scripts/bt/full_sample_dxy_gated.py`) passed `period=MA_PERIOD(200)` to `calculate_atr`, but the column was named "ATR_14" and the plan documented ATR(14). Fixed to `period=14`; corrected Gold/JPY: 5.70% CAGR (was 5.78%), Sharpe 1.04 (was 1.03), MaxDD -11% (was -18%).
+- **ATR period note:** The trailing stop uses ATR(14). ATR(14) produces tighter, faster-reacting stops than ATR(200). Full-sample: ATR(14) MaxDD -11.0% vs ATR(200) MaxDD -18.1% (much better). However, the OOS holdout for the gated (DXY-filtered) strategy shows the gate fails regardless of ATR period (OOS CAGR -1.50% with ATR14 vs +3.04% with ATR200). The walk-forward validation uses ATR(14) and is the authoritative OOS test for the ungated strategy.
 
 **User's proven edge:**
 - Gold short 5040→4130 (~9K SGD profit). Parabolic detection skill demonstrated live.
 
-**Conclusion:** The formal walkforward found 0 passing combos (FX and gold/JPY). But three independent evidence streams converge: (a) ungated MA200+HK+3xATR gold/JPY ground truth (5.70% CAGR, Sharpe 1.04, MaxDD -11% — ATR(14), full sample 1971-2026), (b) SPY/MA200_HK walkforward passing combo (10.79% CAGR, Sharpe 0.656), (c) the user's own live track record (gold 5040→4130). **The DXY regime gate is DEAD — it fails catastrophically OOS (CAGR 3.04%, MaxDD -56%, PF 1.31). Removed from the plan.** The plan builds on the surviving evidence while being transparent about walkforward limitations.
+**Conclusion:** The formal walkforward found 0 passing combos (FX and gold/JPY). But three independent evidence streams converge: (a) ungated MA200+HK+3xATR gold/JPY ground truth (5.70% CAGR, Sharpe 1.04, MaxDD -11.0% — ATR(14), full sample 1971-2026), (b) SPY/MA200_HK walkforward passing combo (10.79% CAGR, Sharpe 0.656), (c) the user's own live track record (gold 5040→4130). **The DXY regime gate is DEAD — it fails catastrophically OOS (CAGR -1.50%, MaxDD -75.4%, PF 0.90 with ATR14; +3.04% CAGR, MaxDD -56%, PF 1.31 with ATR200). Removed from the plan.** The plan builds on the surviving evidence while being transparent about walkforward limitations.
 
 ---
 
@@ -65,8 +66,8 @@ This plan is built on the strongest evidence available, with the validation land
 - **Sizing:** Half-Kelly: f*/2 = 0.0781 per trade (f* = 0.15625). Cap at 2× gross leverage. Units = (equity × 0.0781) / (3 × ATR(14) × point_value). GC=F point value = $100/oz per 1-point move (verify IBKR contract spec).
 - **Risk per trade:** 0.75% equity.
 - **Filter:** ADX(14) > 20; MA200 slope positive. Skip if ATR > 2× 50-day median.
-- **Ground truth:** GC=F MA200_HK baseline ~9.5% CAGR / 33.6% DD (ungated, COMEX futures — separate instrument from Gold/JPY cross). DXY-gated variant FAILS OOS (CAGR 3.04%, MaxDD -56%) — removed. Gold/JPY cross MA200+HK+3xATR ground truth: ~5.7% CAGR, Sharpe 1.04, MaxDD -11% (ATR(14), full sample).
-- **Walkforward:** MA200 on Gold_JPY: OOS Sharpe 0.09–0.19, 7/23 folds passing, PF 4.5–6.3, DD 18–94% depending on sizing. Does NOT clear formal 0.4 Sharpe threshold but shows strong PF and low DD at conservative sizing.
+- **Ground truth:** GC=F MA200_HK baseline ~9.5% CAGR / 33.6% DD (ungated, COMEX futures — separate instrument from Gold/JPY cross). Gold/JPY cross MA200+HK+3xATR ground truth: 5.70% CAGR, Sharpe 1.04, MaxDD -11.0% (ATR(14), full sample 1971-2026). DXY-gated variant FAILS OOS on Gold/JPY (CAGR -1.50% with ATR14 vs +3.04% with ATR200) — removed.
+- **Walkforward:** MA200+HK+3xATR(14) on Gold_JPY: OOS Sharpe 0.09–0.19, 7/23 folds passing, PF 4.5–6.3, DD 18–94% depending on sizing. Does NOT clear formal 0.4 Sharpe threshold but shows strong PF and low DD at conservative sizing.
 - **Status:** GROUND-TRUTH + USER-PROVEN-STYLE
 
 ### S2 — Parabolic/RSI-Divergence Contrarian Fade (User Edge)
@@ -150,6 +151,7 @@ This plan is built on the strongest evidence available, with the validation land
 - **Entry:** Daily close > MA200. Confirm ADX(14) > 20. Enter on next open.
 - **Sizing:** Half-Kelly: units = (equity × 0.0781) / (3 × ATR(14) × point_value). GC=F point value = $100/oz per 1-point move (verify IBKR contract spec).
 - **Exit:** 3×ATR(14) trailing from highest close. Hard exit on close < MA200 (regime flip).
+- **ATR period note:** The trailing stop uses ATR(14). ATR(14) produces tighter, faster-reacting stops than ATR(200) — full-sample MaxDD is -11.0% with ATR(14) vs -18.1% with ATR(200). However, the OOS holdout for the gated (DXY-filtered) strategy collapses regardless of ATR period (OOS CAGR -1.50% with ATR14 vs +3.04% with ATR200), confirming the DXY gate is the primary failure, not the ATR period. The walk-forward validation uses ATR(14) and is the authoritative OOS test for the ungated strategy.
 
 ### Fade Entries (S2)
 - **Entry:** Short GC=F on: RSI(14) > 75 + bearish divergence, OR parabolic > 3 std dev + RSI > 80, OR COT extreme (managed money net long > 2 std dev).
@@ -284,7 +286,7 @@ This plan is built on the strongest evidence available, with the validation land
 - **Implication:** Favorable for trend-following hold periods and USD exposure. No tax drag on strategy returns.
 
 ### Key Assumptions
-1. GC=F MA200+HK+3xATR produces ~9.5% CAGR / 33.6% DD in ground truth (COMEX futures, full sample). Gold/JPY cross MA200+HK+3xATR produces ~5.7% CAGR / -11% DD (ATR(14), full sample 1971-2026). Both below 12-15% target — multi-asset diversification required.
+1. GC=F MA200+HK+3xATR produces ~9.5% CAGR / 33.6% DD in ground truth (COMEX futures, ATR(14), full sample 1971-2026). Gold/JPY cross MA200+HK+3xATR (ATR14) produces ~5.70% CAGR / -11.0% DD (full sample 1971-2026). ATR(14) produces much better MaxDD than ATR(200) for Gold/JPY (-11.0% vs -18.1%) but slightly lower CAGR. Both below 12-15% target — multi-asset diversification required.
 2. User's parabolic fade edge (5040→4130) is reproducible on live data — validated via Phase 1 paper-trade.
 3. Singapore tax regime remains favorable (no CGT) over 20-year horizon.
 4. IBKR continues to offer low-cost GC=F futures execution and SGDUSD conversion.
